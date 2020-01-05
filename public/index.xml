@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Industrial Organization</title>
-    <link>https://ios20.classes.ryansafner.com/</link>
+    <link>https://ios20.classes.ryansafner.com/index.html</link>
     <description>Recent content on Industrial Organization</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,8 +10,8 @@
 	<atom:link href="https://ios20.classes.ryansafner.com/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Assignments</title>
+  </channel>
+</rss>nments</title>
       <link>https://ios20.classes.ryansafner.com/assignments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -48,7 +48,7 @@ Tips for Success Take notes. On paper. Really. Studies show that using pen and p
       
       <guid>https://ios20.classes.ryansafner.com/syllabus/</guid>
       <description>Download as PDF Last Updated: September 6, 2019   “The consequences for human welfare involved in questions like these are simply staggering: Once one starts to think about them, it is hard to think about anything else. – Robert Lucas, Nobel Laureate in Economics 1995”
- Economic Development&amp;#8853;Instructor
+ Industrial Organization&amp;#8853;Instructor
 Dr. Ryan Safner
  118 Rosenstock
 safner@hood.edu
@@ -56,7 +56,7 @@ safner@hood.edu
  Office hours: TuTh 3:15–5:00PM
 Course
  TuTh
- August 26–December 10, 2019</description>
+ January 15–May 8, 2020</description>
     </item>
     
   </channel>

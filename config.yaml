@@ -34,7 +34,7 @@ taxonomies:
   category: ""
 params:
   author: Ryan Safner
-  thumbnail: /images/dev_hex.png
+  thumbnail: /images/io_hex.png
   instructor: 
     name: Dr. Ryan Safner
     email: safner@hood.edu

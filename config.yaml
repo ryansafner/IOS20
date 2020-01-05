@@ -50,10 +50,10 @@ params:
     location: "101 Rosenstock"
     twitter: ryansafner
     dates: >-
-      August 26–December 10, 2019
-    github: "ryansafner/devf19"
+      January 15–May 8, 2020
+    github: "ryansafner/ios20"
     #slack: "https://hoodeconometrics.slack.com/"
-    copyrightYear: "2019"
+    copyrightYear: "2020"
     contactDetails: >-
       Office hours: TuTh 3:15–5:00PM
   university: 
@@ -68,7 +68,7 @@ params:
   credits: >-
     Hex icon by Ryan Safner via [hexSticker](https://github.com/GuangchuangYu/hexSticker).<br> Course website based on [Andrew Heiss](https://econw19.classes.andrewheiss.com/). <br>[Nord color scheme](https://github.com/arcticicestudio/nord) from [Arctic Ice Studio](http://arcticicestudio.com/).
   logo:
-    url: /images/dev_hex.png
+    url: /images/io_hex.png
     alt: Industrial Organization
   meta:
     twitterSite: "@ryansafner"

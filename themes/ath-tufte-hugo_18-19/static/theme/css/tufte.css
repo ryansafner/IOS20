@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono:400,700);
 
 html, body {
   height: 100%;
@@ -51,7 +54,7 @@ body {
   margin-right: auto;
   padding: 0% 5%;
   /*font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
-  font-family: "Archivo", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Archivo */
   font-weight: 400;
   background-color: #ffffff;
   color: #000000;
@@ -91,7 +94,7 @@ body {
     text-decoration: none; }
   .wrap h1 {
     /*font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;*/
-    font-family: "Oswald", sans-serif;
+    font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
     font-style: normal;
     font-weight: 600;
     text-transform: uppercase;
@@ -104,7 +107,7 @@ body {
     hyphens: none;
   }
   .wrap h2 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
     font-weight: 400;
     text-transform: uppercase;
     text-align: left;
@@ -113,10 +116,10 @@ body {
     font-size: 1.5rem;
     line-height: 1.25; }
   .wrap h3 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
     font-weight: 400;
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 1.15rem; /* CHANGED FROM 1.1 */
     margin-top: 1.25rem;
     margin-bottom: 0;
     line-height: 1.08888888888889; }
@@ -170,7 +173,7 @@ body {
     font-family: "Oswald", sans-serif;
     letter-spacing: .03em; }
   .wrap pre, .wrap pre code, .wrap p code, .wrap p pre code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.85rem;
     line-height: 1.71428571;
     margin-top: 1rem; }
@@ -369,8 +372,8 @@ article .fullwidth div.sourceCode {
 article .fullwidth p {
   width: 90%; }
 article span.newthought {
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
+  font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM OSWALD */
+  font-weight: 800; /* CHANGED FROM 600 */
   text-transform: uppercase;
   font-size: 0.9em;
 }
@@ -487,7 +490,7 @@ nav.group a.active {
 header > nav a {
   font-size: 1.3rem;
   /*font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;*/
-  font-family: "Oswald", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
   font-weight: 600;
   /*letter-spacing: 0.1em;*/
   text-transform: uppercase;
@@ -539,7 +542,7 @@ ul.footer-links li {
 
 .blognav {
   /*font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;*/
-  font-family: "Oswald", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
   /*text-transform: uppercase;*/
   display: block;
   overflow: hidden;
@@ -570,7 +573,7 @@ ul.footer-links li {
 /* END NAVIGATION */
 .credits {
   /*font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif; */
-  font-family: "Oswald", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
 }
   .credits a {
     color: #A5452B; }
@@ -669,7 +672,7 @@ hr.slender {
 
   html body span.print-footer {
     /*font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;*/
-    font-family: "Oswald", sans-serif;
+    font-family: "Fira Sans Condensed", sans-serif; /* CHANGED FROM Oswald */
     font-weight: 600;
     font-size: 9pt;
     margin-top: 50pt;

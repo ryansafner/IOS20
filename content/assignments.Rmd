@@ -8,9 +8,9 @@ slug: assignments
 Use this tool to calculate your final course grade and predict what grades you would need on remaining assignments to obtain a desired course grade.
 
 
-# Country Profile {-}
+# Position Paper {-}
 
-Each of you will write a short profile of a different developing country and give a short presentation to the class. The countries that may be chosen will be restricted to developing economies in Latin America, Asia, Africa, and Eastern Europe. Students born outside of the U.S. may *not* choose the country of their birth. The purpose of this assignment is to "get you out of your comfort zone" and see the world from the perspective of a culture and an economy radically different than the one(s) you are familiar with.
+Each of you will write a short position paper on a topic from our applications at the end of the semester (e.g. on antitrust, automation, data as labor, etc). 
 
 # Participation and Discussion {-}
 

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Industrial Organization</title>
-    <link>https://ios20.classes.ryansafner.com/index.html</link>
+    <link>https://ios20.classes.ryansafner.com/</link>
     <description>Recent content on Industrial Organization</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,15 @@
 	<atom:link href="https://ios20.classes.ryansafner.com/index.xml" rel="self" type="application/rss+xml" />
     
     
-  </channel>
-</rss>nments</title>
+    <item>
+      <title>Assignments</title>
       <link>https://ios20.classes.ryansafner.com/assignments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ios20.classes.ryansafner.com/assignments/</guid>
       <description>Grade Calculator  Use this tool to calculate your final course grade and predict what grades you would need on remaining assignments to obtain a desired course grade.
-Country Profile Each of you will write a short profile of a different developing country and give a short presentation to the class. The countries that may be chosen will be restricted to developing economies in Latin America, Asia, Africa, and Eastern Europe.</description>
+Position Paper Each of you will write a short position paper on a topic from our applications at the end of the semester (e.g. on antitrust, automation, data as labor, etc).
+Participation and Discussion At the end of most lessons, we will hold a discussion.</description>
     </item>
     
     <item>
@@ -47,7 +48,7 @@ Tips for Success Take notes. On paper. Really. Studies show that using pen and p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ios20.classes.ryansafner.com/syllabus/</guid>
-      <description>Download as PDF Last Updated: September 6, 2019   “The consequences for human welfare involved in questions like these are simply staggering: Once one starts to think about them, it is hard to think about anything else. – Robert Lucas, Nobel Laureate in Economics 1995”
+      <description>Download as PDF Last Updated: January 6, 2020   “The consequences for human welfare involved in questions like these are simply staggering: Once one starts to think about them, it is hard to think about anything else. – Robert Lucas, Nobel Laureate in Economics 1995”
  Industrial Organization&amp;#8853;Instructor
 Dr. Ryan Safner
  118 Rosenstock

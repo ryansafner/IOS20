@@ -40,7 +40,6 @@ lessons:
   - title: "2.7 Innovation"
 
   - title: '<i class="fas fa-laptop-code"></i> **Midterm Exam**'
-    assignment: "midterm-exam"
 
   - title: '<span class="fake-header-table">III Theory of the Firm</span>'
     header: True
@@ -72,8 +71,6 @@ lessons:
 
   - title: '4.8 Data as Labor?'
 
-  - title: '<i class="fas fa-laptop-code"></i> **Position Paper** due Dec 6 by email'
-    assignment: "position-paper"
+  - title: '<i class="fas fa-laptop-code"></i> **Position Paper**'
 
   - title: '<i class="fas fa-laptop-code"></i> **Final Exam**'
-    assignment: "final-exam"

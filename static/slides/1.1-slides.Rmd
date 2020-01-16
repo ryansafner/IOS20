@@ -287,9 +287,9 @@ spectrum+geom_segment(x=4.5,xend=4.5,y=0,yend=5, color="red", size =1 , linetype
 .pull-right[
 
 - ... which is determined by the product's .hi-purple["Technology"]
-  - Consumer demand (price and income elasticity, substitutes, location, etc)
-  - Good's characteristics: inputs, technology, durability, rivalry, excludability
-  - Production features: economies of scale, economies of scope, network externalities, two-sided platforms
+  - **Consumer demand** (price and income elasticity, substitutes, location, etc)
+  - **Good's features**: inputs, technology, durability, rivalry, excludability
+  - **Production features**: economies of scale, economies of scope, network externalities, two-sided platforms
 ]
 
 ---
@@ -361,7 +361,7 @@ spectrum+geom_segment(x=4.5,xend=4.5,y=0,yend=5, color="red", size =1 , linetype
 # Price Theory: Optimization and Equilibrium
 
 .pull-left[
-- If people can *learn* and *change* their behavior, they will always switch to a higher-valued option
+- If people can **learn** and **change** their behavior, they will always switch to a higher-valued option
 
 - If there are no alternatives that are better, people are at an .hi[optimum]
 
@@ -378,7 +378,7 @@ spectrum+geom_segment(x=4.5,xend=4.5,y=0,yend=5, color="red", size =1 , linetype
 
 ---
 
-# The Major Models of Economics
+# The Major Models of Price Theory
 
 .pull-left[
 
@@ -504,7 +504,7 @@ coord_equal()
 
 - **Most** production takes place in firms
 
-- Firms grapple with their own .hi-purple[principle-agent problems]: 
+- Firms grapple with their own .hi-purple[principal-agent problems]: 
   - management vs. labor, management vs. owners
 
 - Firms must relate to other firms
@@ -720,13 +720,13 @@ ggplot(data = profits)+
 
 # Questions for the Semester
 
-1. Has there been a general increase in market power/concentration?
+1. Has there been a **general increase in market power/concentration**?
 
 2. If so, what should we do about it?
 
-3. Should we revitalize antitrust laws?
+3. Should we revitalize **antitrust laws**?
 
-4. How should we regulate platforms like Facebook, Amazon, Google, etc. uniquely problematic?
+4. Are **platforms** like Facebook, Amazon, Google, etc. uniquely problematic? How should we regulate them?
 
 ---
 

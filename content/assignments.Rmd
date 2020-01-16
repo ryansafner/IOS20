@@ -3,14 +3,17 @@ title: "Assignments"
 slug: assignments
 ---
 
-- [<i class="fas fa-calculator"></i> `Grade Calculator`](https://ryansafner.shinyapps.io/dev_grade_calculator/)
+- [<i class="fas fa-calculator"></i> `Grade Calculator`]()
 
 Use this tool to calculate your final course grade and predict what grades you would need on remaining assignments to obtain a desired course grade.
 
+### Homeworks
+
+There will only be a handful o homework assignments this semester, mostly in the first third of the course (where we are reviewing and practicing models). These questions will help check your understanding and mastery of the material, and will be a combination of quantitative, graph, and short answer questions of examples. These will also be good indicators of what to expect on the exams. You may collaborate with other students to work on homeworks, but *each person must turn in an individual assignment*. Homeworks are due *one week* from the class period where we finish a lesson, and must be turned in at the beginning of class. I will grade homeworks as follows: **70%** of the grade for **completion**, and **30%** for **one randomly selected question**. This is to reward students for putting in a full faith effort to try to reach an answer for each question, but not worry that every answer has to be fully correct.
 
 # Position Paper {-}
 
-Each of you will write a short position paper on a topic from our applications at the end of the semester (e.g. on antitrust, automation, data as labor, etc). 
+Each of you will write a position paper on a topic from our applications at the end of the semester (e.g. on antitrust, automation, data as labor, etc). I will explain more as we get closer to these applications.
 
 # Participation and Discussion {-}
 
@@ -54,10 +57,6 @@ Your "questions" need not be in the form of a question -- some suggestions are p
 The main purpose of the questions is to provide evidence that students are doing the readings and are prepared to talk about them, so bear this in mind. 
 
 At the end of the semester, I will take an average by adding up your total accumulated score and divide it by the number of discussion days we had. This average score will constitute your participation grade for the course. 
-
-# Short Papers {-}
-
-There will be two short papers on assigned topics. The first will be early in the semester, covering topics from the first several weeks. The second will cover topics from the remaining weeks. I am looking for 3-5 page papers that explore subjects prompted by questions that I will provide to you in advance. However, I also encourage you to take the less-trodden path and explore something unique and interesting to you.
 
 # Final exam {-}
 

@@ -3,9 +3,8 @@ lessons:
     header: True
 
   - title: "1.1 Introduction and Overview"
-    slides: "01-slides"
-    class: "01-class"
-    reading: "01-reading"
+    slides: "1.1-slides"
+    class: "1.1-class"
 
   - title: "1.2 Production"
 

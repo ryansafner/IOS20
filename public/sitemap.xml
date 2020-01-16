@@ -18,7 +18,16 @@
   </url>
   
   <url>
+    <loc>https://ios20.classes.ryansafner.com/class/1.1-class/</loc>
+  </url>
+  
+  <url>
     <loc>https://ios20.classes.ryansafner.com/assignments/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ios20.classes.ryansafner.com/class/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

@@ -13,11 +13,9 @@ library(pander)
 ```
 
 - [<i class="fas fa-file-pdf"></i> `Download as PDF`](/files/syllabus-pdf.pdf)
-- **Last Updated**: January 6, 2020
+- **Last Updated**: January 15, 2020
 
-> "The consequences for human welfare involved in questions like these are simply staggering: Once one starts to think about them, it is hard to think about anything else. -- Robert Lucas, Nobel Laureate in Economics 1995"
-
-<span class="newthought">Industrial Organization</span> [^courseinfo] is one of the most common fields of applied microeconomics. It traditionally studies business firms and their relationship to the market--how they make economic decisions, how they are affected by government regulation, how they strategically interact with one another--and how these change in markets that are more or less competitive--monopoly, oligopoly, monopolistic competition, or perfect competition, often with a close connection to antitrust law.
+<span class="newthought">Industrial Organization</span>[^courseinfo] is one of the most common fields of applied microeconomics. It traditionally studies business firms and their relationship to the market--how they make economic decisions, how they are affected by government regulation, how they strategically interact with one another--and how these change in markets that are more or less competitive--monopoly, oligopoly, monopolistic competition, or perfect competition, often with a close connection to antitrust law.
 
 In my view, industrial organization is less useful as a narrow theory of the classical capitalist business firm than a broader theory of economic organization in its many forms. We will examine other ways of organizing economic enterprises that deserve our attention and interest--for example, public enterprises, non-profit organizations, informal community enterprises, and criminal enterprises--as well as the institutions that govern and affect the choices involved in organizing an economic enterprise. 
 
@@ -33,13 +31,15 @@ This course will be a hybrid of formal lecture, hands-on activities, and student
 
 <span class="newthought">By the end of this course,</span> you will: 
 
-- Explain how the development community measures economic development
-- Interpret regression tables in the empirical literature in development
-- Demonstrate different theories of economic development
-- Explain why various policies aimed at promoting development have failed
-- Describe essential conditions for successful development
-- Discuss the broad economic history of "the West", several key "Emerging Markets" (such as Russia, China, Korea, etc.), and several other case studies of developing countries
+- Understand key economic models of perfect competition, monopoly, monopolistic competition, oligopoly (Bertrand, Cournot, and Stackelberg competition), and contestable markets 
+- Apply models of competition to different industries and regulatory regimes
+- Simulate strategic and game theoretic interactions and apply them to industry behavior
+- Discuss how firms actually compete with one another
+- Critique textbook models and theories of regulation and antitrust
+- Understand the economic problems that firms solve, create, and grapple with
+- Debate regulatory solutions to problems and current events in various industries
 
+]
 Given these objectives, this course fulfills two of the learning outcomes for [the George B. Delaplaine, Jr. School of Business](https://www.hood.edu/academics/departments/george-b-delaplaine-jr-school-business/student-learning-outcomes) Economics B.A. program:
 
 - Apply economic reasoning and models to understand and analyze problems of public policy [...]
@@ -80,10 +80,11 @@ Throughout the course, I will post both required and supplemental (non-required)
 ```{r assignments-grades, include=FALSE}
 assignments <- tribble(
   ~"",  ~Assignment, ~Percent,
-  "n"     , "Participation (Average)", "25%",
-  1, "Position Paper", "10%",
-  2      , "Short Paper", "20% each",
-  1     , "Final", "30%"
+  "n"     , "Participation (Average)", "20%",
+  "n", "Homework (Average)", "10%",
+  1, "Position Paper", "25%",
+  1      , "Midterm", "20%",
+  1     , "Final (Take-home)", "25%"
 )
 
 grading <- tribble(

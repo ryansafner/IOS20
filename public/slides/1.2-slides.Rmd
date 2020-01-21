@@ -41,10 +41,9 @@ theme_slides <- theme_light() +
 
 ```
 
+class: inverse, center, middle
 
-## Production Concepts
-
-## Costs
+# Models Refresher
 
 ---
 
@@ -251,10 +250,10 @@ theme_slides <- theme_light() +
 - Firms convert some goods to other goods: 
 
 - **Inputs**: $x_1, x_2, \cdots, x_n$
-  - <span class="green">**Examples**: worker efforts, warehouse space, electricity, loans, gasoline, cardboard, fertilizer, computers, software programs, etc<span>
+  - <span class="green">**Examples**: worker efforts, warehouse space, electricity, loans, oil, fertilizer, software programs, etc<span>
   
-- **Output**:<sup>.red[1]</sup> $q$
-  - <span class="green">**Examples**: oil, cars, legal services, mobile apps, vegetables, consulting advice, financial reports, etc<span>
+- **Output**: $q$
+  - <span class="green">**Examples**: gasoline, cars, legal services, mobile apps, vegetables, consulting advice, financial reports, etc<span>
 
 ]
 
@@ -264,14 +263,12 @@ theme_slides <- theme_light() +
 ]
 ]
 
-.footnote[<sup>.red[1]</sup> For simplicity, we assume a firm produces a single product.]
-
 ---
 
 # What Do Firms Do? III
 
 .pull-left[
-- .shout[Technology] or a .shout[production function]: rate at which firm can convert specified inputs $(x_1, x_2, \cdots, x_n)$ into output $(q)$
+- .hi[Technology] or a .hi[production function]: rate at which firm can convert specified inputs $(x_1, x_2, \cdots, x_n)$ into output $(q)$
 $$q=f(x_1, x_2, \cdots, x_n)$$
 
 ]
@@ -309,7 +306,7 @@ $$q=f(t,l,k,e,a)$$
 
 .pull-left[
 
-- Economists typically classify inputs in categories, known as the .shout[factors of production (FOP)] or "the .shout[factors]"
+- Economists typically classify inputs in categories, known as the .hi[factors of production (FOP)] or "the .hi[factors]"
 
 ```{r,results="asis"}
 tribble(
@@ -367,7 +364,7 @@ tribble(
 
 .pull-left[
 
-- We will assume firms .whisper[maximize profit `\\((\pi)\\)`]
+- We will assume firms .hi-purple[maximize profit `\\((\pi)\\)`]
 
 - Not true for all firms
     - <span class="green">**Examples**: non-profits, charities, civic associations, government agencies, criminal organizations, etc</span>
@@ -382,14 +379,6 @@ tribble(
 .center[
 ![](https://www.dropbox.com/s/70jnyywlc8z7u6r/gnomes.png?raw=1)
 ]
-]
-
----
-
-# Profits Have a Bad Rap These Days
-
-.center[
-![:scale 80%](https://www.dropbox.com/s/aubd9fo004avvau/peopleoverprofits.jpg?raw=1)
 ]
 
 ---
@@ -482,12 +471,27 @@ $$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
 .pull-left[
 $$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
 
-- .whisper[The firm's costs are all of the factor-owner's incomes!]
-    - Landowners, laborers, creditors are all paid rent, wages, and interest, respectively
+- .hi-purple[The firm's costs are all of the factor-owner's incomes!]
+    - Landowners, laborers, creditors are all paid rent, wages, and interest
 
-- Profits are the .whisper[residual value] leftover after paying all factors
+- Profits are the .hi-purple[residual value] leftover after paying all factors
 
-- Profits are income for the .shout[residual claimant(s)] of the production process (i.e. **owner(s)** of a firm):
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/0s2tfmcugauyacz/riskprofit.jpg?raw=1)
+]
+]
+
+---
+
+# Who Gets the Profits? II
+
+.pull-left[
+$$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
+
+- Profits are income for the .hi[residual claimant(s)] of the production process (i.e. **owner(s)** of a firm):
     - Entrepreneurs
     - Shareholders
 
@@ -501,7 +505,8 @@ $$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
 
 ---
 
-# Who Gets the Profits? II
+
+# Who Gets the Profits? III
 
 .pull-left[
 $$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
@@ -519,28 +524,6 @@ $$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
 ]
 ]
 
----
-
-# Profits and Entrepreneurship: A Preview
-
-.pull-left[
-
-- In markets, production must face the .shout[profit test]:
-    - <span class="whisper">Is consumer's willingness to pay $>$ opportunity cost of inputs?</span>
-
-- Profits are an indication that **value is being created for society**
-
-- Losses are an indication that **value is being destroyed for society**
-
-- Survival for sellers in markets *requires* firms continually create value and earn profits or die
-]
-
-.pull-right[
-
-.center[
-![](https://www.dropbox.com/s/b5qcs2cqjmhbqc0/feedback.png?raw=1)
-]
-]
 
 ---
 
@@ -595,10 +578,10 @@ $$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
 
 - The "time"-frame of production can be usefully divided between short vs. long run analysis
 
-- .shout[Short run]: at least one factor of production is fixed (it is too costly to be changed)
+- .hi[Short run]: at least one factor of production is *fix*ed* (too costly to change)
 $$q=f(\bar{k},l)$$
-    - We assume capital is fixed (i.e. number of factories, storefronts, etc)
-    - Our only decisions concern how we use labor
+    - We assume **capital** is fixed (i.e. number of factories, storefronts, etc)
+    - Only decisions about how to use **labor**
     
 ]
 
@@ -617,12 +600,7 @@ $$q=f(\bar{k},l)$$
 
 - The "time"-frame of production can be usefully divided between short vs. long run analysis
 
-- .shout[Short run]: at least one factor of production is fixed (it is too costly to be changed)
-$$q=f(\bar{k},l)$$
-    - We assume capital is fixed (i.e. number of factories, storefronts, etc)
-    - Our only decisions concern how we use labor
-    
-- .shout[Long run]: all factors of production are variable
+- .hi[Long run]: all factors of production are **variable**
 $$q=f(k,l)$$
 
 ]
@@ -639,11 +617,9 @@ $$q=f(k,l)$$
 # Marginal Products
 
 .pull-left[
-- The .shout[marginal product] of an input is the *additional* output produced by *one more unit* of that input (*holding other inputs constant*)
+- .hi[Marginal product] of an input is the *additional* output produced by *one more unit* of that input (*holding other inputs constant*)
 
 - Like marginal utility
-
-- Similar to marginal utilities, I will give you the marginal product equations
 
 ]
 
@@ -684,7 +660,7 @@ pf+ # 1 to 2
 
 .pull-left[
 
-- .shout[Marginal product of labor `\\((MP_l)\\)`]: additional output produced by adding one more unit of labor (holding $k$ constant)
+- .hi[Marginal product of labor `\\((MP_l)\\)`]: additional output produced by adding one more unit of labor (holding $k$ constant)
 $$MP_l = \frac{\Delta q}{\Delta l}$$
 
 - $MP_l$ is the slope of $TP$ at every value of $l$! 
@@ -738,14 +714,12 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-- .shout[Marginal product of capital `\\((MP_k)\\)`]: additional output produced by adding one more unit of capital (holding $l$ constant)
+- .hi[Marginal product of capital `\\((MP_k)\\)`]: additional output produced by adding one more unit of capital (holding $l$ constant)
 $$MP_k = \frac{\Delta q}{\Delta k}$$
 
 - $MP_k$ is the slope of $TP$ at every value of $k$! 
 
 - Note: via calculus: $\frac{\partial q}{\partial k}$
-
-- Note we often don't consider capital in the short run!
 
 ]
 
@@ -795,7 +769,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-- .onfire[Law of Diminishing Returns]: adding more of one factor of production *holding others constant* will result in successively lower increases in output<sup>.red[1]</sup>
+- .hi[Law of Diminishing Returns]: adding more of one factor of production **holding others constant** will result in successively lower increases in output
 
 - In order to increase output, firm will need to increase *all* factors!
 
@@ -854,7 +828,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-- .onfire[Law of Diminishing Returns]: adding more of one factor of production *holding others constant* will result in successively lower increases in output<sup>.red[1]</sup>
+- .hi[Law of Diminishing Returns]: adding more of one factor of production *holding others constant* will result in successively lower increases in output<sup>.red[1]</sup>
 
 - In order to increase output, firm will need to increase *all* factors!
 
@@ -916,23 +890,6 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 ```
 ]
 
----
-
-# Production Functions and Marginal Product
-
-- A quick trick to roughly estimate $MP_l$
-
-$$MP_l \approx \frac{q_2-q_1}{l_2-l_1}$$
-
-| $l$ | $q$ | $MP_l$ |
-|-----|-----|:------:|
-| $0$ | $0.00$ | $-$ |
-| $1$ | $2.00$ | $2.00-0.00=2.00$ |
-| $2$ | $2.83$ | $2.83-2.00=0.83$ |
-| $3$ | $3.46$ | $3.46-2.83=0.63$ |
-
-
-- Note these are *approximate*. Technically, $MP_l$ is defined via calculus as an *infinitesimal* change in $l$, whereas these are discrete changes.
 
 ---
 
@@ -940,14 +897,12 @@ $$MP_l \approx \frac{q_2-q_1}{l_2-l_1}$$
 
 .pull-left[
 
-- .shout[Average product of labor `\\((AP_l)\\)`]: total output per worker
+- .hi[Average product of labor `\\((AP_l)\\)`]: total output per worker
 $$AP_l = \frac{q}{l}$$
 
 - A measure of *labor productivity*
 
-- Geometrically: slope of a line from (0,0) to $q(l)$
-
-- .shout[Average product of capital `\\((AP_k)\\)`]: total output per unit of capital
+- .hi[Average product of capital `\\((AP_k)\\)`]: total output per unit of capital
 $$AP_k = \frac{q}{k}$$
 ]
 
@@ -1028,8 +983,6 @@ $$q=f(k,l)$$
 
 3. **Subject to:** .hi-red[< technology >]
 
-- It's actually much easier to break this into *2 stages*<sup>.red[1]</sup>
-
 ]
 
 .pull-right[
@@ -1039,61 +992,6 @@ $$q=f(k,l)$$
 ]
 ]
 
-.footnote[<sup>.red[1]</sup> Though it's possible to do it all at once. See today's [class notes](/class/11-class) page for an example.]
----
-
-# The Firm's Two Problems
-
-.pull-left[
-
-- First Stage: the **firm's profit maximization problem**: 
-
-1. **Choose:** .hi-purple[ < output >]
-
-2. **In order to maximize:** .hi-green[< profits >]
-
-- We'll cover this later...first we'll explore: 
-]
-
-.pull-right[
-
-.center[
-![](https://www.dropbox.com/s/zwows56ydpqj9u6/management.jpg?raw=1)
-]
-]
-
----
-
-# The Firm's Two Problems
-
-.pull-left[
-
-- First Stage: the **firm's profit maximization problem**: 
-
-1. **Choose:** .hi-purple[ < output >]
-
-2. **In order to maximize:** .hi-green[< profits >]
-
-- We'll cover this later...first we'll explore: 
-
-- Second Stage: the **firm's cost minimization problem**: 
-
-1. **Choose:** .hi-purple[ < inputs >]
-
-2. **In order to _minimize_:** .hi-green[< cost >]
-
-3. **Subject to:** .hi-red[< producing the optimal output >]
-
-- Minimizing costs $\iff$ maximizing profits
-
-]
-
-.pull-right[
-
-.center[
-![](https://www.dropbox.com/s/zwows56ydpqj9u6/management.jpg?raw=1)
-]
-]
 
 ---
 
@@ -1141,6 +1039,27 @@ $$q=f(k,l)$$
 
 ---
 
+# Another Helpful Perspective
+
+.pull-left[
+
+- Another helpful perspective:
+  - **"Accounting cost"**: what you **historically** paid for a resource
+  - **"Economic cost**: what you can **currently** get in the market for a resource
+    - Its value in *alternative* uses (market price, measuring the opp cost)
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/zd7zs2h3v95lh4l/costrevenue.jpg?raw=1)
+
+![](https://www.dropbox.com/s/mb9yaadujqe38fj/disappear.jpg?raw=1)
+]
+]
+
+---
+
 # The Accounting vs. Economic Point of View I
 
 .pull-left[
@@ -1160,6 +1079,7 @@ $$q=f(k,l)$$
 ]
 
 ---
+
 # The Accounting vs. Economic Point of View II
 
 .pull-left[
@@ -1187,8 +1107,10 @@ $$q=f(k,l)$$
 .content-box-green[
 .hi-green[**Examples**]:
 - If you choose to start a business, you may give up your salary at your current job
+- If you own your firm, your labor in it could be put towards working elsewhere
 - If you invest in a factory, you give up other investment opportunities
 - If you use an office building you own, you cannot rent it to other people
+- If you own land on which you farm, you cannot rent the land to others
 ]
 
 ---
@@ -1207,11 +1129,11 @@ $$q=f(k,l)$$
 
 - Opportunity cost is a *forward-looking* concept
 
-- Choices made in the *past* with *non-recoverable* costs are called .shout[sunk costs]
+- Choices made in the *past* with *non-recoverable* costs are called .hi[sunk costs]
 
 - Sunk costs *should not* enter into future decisions
 
-- Many people have difficulty letting go of unchangeable past decisions: .whisper[sunk cost fallacy]
+- Many people have difficulty letting go of unchangeable past decisions: .hi-purple[sunk cost fallacy]
 
 ]
 
@@ -1260,7 +1182,7 @@ class: inverse, center, middle
 
 # Costs in the Short Run
 
-- .shout[Total cost function, `\\(C(q)\\)`] relates output $q$<sup>.red[1]</sup> to the total cost of production $C$
+- .hi[Total cost function, `\\(C(q)\\)`] relates output $q$ to the total cost of production $C$
 
 $$C(q)=f+VC(q)$$
 
@@ -1268,16 +1190,14 @@ $$C(q)=f+VC(q)$$
 
 - Two kinds of costs:
 
-**1.** .shout[Fixed costs, `\\(f\\)`] are costs that do not vary with output
+**1.** .hi[Fixed costs, `\\(f\\)`] are costs that do not vary with output
   - Only true in the short run! (Consider this the cost of maintaining your capital)
 
 --
 
-**2.** .shout[Variable costs, `\\(VC(q)\\)`] are costs that vary with output (notice the variable in them!)
+**2.** .hi[Variable costs, `\\(VC(q)\\)`] are costs that vary with output (notice the variable in them!)
   - Typically, the more production of $q$, the higher the cost
   - e.g. firm is hiring *additional* labor
-
-.footnote[<sup>.red[1]</sup> Using optimal combinations of `\\(l\\)` and `\\(k\\)`!]
 
 ---
 
@@ -1323,7 +1243,7 @@ $$C(q)=q^2+q+10$$
 # Cost Functions: Example, Visualized
 
 .pull-left[
-
+.smallest[
 | $q$ | $f$ | $VC(q)$ | $C(q)$ |
 |----:|----:|--------:|-------:|
 | $0$ | $10$ | $0$ | $10$ |
@@ -1337,7 +1257,7 @@ $$C(q)=q^2+q+10$$
 | $8$ | $10$ | $72$ | $82$ |
 | $9$ | $10$ | $90$ | $100$ |
 | $10$ | $10$ | $110$ | $120$ |
-
+]
 ]
 
 .pull-right[
@@ -1373,40 +1293,33 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 # Average Costs
 
-- .shout[Average Fixed Cost]: fixed cost per unit of output:
+- .hi[Average Fixed Cost]: fixed cost per unit of output:
 
 $$AFC(q)=\frac{f}{q}$$
 
 --
 
-- .shout[Average Variable Cost]: variable cost per unit of output:
+- .hi[Average Variable Cost]: variable cost per unit of output:
 
 $$AVC(q)=\frac{VC(q)}{q}$$
 
 --
 
-- .shout[Average (Total) Cost]: (total) cost per unit of output:
+- .hi[Average (Total) Cost]: (total) cost per unit of output:
 
 $$AC(q)=\frac{C(q)}{q}$$
-
---
-
-$$\begin{align*}
-C(q) &= VC(q)+f\\
-\frac{C(q)}{q} &= \frac{VC(q)}{q} + \frac{f}{q}\\
-AC(q) &=AVC(q) + AFC(q)\\ \end{align*}$$
 
 ---
 
 # Marginal Cost
 
-- .shout[Marginal Cost] is the change in cost for each additional unit of output produced:
+- .hi[Marginal Cost] is the change in cost for each additional unit of output produced:
 
-$$MC(q) = \frac{\Delta C(q)}{\Delta q} \approx \frac{C_2-C_1}{q_2-q_1}$$
+$$MC(q) = \frac{\Delta C(q)}{\Delta q}$$
 
 - Calculus: first derivative of the cost function
 
-- .onfire[Marginal cost is the *primary* cost that matters in making decisions]
+- .hi[Marginal cost is the *primary* cost that matters in making decisions]
   - All other costs are driven by marginal costs
   - This is the main cost that firms can "see"
 
@@ -1416,6 +1329,7 @@ $$MC(q) = \frac{\Delta C(q)}{\Delta q} \approx \frac{C_2-C_1}{q_2-q_1}$$
 
 .pull-left[
 
+.smallest[
 | $q$ | $C(q)$ | $MC(q)$ | $AFC(q)$ | $AVC(q)$ | $AC(q)$ |
 |----:|----:|--------:|-------:|
 | $0$ | $10$ | $-$ | $-$ | $-$ | $-$ |
@@ -1430,6 +1344,7 @@ $$MC(q) = \frac{\Delta C(q)}{\Delta q} \approx \frac{C_2-C_1}{q_2-q_1}$$
 | $9$ | $100$ | $18$ | $1.11$ | $10$ | $11.10$ |
 | $10$ | $120$ | $20$ | $1.00$ | $11$ | $12.00$ |
 
+]
 ]
 
 .pull-right[
@@ -1469,7 +1384,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-- There is a general mathematical relationship between a marginal and an average value:
+- Relationship between a marginal and an average value:
 
 - Whenever marginal $>$ average, average is increasing
 
@@ -1507,7 +1422,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-- There is a general mathematical relationship between a marginal and an average value:
+- Relationship between a marginal and an average value:
 
 - Whenever marginal $>$ average, average is increasing
 
@@ -1542,15 +1457,15 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 
-- There is a general mathematical relationship between a marginal and an average value:
+- Relationship between a marginal and an average value:
 
 - Whenever marginal $>$ average, average is increasing
 
 - Whenever marginal $<$ average, average is decreasing
 
 - When marginal $=$ average, average is **maximized/minimized**
-- .whisper[When `\\(MC=AC\\)`, `\\(AC\\)` is at a *minimum*]
-- .whisper[When `\\(MC=AVC\\)`, `\\(AVC\\)` is at a *minimum*]
+- .hi-purple[When `\\(MC=AC\\)`, `\\(AC\\)` is at a *minimum*]
+- .hi-purple[When `\\(MC=AVC\\)`, `\\(AVC\\)` is at a *minimum*]
     
 - Economic importance (later):
     - Break-even price and shut-down price
@@ -1644,15 +1559,12 @@ class: inverse, center, middle
 
 .pull-left[
 
-- In the long run, firm can change all factors of production, and vary the scale of production
+- In the .hi[long run], firm can change *all* factors of production, and vary the scale of production
 
 - **Long run average cost, LRAC(q)**: cost per unit of output when the firm can change both $l$ and $k$ to make more $q$
 
 - **Long run marginal cost, LRMC(q)**: change in long run total cost as the firm produce an additional unit of $q$ (by changing both $l$ and/or $k$)
 
-- Don't worry much about these, they are nearly identical to short run cost curves
-
-- One important idea...
 
 ]
 
@@ -1672,11 +1584,8 @@ class: inverse, center, middle
 
 - In the long run, firm can choose $k$ (factories, locations, etc)
 
-- Separate short run average cost (SRAC) curves for each amount of $k$ potentially chosen
+- Separate **short run average cost** (SRAC) curves for each amount of $k$ potentially chosen
 
-- .purple[Long run average cost (LRAC)] curve "envelopes" the lowest (optimal) parts of all the SRAC curves!
-
-> "Subject to producing the optimal amount of output, choose l and k to minimize cost"
 
 
 ]
@@ -1724,7 +1633,9 @@ lrac
 
 - In the long run, firm can choose $k$ (factories, locations, etc)
 
-- Separate short run average cost (SRAC) curves for each amount of $k$ potentially chosen
+- Separate **short run average cost** (SRAC) curves for each amount of $k$ potentially chosen
+
+- .purple[Long run average cost (LRAC)] curve "envelopes" the lowest (optimal) parts of all the SRAC curves!
 
 ]
 
@@ -1751,17 +1662,17 @@ lrac+
 
 # Long Run Costs & Scale Economies I
 
-- Further properties about costs based on .shout[scale economies] of production:
+- Further properties about costs based on .hi[scale economies] of production:
 
-- .shout[Economies of scale]: costs fall with output
+- .hi[Economies of scale]: costs fall with output
 
-- .shout[Diseconomies of scale]: costs rise with output
+- .hi[Diseconomies of scale]: costs rise with output
 
-- .shout[Constant economies of scale]: costs don't change with output
+- .hi[Constant economies of scale]: costs don't change with output
 
 - Note economies of scale $\neq$ returns to scale!
-    - RTS (last class): a **technological** relationship between inputs & output
-    - EOS (this class): an **economic** relationship between output and average costs
+    - RTS: a **technological** relationship between inputs & output
+    - EOS: an **economic** relationship between output and average costs
 
 ---
 
@@ -1769,7 +1680,7 @@ lrac+
 
 .pull-left[
 
-- .shout[Minimum Efficient Scale]: $q$ with the lowest $AC(q)$
+- .hi[Minimum Efficient Scale]: $q$ with the lowest $AC(q)$
 
 - .hi-green[Economies of Scale]: $\uparrow q$, $\downarrow AC(q)$
 
@@ -1804,46 +1715,6 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   theme(legend.position = "bottom")
 ```
 ]
-
----
-
-# Long Run Costs and Scale Economies: Example
-
-.content-box-green[
-.hi-green[**Example**]: A firm's long run cost structure is as follows:
-
-$$\begin{align*}
-LRC(q)&= 32000q-250q^2+q^3\\
-LRMC(q)&=32000-500q+3q^2\\ \end{align*}$$
-]
-
-1. At what levels of output will the firm face economies of scale and diseconomies of scale? (Hint: This firm has a $U$-shaped LRAC.)
-
----
-
-# Long Run Costs and Scale Economies: Example, Visualized
-
-```{r, fig.retina=3}
-library(mosaic)
-lrac_ex1<-function(x){32000-250*x+x^2}
-
-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  stat_function(fun=lrac_ex1, geom="line", size=2, color = "orange")+
-    geom_label(aes(x=175,y=lrac_ex1(175)), color = "orange", label=expression(LRAC(q)), size = 4)+
-   geom_segment(x=125,xend=125,y=0, yend=16375, size=1, linetype="dotted")+
-   geom_segment(x=0,xend=125,y=16375, yend=16375, size=1, linetype="dotted")+
-   scale_x_continuous(breaks=seq(0,200,50),
-                     limits=c(0,200),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  scale_y_continuous(breaks=seq(0,50000,10000),
-                     limits=c(0,50000),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  #scale_colour_manual("Curves", values = line_colors, guide=F)+
-  labs(x = "Output, q",
-       y = "Per-Unit Costs ($)",
-       caption = expression(paste(C(q)==32000-250*q^2+q^3)))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
-```
 
 ---
 
@@ -1990,20 +1861,20 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-right[
 
-- .shout[Total Revenue] $R(q)=pq$
+- .hi[Total Revenue] $R(q)=pq$
 ]
 
 ---
 
 # Average and Marginal Revenues
 
-- .shout[Average Revenue]: revenue per unit of output
+- .hi[Average Revenue]: revenue per unit of output
 $$AR(q)=\frac{R}{q}$$
   - Is *always* equal to the price! Why?
 
 --
 
-- .shout[Marginal Revenue]: change in revenues for each additional unit of output sold:
+- .hi[Marginal Revenue]: change in revenues for each additional unit of output sold:
 $$MR(q) = \frac{\Delta R(q)}{\Delta q} \approx \frac{R_2-R_1}{q_2-q_1}$$
   - Calculus: first derivative of the revenues function
   - For a *competitive* firm, always equal to the price!
@@ -2045,7 +1916,7 @@ For the 2<sup>nd</sup> bushel sold:
 # Total Revenue, Example: Visualized
 
 .pull-left[
-
+.smallest[
 | $q$ | $R(q)$ |
 |----:|-------:|
 | $0$ | $0$ |
@@ -2059,7 +1930,7 @@ For the 2<sup>nd</sup> bushel sold:
 | $8$ | $80$ |
 | $9$ | $90$ |
 | $10$ | $100$ |
-
+]
 ]
 
 .pull-right[
@@ -2089,7 +1960,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Average and Marginal Revenue, Example: Visualized
 
 .pull-left[
-
+.smallest[
 | $q$ | $R(q)$ | $AR(q)$ | $MR(q)$ |
 |----:|-------:|--------:|--------:|
 | $0$ | $0$ | $-$ | $-$ |
@@ -2103,7 +1974,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 | $8$ | $80$ | $10$ | $10$ |
 | $9$ | $90$ | $10$ | $10$ |
 | $10$ | $100$ | $10$ | $10$ |
-
+]
 ]
 
 .pull-right[

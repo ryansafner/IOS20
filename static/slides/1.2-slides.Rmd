@@ -992,7 +992,6 @@ $$q=f(k,l)$$
 ]
 ]
 
-.footnote[<sup>.red[1]</sup> Though it's possible to do it all at once. See today's [class notes](/class/11-class) page for an example.]
 
 ---
 

@@ -19,7 +19,7 @@ semester: "[IOs20.classes.ryansafner.com](http://IOS20.classes.ryansafner.com)"
 
 email: "safner@hood.edu"
 web: "ryansafner.com"
-officehours: "TuTh 3:15–5:00PM"
+officehours: "MW 3:15–5:00PM"
 office: "Rosenstock Hall 118"
 classroom: "Rosenstock Hall 101"
 classhours: "TuTh 2:00–3:15PM"

@@ -15,6 +15,14 @@ editor_options:
 
 We begin our review/extension of basic production concepts from microeconomics. Today we focus primarily on production functions and costs. These will be relevant regardless of what kind of market structure we are looking at.  
 
+# Moblab
+
+Please register an account at [Moblab.com](https://moblab.com) and join our class section with the code below:
+
+![](https://www.dropbox.com/s/l9erzvqab73qzla/moblabio.png?raw=1)
+
+We may play our first "game" this week or next to understand perfect competition. 
+
 # Slides
 
 - [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/1.1-slides.html)

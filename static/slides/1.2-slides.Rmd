@@ -1,0 +1,2129 @@
+---
+title: "1.2: Technology and Cost"
+subtitle: "ECON 326 · Industrial Organization · Spring 2020"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i> safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/IOs20"><i class="fa fa-github fa-fw"></i> ryansafner/IOs20</a><br> <a href="https://IOs20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i> IOs20.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    df_print: paged
+    #seal: false
+    css: [custom.css, custom-fonts.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      message = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+
+theme_slides <- theme_light() + 
+  theme(
+    text = element_text(family = "Fira Sans", size = 24)
+  )
+
+```
+
+
+## Production Concepts
+
+## Costs
+
+---
+
+# The Two Major Models of Price Theory
+
+.pull-left[
+
+## Optimization
+
+- Agents have .hi[objectives] they value
+
+- Agents face .hi[constraints]
+
+- Make .hi[tradeoffs] to maximize objectives within constraints
+
+.center[
+![](https://www.dropbox.com/s/qvr240t5j6t3arm/optimize.jpeg?raw=1)
+]
+]
+
+--
+
+.pull-right[
+
+## Equilibrium
+
+- Agents .hi[compete] with others over **scarce** resources
+
+- Agents .hi[adjust] behaviors based on prices
+
+- .hi[Stable outcomes] when adjustments stop
+
+.center[
+![](https://www.dropbox.com/s/j7xenkgo3p71vke/equilibriumbalance.png?raw=1)
+]
+
+]
+
+---
+
+# Relationship Between Optimization & Equilibrium
+
+.pull-left[
+- If people can **learn** and **change** their behavior, they will always **switch** to a higher-valued option
+
+- If there are no alternatives that are better, people are at an .hi[optimum]
+
+- If everyone is at an optimum, the system is in .hi[equilibrium]
+]
+
+.pull-right[
+.center[
+![:scale 70%](https://www.dropbox.com/s/wp97bsk0yni31k9/incentive2.jpg?raw=1)
+
+![:scale 70%](https://www.dropbox.com/s/j7xenkgo3p71vke/equilibriumbalance.png?raw=1)
+]
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .hi-purple[ < some alternative >]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/qvr240t5j6t3arm/optimize.jpeg?raw=1)
+]
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .hi-purple[ < some alternative >]
+
+2. **In order to maximize:** .hi-green[< some objective >]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/qvr240t5j6t3arm/optimize.jpeg?raw=1)
+]
+]
+
+---
+
+# Constrained Optimization III
+
+.pull-left[
+
+- All constrained optimization models have three moving parts: 
+
+1. **Choose:** .hi-purple[< some alternative >]
+
+2. **In order to maximize:** .hi-green[< some objective >]
+
+3. **Subject to:** .hi-red[< some constraints >]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/qvr240t5j6t3arm/optimize.jpeg?raw=1)
+]
+]
+
+---
+
+# This Black Box We Call "Firms"
+
+.pull-left[
+
+- .hi[Firm] is a mere .hi-purple[production process]:
+  - a bundle of technology, physical assets, and individuals
+
+- Synonymous with .hi[production function]
+
+- Fully replicable
+
+- We'll explore (and explode) this much later
+]
+
+.pull-right[
+.center[
+![:scale 70%](https://www.dropbox.com/s/zu2c5ijzqvz5sbh/inputoutput.png?raw=1)
+]
+]
+---
+
+# What Do Firms Do? I
+
+.pull-left[
+
+- Assume "firm" is agent to model:
+
+- So what do firms do?
+
+- How would we set up an optimization model:
+
+1. **Choose:** .hi-purple[ < some alternative >]
+
+2. **In order to maximize:** .hi-green[< some objective >]
+
+3. **Subject to:** .hi-red[< some constraints >]
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ibesms9662olrka/thefirm.JPG?raw=1)
+]
+]
+
+---
+
+# What Do Firms Do? II
+
+.pull-left[
+- Firms convert some goods to other goods: 
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](https://www.dropbox.com/s/zu2c5ijzqvz5sbh/inputoutput.png?raw=1)
+]
+]
+
+---
+
+# What Do Firms Do? II
+
+.pull-left[
+- Firms convert some goods to other goods: 
+
+- **Inputs**: $x_1, x_2, \cdots, x_n$
+  - <span class="green">**Examples**: worker efforts, warehouse space, electricity, loans, gasoline, cardboard, fertilizer, computers, software programs, etc<span>
+  
+]
+
+.pull-right[
+.center[
+![:scale 70%](https://www.dropbox.com/s/zu2c5ijzqvz5sbh/inputoutput.png?raw=1)
+]
+]
+
+---
+# What Do Firms Do? II
+
+.pull-left[
+- Firms convert some goods to other goods: 
+
+- **Inputs**: $x_1, x_2, \cdots, x_n$
+  - <span class="green">**Examples**: worker efforts, warehouse space, electricity, loans, gasoline, cardboard, fertilizer, computers, software programs, etc<span>
+  
+- **Output**:<sup>.red[1]</sup> $q$
+  - <span class="green">**Examples**: oil, cars, legal services, mobile apps, vegetables, consulting advice, financial reports, etc<span>
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](https://www.dropbox.com/s/zu2c5ijzqvz5sbh/inputoutput.png?raw=1)
+]
+]
+
+.footnote[<sup>.red[1]</sup> For simplicity, we assume a firm produces a single product.]
+
+---
+
+# What Do Firms Do? III
+
+.pull-left[
+- .shout[Technology] or a .shout[production function]: rate at which firm can convert specified inputs $(x_1, x_2, \cdots, x_n)$ into output $(q)$
+$$q=f(x_1, x_2, \cdots, x_n)$$
+
+]
+
+.pull-right[
+.center[
+![:scale 70%](https://www.dropbox.com/s/zu2c5ijzqvz5sbh/inputoutput.png?raw=1)
+]
+]
+
+---
+
+# Production Function as Recipe
+
+.pull-left[
+.center[The production function
+
+![](https://www.dropbox.com/s/0820xwecp9au978/recipe1.PNG?raw=1)
+]
+]
+
+.pull-right[
+.center[The production algorithm
+
+![](https://www.dropbox.com/s/7sbjwufc10xxalh/recipe2.PNG?raw=1)
+]
+
+]
+
+---
+
+# Factors of Production I
+
+$$q=f(t,l,k,e,a)$$
+
+.pull-left[
+
+- Economists typically classify inputs in categories, known as the .shout[factors of production (FOP)] or "the .shout[factors]"
+
+```{r,results="asis"}
+tribble(
+  ~"Factor", ~"Owned By", ~"Earns",
+  "Land (t)", "Landowners", "Rent",
+  "Labor (l)", "Laborers", "Wages",
+  "Capital (k)", "Capitalists", "Interest",
+  "Entrepreneurship (e)", "Entrepreneurs", "Profit"
+) %>%
+  knitr::kable(., format="html")
+```
+
+- $a$: "total factor productivity" (ideas/knowledge/institutions)
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/cg5lbqrxsjij5iu/factors.jpg?raw=1)
+]
+
+]
+
+---
+
+# Factors of Production II
+
+$$q=f(l,k)$$
+
+.pull-left[
+
+- We will assume just two inputs: labor $l$ and capital $k$
+
+```{r,results="asis"}
+tribble(
+  ~"Factor", ~"Owned By", ~"Earns",
+  "Labor (l)", "Laborers", "Wages",
+  "Capital (k)", "Capitalists", "Interest"
+) %>%
+  knitr::kable(., format="html")
+```
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/cg5lbqrxsjij5iu/factors.jpg?raw=1)
+]
+
+]
+
+---
+
+# What Does a Firm Maximize?
+
+.pull-left[
+
+- We will assume firms .whisper[maximize profit `\\((\pi)\\)`]
+
+- Not true for all firms
+    - <span class="green">**Examples**: non-profits, charities, civic associations, government agencies, criminal organizations, etc</span>
+
+- Even profit-seeking firms may also want to maximize additional things
+    - <span class="green">**Examples**: goodwill, sustainability, social responsibility, etc </span>
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/70jnyywlc8z7u6r/gnomes.png?raw=1)
+]
+]
+
+---
+
+# Profits Have a Bad Rap These Days
+
+.center[
+![:scale 80%](https://www.dropbox.com/s/aubd9fo004avvau/peopleoverprofits.jpg?raw=1)
+]
+
+---
+
+# What is Profit?
+
+.pull-left[
+
+- In economics, profit is simply **benefits minus (opportunity) costs**
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/igyvlrzpb02f28n/profitloss2.jpg?raw=1)
+]
+]
+
+---
+
+# What is Profit?
+
+.pull-left[
+
+- In economics, profit is simply **benefits minus (opportunity) costs**
+
+- Suppose a firm sells output $q$ at a price $p$
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/igyvlrzpb02f28n/profitloss2.jpg?raw=1)
+]
+]
+
+
+---
+
+# What is Profit?
+
+.pull-left[
+
+- In economics, profit is simply **benefits minus (opportunity) costs**
+
+- Suppose a firm sells output $q$ at a price $p$
+
+
+- It can buy each input $x_i$ at an associated price $p_i$
+    - labor $l$ at wage rate $w$
+    - capital $k$ at rental rate $r$
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/igyvlrzpb02f28n/profitloss2.jpg?raw=1)
+]
+]
+
+---
+
+# What is Profit?
+
+.pull-left[
+
+- In economics, profit is simply **benefits minus (opportunity) costs**
+
+- Suppose a firm sells output $q$ at a price $p$
+
+- It can buy each input $x_i$ at an associated price $p_i$
+    - labor $l$ at wage rate $w$
+    - capital $k$ at rental rate $r$
+
+- The profit of selling $q$ units and using inputs $l,k$ is:
+$$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/igyvlrzpb02f28n/profitloss2.jpg?raw=1)
+]
+]
+
+---
+
+# Who Gets the Profits? I
+
+.pull-left[
+$$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
+
+- .whisper[The firm's costs are all of the factor-owner's incomes!]
+    - Landowners, laborers, creditors are all paid rent, wages, and interest, respectively
+
+- Profits are the .whisper[residual value] leftover after paying all factors
+
+- Profits are income for the .shout[residual claimant(s)] of the production process (i.e. **owner(s)** of a firm):
+    - Entrepreneurs
+    - Shareholders
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/0s2tfmcugauyacz/riskprofit.jpg?raw=1)
+]
+]
+
+---
+
+# Who Gets the Profits? II
+
+.pull-left[
+$$\pi=\underbrace{pq}_{revenues}-\underbrace{(wl+rk)}_{costs}$$
+
+- Residual claimants have incentives to maximize firm's profits, as this *maximizes their own income*
+
+- Entrepreneurs and shareholders are the only participants in production that are *not* guaranteed an income!
+    - Starting and owning a firm is inherently **risky**!
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/45zx56p5a2srqib/tightrope.jpg?raw=1)
+]
+]
+
+---
+
+# Profits and Entrepreneurship: A Preview
+
+.pull-left[
+
+- In markets, production must face the .shout[profit test]:
+    - <span class="whisper">Is consumer's willingness to pay $>$ opportunity cost of inputs?</span>
+
+- Profits are an indication that **value is being created for society**
+
+- Losses are an indication that **value is being destroyed for society**
+
+- Survival for sellers in markets *requires* firms continually create value and earn profits or die
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/b5qcs2cqjmhbqc0/feedback.png?raw=1)
+]
+]
+
+---
+
+# The Firm's Optimization Problem I
+
+.pull-left[
+
+- So what do firms do? 
+
+1. **Choose:** .hi-purple[ < some alternative >]
+
+2. **In order to maximize:** .hi-green[< profits >]
+
+3. **Subject to:** .hi-red[< technology >]
+
+- We've so far assumed they maximize profits and they are limited by their technology
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/zwows56ydpqj9u6/management.jpg?raw=1)
+]
+]
+
+---
+
+# The Firm's Optimization Problem II
+
+.pull-left[
+- What do firms **choose**? (Not an easy answer)
+
+- Prices?
+    - Depends on the market the firm is operating in!
+    - Study of <span class="shout">industrial organization</span>
+    
+- Essential question: how competitive is a market? This will influence what firms (can) do
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/3h37ge5bmvety7y/marketpower.jpg?raw=1)
+]
+]
+
+---
+
+# The "Runs" of Production 
+
+.pull-left[
+
+- The "time"-frame of production can be usefully divided between short vs. long run analysis
+
+- .shout[Short run]: at least one factor of production is fixed (it is too costly to be changed)
+$$q=f(\bar{k},l)$$
+    - We assume capital is fixed (i.e. number of factories, storefronts, etc)
+    - Our only decisions concern how we use labor
+    
+]
+
+.pull-right[
+.center[
+![:scale 60%](https://www.dropbox.com/s/csmheqe2xzp1dst/timehourglass.jpg?raw=1)
+]
+
+]
+
+---
+
+# The "Runs" of Production 
+
+.pull-left[
+
+- The "time"-frame of production can be usefully divided between short vs. long run analysis
+
+- .shout[Short run]: at least one factor of production is fixed (it is too costly to be changed)
+$$q=f(\bar{k},l)$$
+    - We assume capital is fixed (i.e. number of factories, storefronts, etc)
+    - Our only decisions concern how we use labor
+    
+- .shout[Long run]: all factors of production are variable
+$$q=f(k,l)$$
+
+]
+
+.pull-right[
+.center[
+![:scale 60%](https://www.dropbox.com/s/csmheqe2xzp1dst/timehourglass.jpg?raw=1)
+]
+
+]
+
+---
+
+# Marginal Products
+
+.pull-left[
+- The .shout[marginal product] of an input is the *additional* output produced by *one more unit* of that input (*holding other inputs constant*)
+
+- Like marginal utility
+
+- Similar to marginal utilities, I will give you the marginal product equations
+
+]
+
+.pull-right[
+```{r, fig.retina=3}
+prod_1=function(x){2*sqrt(x)}
+
+pf<-ggplot(data.frame(x=c(0,6)), aes(x=x))+
+  stat_function(fun=prod_1, geom="line", size=2, color="red")+
+  geom_label(aes(x=5,y=prod_1(5)), color = "red", label="Total Product", size = 6)+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (l)",
+       y = "Output (q)",
+       caption = expression(paste("Technology: ", q(l,bar(k))==2*sqrt(l))))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+pf+ # 1 to 2
+  geom_segment(x=1,xend=1,y=0,yend=prod_1(1), linetype="dotted", size =1)+
+  geom_segment(x=0,xend=1,y=prod_1(1),yend=prod_1(1), linetype="dotted", size =1)+
+  geom_segment(x=2,xend=2,y=0,yend=prod_1(2), linetype="dotted", size =1)+
+  geom_segment(x=0,xend=2,y=prod_1(2),yend=prod_1(2), linetype="dotted", size =1)+
+  annotate("segment", x = 1, xend = 2, y = 1, yend = 1, color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  annotate("segment", x = 1, xend = 1, y = 2, yend = prod_1(2), color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))
+
+```
+]
+
+---
+
+# Marginal Product of Labor
+
+.pull-left[
+
+- .shout[Marginal product of labor `\\((MP_l)\\)`]: additional output produced by adding one more unit of labor (holding $k$ constant)
+$$MP_l = \frac{\Delta q}{\Delta l}$$
+
+- $MP_l$ is the slope of $TP$ at every value of $l$! 
+
+- Note: via calculus: $\frac{\partial q}{\partial l}$
+]
+
+.pull-right[
+
+```{r, fig.retina=3, fig.height=3.5}
+ggplot(data.frame(x=c(0,6)), aes(x=x))+
+  stat_function(fun=prod_1, geom="line", size=2, color="red")+
+  geom_label(aes(x=5,y=prod_1(5)), color = "red", label=expression(TP==2*sqrt(l)), size = 6)+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (l)",
+       y = "Output (q)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+```{r, fig.retina=3, fig.height=3.5}
+mp=function(x){1/sqrt(x)}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mp, geom="line", size=2, color="blue")+
+  geom_label(aes(x=1,y=mp(1)), color = "blue", label=expression(MP[l]==frac(1,sqrt(l))), size = 4)+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (l)",
+       y = "Output per Worker (q/l)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+]
+
+---
+
+# Marginal Product of Capital
+
+.pull-left[
+
+- .shout[Marginal product of capital `\\((MP_k)\\)`]: additional output produced by adding one more unit of capital (holding $l$ constant)
+$$MP_k = \frac{\Delta q}{\Delta k}$$
+
+- $MP_k$ is the slope of $TP$ at every value of $k$! 
+
+- Note: via calculus: $\frac{\partial q}{\partial k}$
+
+- Note we often don't consider capital in the short run!
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3, fig.height=3.5}
+ggplot(data.frame(x=c(0,6)), aes(x=x))+
+  stat_function(fun=prod_1, geom="line", size=2, color="red")+
+  geom_label(aes(x=5,y=prod_1(5)), color = "red", label=expression(TP==2*sqrt(k)), size = 6)+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (k)",
+       y = "Output (q)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+```{r, fig.retina=3, fig.height=3.5}
+mp=function(x){1/sqrt(x)}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mp, geom="line", size=2, color="blue")+
+  geom_label(aes(x=1,y=mp(1)), color = "blue", label=expression(MP[k]==frac(1,sqrt(k))), size = 4)+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (k)",
+       y = "Output per Machine (q/k)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+]
+
+---
+
+# Diminishing Returns
+
+.pull-left[
+
+- .onfire[Law of Diminishing Returns]: adding more of one factor of production *holding others constant* will result in successively lower increases in output<sup>.red[1]</sup>
+
+- In order to increase output, firm will need to increase *all* factors!
+
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3, fig.height=3.5}
+ggplot(data.frame(x=c(0,6)), aes(x=x))+
+  stat_function(fun=prod_1, geom="line", size=2, color="red")+
+  geom_label(aes(x=5,y=prod_1(5)), color = "red", label=expression(TP==2*sqrt(l)), size = 6)+
+# 1 to 2
+  geom_segment(x=1,xend=1,y=0,yend=prod_1(1), linetype="dotted", size =1)+
+  geom_segment(x=0,xend=1,y=prod_1(1),yend=prod_1(1), linetype="dotted", size =1)+
+  geom_segment(x=2,xend=2,y=0,yend=prod_1(2), linetype="dotted", size =1)+
+  geom_segment(x=0,xend=2,y=prod_1(2),yend=prod_1(2), linetype="dotted", size =1)+
+  annotate("segment", x = 1, xend = 2, y = 1, yend = 1, color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  annotate("segment", x = 1, xend = 1, y = 2, yend = prod_1(2), color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (l)",
+       y = "Output (q)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+```{r, fig.retina=3, fig.height=3.5}
+mp=function(x){1/sqrt(x)}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mp, geom="line", size=2, color="blue")+
+  geom_label(aes(x=1,y=mp(1)), color = "blue", label=expression(MP[l]==frac(1,sqrt(l))), size = 4)+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (l)",
+       y = "Output per Worker (q/l)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Diminishing Returns
+
+.pull-left[
+
+- .onfire[Law of Diminishing Returns]: adding more of one factor of production *holding others constant* will result in successively lower increases in output<sup>.red[1]</sup>
+
+- In order to increase output, firm will need to increase *all* factors!
+
+.center[
+![:scale 80%](https://www.dropbox.com/s/smwh0dv38htghip/toomanycooks.jpg?raw=1)
+]
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3, fig.height=3.5}
+ggplot(data.frame(x=c(0,6)), aes(x=x))+
+  stat_function(fun=prod_1, geom="line", size=2, color="red")+
+  geom_label(aes(x=5,y=prod_1(5)), color = "red", label=expression(TP==2*sqrt(l)), size = 6)+
+# 1 to 2
+  geom_segment(x=1,xend=1,y=0,yend=prod_1(1), linetype="dotted", size =1)+
+  geom_segment(x=0,xend=1,y=prod_1(1),yend=prod_1(1), linetype="dotted", size =1)+
+  geom_segment(x=2,xend=2,y=0,yend=prod_1(2), linetype="dotted", size =1)+
+  geom_segment(x=0,xend=2,y=prod_1(2),yend=prod_1(2), linetype="dotted", size =1)+
+  annotate("segment", x = 1, xend = 2, y = 1, yend = 1, color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  annotate("segment", x = 1, xend = 1, y = 2, yend = prod_1(2), color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  
+  # 2 to 3
+    geom_segment(x=3,xend=3,y=0,yend=prod_1(3), linetype="dotted", size =1)+
+  geom_segment(x=0,xend=3,y=prod_1(3),yend=prod_1(3), linetype="dotted", size =1)+
+  annotate("segment", x = 2, xend = 3, y = 1, yend = 1, color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  annotate("segment", x = 2, xend = 2, y = 3, yend = prod_1(3), color = "purple", size=2, alpha=0.9, arrow=arrow(length=unit(0.3,"cm"), ends="last", type="closed"))+
+  scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (l)",
+       y = "Output (q)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+```{r, fig.retina=3, fig.height=3.5}
+mp=function(x){1/sqrt(x)}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mp, geom="line", size=2, color="blue")+
+  geom_label(aes(x=1,y=mp(1)), color = "blue", label=expression(MP[l]==frac(1,sqrt(l))), size = 4)+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (l)",
+       y = "Output per Worker (q/l)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Production Functions and Marginal Product
+
+- A quick trick to roughly estimate $MP_l$
+
+$$MP_l \approx \frac{q_2-q_1}{l_2-l_1}$$
+
+| $l$ | $q$ | $MP_l$ |
+|-----|-----|:------:|
+| $0$ | $0.00$ | $-$ |
+| $1$ | $2.00$ | $2.00-0.00=2.00$ |
+| $2$ | $2.83$ | $2.83-2.00=0.83$ |
+| $3$ | $3.46$ | $3.46-2.83=0.63$ |
+
+
+- Note these are *approximate*. Technically, $MP_l$ is defined via calculus as an *infinitesimal* change in $l$, whereas these are discrete changes.
+
+---
+
+# Average Product of Labor
+
+.pull-left[
+
+- .shout[Average product of labor `\\((AP_l)\\)`]: total output per worker
+$$AP_l = \frac{q}{l}$$
+
+- A measure of *labor productivity*
+
+- Geometrically: slope of a line from (0,0) to $q(l)$
+
+- .shout[Average product of capital `\\((AP_k)\\)`]: total output per unit of capital
+$$AP_k = \frac{q}{k}$$
+]
+
+.pull-right[
+
+```{r, fig.retina=3, fig.height=3.5}
+ggplot(data.frame(x=c(0,6)), aes(x=x))+
+  stat_function(fun=prod_1, geom="line", size=2, color="red")+
+  geom_label(aes(x=5,y=prod_1(5)), color = "red", label=expression(TP==2*sqrt(l)), size = 6)+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (l)",
+       y = "Output (q)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+```{r, fig.retina=3, fig.height=3.5}
+ap=function(x){2/sqrt(x)}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=ap, geom="line", size=2, color="purple")+
+  geom_label(aes(x=1,y=ap(1)), color = "purple", label=expression(AP[l]==frac(2,sqrt(l))), size = 4)+
+    scale_x_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,6,1),
+                     limits=c(0,6),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("I.C. equations", values = colors)+
+  guides(color = F)+
+  labs(x = "Input (l)",
+       y = "Output per Worker (q/l)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+]
+
+# The Long Run
+
+.pull-left[
+
+- In the long run, *all* factors of production are **variable**
+
+$$q=f(k,l)$$
+
+- Can build more factories, open more storefronts, rent more space, invest in machines, etc.
+
+- So the firm can choose both $l$ *and* $k$
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/radyrg161n921y3/chooselocations.jpg?raw=1)
+]
+]
+
+---
+
+# The Firm's Problem
+
+.pull-left[
+- Based on what we've discussed, we can fill in a constrained optimization model for the firm
+    - But don't write this one down just yet!
+
+- The **firm's problem** is: 
+
+1. **Choose:** .hi-purple[ < inputs and output >]
+
+2. **In order to maximize:** .hi-green[< profits >]
+
+3. **Subject to:** .hi-red[< technology >]
+
+- It's actually much easier to break this into *2 stages*<sup>.red[1]</sup>
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/zwows56ydpqj9u6/management.jpg?raw=1)
+]
+]
+
+.footnote[<sup>.red[1]</sup> Though it's possible to do it all at once. See today's [class notes](/class/11-class) page for an example.]
+---
+
+# The Firm's Two Problems
+
+.pull-left[
+
+- First Stage: the **firm's profit maximization problem**: 
+
+1. **Choose:** .hi-purple[ < output >]
+
+2. **In order to maximize:** .hi-green[< profits >]
+
+- We'll cover this later...first we'll explore: 
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/zwows56ydpqj9u6/management.jpg?raw=1)
+]
+]
+
+---
+
+# The Firm's Two Problems
+
+.pull-left[
+
+- First Stage: the **firm's profit maximization problem**: 
+
+1. **Choose:** .hi-purple[ < output >]
+
+2. **In order to maximize:** .hi-green[< profits >]
+
+- We'll cover this later...first we'll explore: 
+
+- Second Stage: the **firm's cost minimization problem**: 
+
+1. **Choose:** .hi-purple[ < inputs >]
+
+2. **In order to _minimize_:** .hi-green[< cost >]
+
+3. **Subject to:** .hi-red[< producing the optimal output >]
+
+- Minimizing costs $\iff$ maximizing profits
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/zwows56ydpqj9u6/management.jpg?raw=1)
+]
+]
+
+---
+
+# Costs in Economics are Opportunity Costs
+
+.pull-left[
+
+- Costs in economics are different from common conception of "cost"
+    - **Accounting cost**: monetary cost
+    - **Economic cost**: value of next best use of resources given up (opportunity cost)
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/zd7zs2h3v95lh4l/costrevenue.jpg?raw=1)
+
+![](https://www.dropbox.com/s/mb9yaadujqe38fj/disappear.jpg?raw=1)
+]
+]
+
+---
+
+# Costs in Economics are Opportunity Costs
+
+.pull-left[
+
+- Costs in economics are different from common conception of "cost"
+    - **Accounting cost**: monetary cost
+    - **Economic cost**: value of next best use of resources given up
+
+- This leads to the difference between
+    - **Accounting profit**: revenues minus accounting costs
+    - **Economic profit**: revenues minues accounting & *opportunity* costs
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/zd7zs2h3v95lh4l/costrevenue.jpg?raw=1)
+
+![](https://www.dropbox.com/s/mb9yaadujqe38fj/disappear.jpg?raw=1)
+]
+]
+
+---
+
+# The Accounting vs. Economic Point of View I
+
+.pull-left[
+
+- Helpful to consider two points of view:
+  - **"Accounting point of view"**: are you taking in more cash than you are spending?
+  - **"Economic point of view**: is your product you making the *best social* use of your resources (i.e. are there higher-valued uses of your resources you are keeping them away from)?
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/zd7zs2h3v95lh4l/costrevenue.jpg?raw=1)
+
+![](https://www.dropbox.com/s/mb9yaadujqe38fj/disappear.jpg?raw=1)
+]
+]
+
+---
+# The Accounting vs. Economic Point of View II
+
+.pull-left[
+
+- Social implications: are consumers *best* off with you using scarce resources (with alternative uses!) to produce your current product?
+
+- Remember: this is an *economics* course, not a *business* course!
+    - What might be good/bad for one business might have bad/good *consequences* for society! 
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/zd7zs2h3v95lh4l/costrevenue.jpg?raw=1)
+
+![](https://www.dropbox.com/s/mb9yaadujqe38fj/disappear.jpg?raw=1)
+]
+]
+
+---
+
+# Opportunity Costs
+
+- Each choice incurs an opportunity cost
+
+.content-box-green[
+.hi-green[**Examples**]:
+- If you choose to start a business, you may give up your salary at your current job
+- If you invest in a factory, you give up other investment opportunities
+- If you use an office building you own, you cannot rent it to other people
+]
+
+---
+
+# Opportunity Cost is Hard for People
+
+.center[
+![](https://www.dropbox.com/s/07x6jdqz4iam0nv/oppcostpizza.jpg?raw=1)
+]
+
+---
+
+# Opportunity Costs vs. Sunk Costs
+
+.pull-left[
+
+- Opportunity cost is a *forward-looking* concept
+
+- Choices made in the *past* with *non-recoverable* costs are called .shout[sunk costs]
+
+- Sunk costs *should not* enter into future decisions
+
+- Many people have difficulty letting go of unchangeable past decisions: .whisper[sunk cost fallacy]
+
+]
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/89uh92uh19y6z89/sunkcost.jpg?raw=1)
+]
+]
+
+---
+
+# The Sunk Cost Fallacy
+
+.center[
+![:scale 60%](https://www.dropbox.com/s/qb844pyybvlcgow/sunkcostfallacy.jpg?raw=1)
+]
+
+---
+
+# Common Sunk Costs in Business
+
+.pull-left[
+
+- Licensing fees, long-term lease contracts
+
+- Specific capital (with no alternative use): uniforms, menus, signs
+
+- Research & Development spending
+
+- Advertising spending
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/89uh92uh19y6z89/sunkcost.jpg?raw=1)
+]
+]
+---
+
+class: inverse, center, middle
+# Costs in the Short Run
+
+---
+
+# Costs in the Short Run
+
+- .shout[Total cost function, `\\(C(q)\\)`] relates output $q$<sup>.red[1]</sup> to the total cost of production $C$
+
+$$C(q)=f+VC(q)$$
+
+--
+
+- Two kinds of costs:
+
+**1.** .shout[Fixed costs, `\\(f\\)`] are costs that do not vary with output
+  - Only true in the short run! (Consider this the cost of maintaining your capital)
+
+--
+
+**2.** .shout[Variable costs, `\\(VC(q)\\)`] are costs that vary with output (notice the variable in them!)
+  - Typically, the more production of $q$, the higher the cost
+  - e.g. firm is hiring *additional* labor
+
+.footnote[<sup>.red[1]</sup> Using optimal combinations of `\\(l\\)` and `\\(k\\)`!]
+
+---
+
+# Fixed vs. Sunk costs
+
+.pull-left[
+- What is the difference between *fixed* and *sunk* costs?
+
+- Sunk costs are a *type* of fixed cost that are *not* avoidable or recoverable
+
+- Many fixed costs can be avoided or changed in the long run
+
+- Common *fixed*, but *not sunk*, costs:
+  - rent for office space
+  - durable equipment
+  - operating permits (that are renewed)
+
+- When deciding to stay in business, fixed costs matter, sunk costs do not!
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/89uh92uh19y6z89/sunkcost.jpg?raw=1)
+]
+]
+---
+
+# Cost Functions: Example
+
+.content-box-green[
+.hi-green[**Example**]: Suppose your firm has the following total cost function:
+
+$$C(q)=q^2+q+10$$
+
+]
+
+1. Write a function for the fixed costs, $f$.
+
+2. Write a function for the variable costs, $VC(q)$.
+
+---
+
+# Cost Functions: Example, Visualized
+
+.pull-left[
+
+| $q$ | $f$ | $VC(q)$ | $C(q)$ |
+|----:|----:|--------:|-------:|
+| $0$ | $10$ | $0$ | $10$ |
+| $1$ | $10$ | $2$ | $12$ |
+| $2$ | $10$ | $6$ | $16$ |
+| $3$ | $10$ | $12$ | $22$ |
+| $4$ | $10$ | $20$ | $30$ |
+| $5$ | $10$ | $30$ | $40$ |
+| $6$ | $10$ | $42$ | $52$ |
+| $7$ | $10$ | $56$ | $66$ |
+| $8$ | $10$ | $72$ | $82$ |
+| $9$ | $10$ | $90$ | $100$ |
+| $10$ | $10$ | $110$ | $120$ |
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+library(mosaic)
+fixed_cost<-10
+variable_cost<-function(x){x^2+x}
+total_cost<-function(x){x^2+x+10}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_hline(yintercept=10, size=2, color="pink")+
+    geom_label(aes(x=10,y=10), color = "pink", label=expression(f), size = 6)+
+  stat_function(fun=total_cost, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=total_cost(9)), color = "red", label=expression(C(q)), size = 6)+
+  stat_function(fun=variable_cost, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=8,y=variable_cost(8)), color = "orange", label=expression(VC(q)), size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,120,10),
+                     limits=c(0,120),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Costs ($)",
+       caption = expression(paste(C(q)==q^2+q+10)))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Average Costs
+
+- .shout[Average Fixed Cost]: fixed cost per unit of output:
+
+$$AFC(q)=\frac{f}{q}$$
+
+--
+
+- .shout[Average Variable Cost]: variable cost per unit of output:
+
+$$AVC(q)=\frac{VC(q)}{q}$$
+
+--
+
+- .shout[Average (Total) Cost]: (total) cost per unit of output:
+
+$$AC(q)=\frac{C(q)}{q}$$
+
+--
+
+$$\begin{align*}
+C(q) &= VC(q)+f\\
+\frac{C(q)}{q} &= \frac{VC(q)}{q} + \frac{f}{q}\\
+AC(q) &=AVC(q) + AFC(q)\\ \end{align*}$$
+
+---
+
+# Marginal Cost
+
+- .shout[Marginal Cost] is the change in cost for each additional unit of output produced:
+
+$$MC(q) = \frac{\Delta C(q)}{\Delta q} \approx \frac{C_2-C_1}{q_2-q_1}$$
+
+- Calculus: first derivative of the cost function
+
+- .onfire[Marginal cost is the *primary* cost that matters in making decisions]
+  - All other costs are driven by marginal costs
+  - This is the main cost that firms can "see"
+
+---
+
+# Average and Marginal Costs: Visualized
+
+.pull-left[
+
+| $q$ | $C(q)$ | $MC(q)$ | $AFC(q)$ | $AVC(q)$ | $AC(q)$ |
+|----:|----:|--------:|-------:|
+| $0$ | $10$ | $-$ | $-$ | $-$ | $-$ |
+| $1$ | $12$ | $2$ | $10.00$ | $2$ | $12.00$ |
+| $2$ | $16$ | $4$ | $5.00$ | $3$ | $8.00$ |
+| $3$ | $22$ | $6$ | $3.33$ | $4$ | $7.30$ |
+| $4$ | $30$ | $8$ | $2.50$ | $5$ | $7.50$ |
+| $5$ | $40$ | $10$ | $2.00$ | $6$ | $8.00$ |
+| $6$ | $52$ | $12$ | $1.67$ | $7$ | $8.70$ |
+| $7$ | $66$ | $14$ | $1.43$ | $8$ | $9.40$ |
+| $8$ | $82$ | $16$ | $1.25$ | $9$ | $10.25$ |
+| $9$ | $100$ | $18$ | $1.11$ | $10$ | $11.10$ |
+| $10$ | $120$ | $20$ | $1.00$ | $11$ | $12.00$ |
+
+]
+
+.pull-right[
+```{r, fig.retina=3}
+library(mosaic)
+mc<-function(x){2*x+1}
+avc<-function(x){x+1/x}
+ac<-function(x){x+11/x}
+afc<-function(x){10/x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=5,y=mc(5)), color = "red", label=expression(MC(q)), size = 6)+
+  stat_function(fun=avc, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=9,y=avc(9)), color = "brown", label=expression(AVC(q)), size = 6)+
+  stat_function(fun=afc, geom="line", size=2, color = "pink")+
+    geom_label(aes(x=9,y=afc(9)), color = "pink", label=expression(AFC(q)), size = 6)+
+  stat_function(fun=ac, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=9,y=ac(9)), color = "orange", label=expression(AC(q)), size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,12,1),
+                     limits=c(0,12),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)",
+       caption = expression(paste(C(q)==q^2+q+10)))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Relationship Between Marginal and Average
+
+.pull-left[
+
+- There is a general mathematical relationship between a marginal and an average value:
+
+- Whenever marginal $>$ average, average is increasing
+
+]
+
+.pull-right[
+```{r, fig.retina=3}
+library(mosaic)
+marginal<-function(x){3*x^2-8*x+8}
+average<-function(x){x^2-4*x+8+10/x}
+averagev<-function(x){x^2-4*x+8}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.5,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 6)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 6)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 6)+
+    scale_x_continuous(breaks=NULL,
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,20))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Relationship Between Marginal and Average
+
+.pull-left[
+
+- There is a general mathematical relationship between a marginal and an average value:
+
+- Whenever marginal $>$ average, average is increasing
+
+- Whenever marginal $<$ average, average is decreasing
+
+]
+
+.pull-right[
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.5,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 6)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 6)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 6)+
+    scale_x_continuous(breaks=NULL,
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,20))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Relationship Between Marginal and Average
+
+.pull-left[
+
+- There is a general mathematical relationship between a marginal and an average value:
+
+- Whenever marginal $>$ average, average is increasing
+
+- Whenever marginal $<$ average, average is decreasing
+
+- When marginal $=$ average, average is **maximized/minimized**
+- .whisper[When `\\(MC=AC\\)`, `\\(AC\\)` is at a *minimum*]
+- .whisper[When `\\(MC=AVC\\)`, `\\(AVC\\)` is at a *minimum*]
+    
+- Economic importance (later):
+    - Break-even price and shut-down price
+]
+
+.pull-right[
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=marginal, geom="line", size=2, color = "red")+
+    geom_label(aes(x=3.5,y=marginal(3.5)), color = "red", label=expression(MC(q)), size = 6)+
+  stat_function(fun=averagev, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=5,y=averagev(5)), color = "brown", label=expression(AVC(q)), size = 6)+
+  stat_function(fun=average, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=5.5,y=average(5.5)), color = "orange", label=expression(AC(q)), size = 6)+
+  geom_hline(yintercept=8, size=1, linetype="dashed")+
+  geom_label(x=6,y=8, label="Min AC(q)", size =5, color="orange")+
+  geom_hline(yintercept=4, size=1, linetype="dashed")+
+  geom_label(x=6,y=4, label="Min AVC(q)", size =5, color="brown")+
+    scale_x_continuous(breaks=NULL,
+                       limits=c(0,7),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,20))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Costs: Example
+
+.content-box-green[
+.hi-green[**Example**:] Suppose a firm's cost structure is described by: 
+$$\begin{align*}
+C(q)&=15q^2+8q+45\\
+MC(q)&=30q+8\\ \end{align*}$$
+]
+
+1. Write expressions for the firm's **fixed costs**, **variable costs**, **average fixed costs**, **average variable costs**, and **average (total) costs**.
+
+2. Find the minimum average (total) cost.
+
+3. Find the minimum average variable cost.
+
+---
+
+# Costs: Example: Visualized
+
+```{r, fig.retina=3}
+mc_ex1<-function(x){30*x+8}
+avc_ex1<-function(x){15*x+8}
+ac_ex1<-function(x){15*x+8+45/x}
+afc_ex1<-function(x){45/x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mc_ex1, geom="line", size=2, color = "red")+
+    geom_label(aes(x=2.5,y=mc_ex1(2.5)), color = "red", label=expression(MC(q)), size = 4)+
+  stat_function(fun=avc_ex1, geom="line", size=2, color = "brown")+
+    geom_label(aes(x=3,y=avc_ex1(3)), color = "brown", label=expression(AVC(q)), size = 4)+
+  stat_function(fun=afc_ex1, geom="line", size=2, color = "pink")+
+    geom_label(aes(x=3,y=afc_ex1(3)), color = "pink", label=expression(AFC(q)), size = 4)+
+  stat_function(fun=ac_ex1, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=3,y=ac_ex1(3)), color = "orange", label=expression(AC(q)), size = 4)+
+   geom_segment(x=1.73,xend=1.73,y=0, yend=59.9, size=1, linetype="dotted")+
+   geom_segment(x=0,xend=1.73,y=59.9, yend=59.9, size=1, linetype="dotted")+
+   scale_x_continuous(breaks=c(0,1,1.73,2,3,4),
+                     limits=c(0,4),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,100,10),
+                     labels=scales::dollar,
+                     limits=c(0,100),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)",
+       caption = expression(paste(C(q)==15*q^2+8*q+45)))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+---
+
+class: inverse, center, middle
+# Costs in the Long Run
+
+---
+
+# Costs in the Long Run
+
+.pull-left[
+
+- In the long run, firm can change all factors of production, and vary the scale of production
+
+- **Long run average cost, LRAC(q)**: cost per unit of output when the firm can change both $l$ and $k$ to make more $q$
+
+- **Long run marginal cost, LRMC(q)**: change in long run total cost as the firm produce an additional unit of $q$ (by changing both $l$ and/or $k$)
+
+- Don't worry much about these, they are nearly identical to short run cost curves
+
+- One important idea...
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/radyrg161n921y3/chooselocations.jpg?raw=1)
+]
+]
+
+
+---
+
+# Average Cost in the Long Run
+
+.pull-left[
+
+- In the long run, firm can choose $k$ (factories, locations, etc)
+
+- Separate short run average cost (SRAC) curves for each amount of $k$ potentially chosen
+
+- .purple[Long run average cost (LRAC)] curve "envelopes" the lowest (optimal) parts of all the SRAC curves!
+
+> "Subject to producing the optimal amount of output, choose l and k to minimize cost"
+
+
+]
+
+.pull-right[
+```{r, fig.retina=3}
+lrc1<-function(x){(0.25*x-12.5)^(2)+300}
+lrc2<-function(x){(0.25*x-37.5)^(2)+200}
+lrc3<-function(x){(0.25*x-62.5)^(2)+100}
+lrc4<-function(x){(0.25*x-87.5)^(2)+200}
+lrc5<-function(x){(0.25*x-112.5)^(2)+300}
+
+
+line_colors<-c("k=1" = "red", "k=2" = "orange", "k=3" = "yellow", "k=4" = "green", "k=5" = "blue")
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+
+lrac<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=lrc1, geom="line", size=2, aes(color = "k=1"))+
+    #geom_label(aes(x=5,y=mc(5)), color = "red", label=expression(MC(q)), size = 6)+
+  stat_function(fun=lrc2, geom="line", size=2, aes(color = "k=2"))+
+  stat_function(fun=lrc3, geom="line", size=2, aes(color = "k=3"))+
+  stat_function(fun=lrc4, geom="line", size=2, aes(color = "k=4"))+
+  stat_function(fun=lrc5, geom="line", size=2, aes(color = "k=5"))+
+  
+    scale_x_continuous(breaks=seq(0,500,50),
+                     limits=c(0,500),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,500,50),
+                     limits=c(0,500),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_colour_manual("AC(q) by # of k", values = line_colors)+
+  labs(x = "Output, q",
+       y = "Costs ($)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  theme(legend.position = "bottom")
+lrac
+```
+]
+
+---
+
+# Average Cost in the Long Run
+
+.pull-left[
+
+- In the long run, firm can choose $k$ (factories, locations, etc)
+
+- Separate short run average cost (SRAC) curves for each amount of $k$ potentially chosen
+
+]
+
+.pull-right[
+```{r, fig.retina=3}
+lrac1<-function(x){(0.25*x-12.5)^(2)+300}
+lrac2<-function(x){(0.25*x-37.5)^(2)+200}
+lrac3<-function(x){(0.25*x-62.5)^(2)+100}
+lrac4<-function(x){(0.25*x-87.5)^(2)+200}
+lrac5<-function(x){(0.25*x-112.5)^(2)+300}
+
+
+lrac+
+  stat_function(fun=lrac1, xlim=c(0,90), geom="line", size=3, color="purple")+
+  stat_function(fun=lrac2, xlim=c(90,190), geom="line", size=3, color="purple")+
+  stat_function(fun=lrac3, xlim=c(190,310), geom="line", size=3, color="purple")+
+  stat_function(fun=lrac4, xlim=c(310,410), geom="line", size=3, color="purple")+
+  stat_function(fun=lrac5, xlim=c(410,500), geom="line", size=3, color="purple")+
+  geom_label(x=250,y=100,label="LRAC", size =4, color="purple")
+```
+]
+
+---
+
+# Long Run Costs & Scale Economies I
+
+- Further properties about costs based on .shout[scale economies] of production:
+
+- .shout[Economies of scale]: costs fall with output
+
+- .shout[Diseconomies of scale]: costs rise with output
+
+- .shout[Constant economies of scale]: costs don't change with output
+
+- Note economies of scale $\neq$ returns to scale!
+    - RTS (last class): a **technological** relationship between inputs & output
+    - EOS (this class): an **economic** relationship between output and average costs
+
+---
+
+# Long Run Costs & Scale Economies II
+
+.pull-left[
+
+- .shout[Minimum Efficient Scale]: $q$ with the lowest $AC(q)$
+
+- .hi-green[Economies of Scale]: $\uparrow q$, $\downarrow AC(q)$
+
+- .red[Diseconomies of Scale]: $\uparrow q$, $\uparrow AC(q)$
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+ac_mes<-function(x){(x-5)^2+4}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=ac_mes, geom="line", size=2, color="orange")+
+  geom_label(x=8, y=ac_mes(8), color="orange", size=6, label="AC(q)")+
+  geom_segment(x=5, xend=5, y=0, yend=4, linetype="dotted", size =1)+
+  geom_label(x=5, y=2, size=6, label="M.E.S.")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  
+  annotate("segment", x = 1, xend = 4, y = 14, yend = 2, color = "green", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+    geom_label(x=2, y=4, size=6, label="Economies", color="green")+
+
+  annotate("segment", x = 6, xend = 9, y = 2, yend = 14, color = "red", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+    geom_label(x=8, y=4, size=6, label="Diseconomies", color="red")+
+  labs(x = "Output, q",
+       y = "Costs per Unit ($)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  theme(legend.position = "bottom")
+```
+]
+
+---
+
+# Long Run Costs and Scale Economies: Example
+
+.content-box-green[
+.hi-green[**Example**]: A firm's long run cost structure is as follows:
+
+$$\begin{align*}
+LRC(q)&= 32000q-250q^2+q^3\\
+LRMC(q)&=32000-500q+3q^2\\ \end{align*}$$
+]
+
+1. At what levels of output will the firm face economies of scale and diseconomies of scale? (Hint: This firm has a $U$-shaped LRAC.)
+
+---
+
+# Long Run Costs and Scale Economies: Example, Visualized
+
+```{r, fig.retina=3}
+library(mosaic)
+lrac_ex1<-function(x){32000-250*x+x^2}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=lrac_ex1, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=175,y=lrac_ex1(175)), color = "orange", label=expression(LRAC(q)), size = 4)+
+   geom_segment(x=125,xend=125,y=0, yend=16375, size=1, linetype="dotted")+
+   geom_segment(x=0,xend=125,y=16375, yend=16375, size=1, linetype="dotted")+
+   scale_x_continuous(breaks=seq(0,200,50),
+                     limits=c(0,200),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,50000,10000),
+                     limits=c(0,50000),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Per-Unit Costs ($)",
+       caption = expression(paste(C(q)==32000-250*q^2+q^3)))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+
+---
+
+class: inverse, center, middle
+
+# Revenues
+
+---
+
+# Revenues for Firms in *Competitive* Industries I
+
+.pull-left[
+```{r, fig.retina=3, fig.height=5}
+demand<-function(x){10-x}
+supply<-function(x){x}
+demand_firm<-function(x){5}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     labels=scales::dollar,                   
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Representative Firm",
+       x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.pull-right[
+```{r, fig.retina=3, fig.height=5}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=supply, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply(9)), color = "red", label="Supply", size = 5)+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     labels=scales::dollar,                   
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Industry",
+       x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Revenues for Firms in *Competitive* Industries I
+
+.pull-left[
+```{r, fig.retina=3, fig.height=5}
+demand<-function(x){10-x}
+supply<-function(x){x}
+demand_firm<-function(x){5}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_firm, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=9,y=demand_firm(9)), color = "blue", label="Demand", size = 5)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     labels=scales::dollar,                   
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Representative Firm",
+       x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.pull-right[
+```{r, fig.retina=3, fig.height=5}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=supply, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply(9)), color = "red", label="Supply", size = 5)+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     labels=scales::dollar,                   
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Industry",
+       x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+--
+
+- .hi-purple[Demand for a firm's product] is **perfectly elastic** at the market price
+
+--
+
+- Where did the supply curve come from? You'll see 
+
+---
+
+# Revenues for Firms in *Competitive* Industries II
+
+.pull-left[
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_firm, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=9,y=demand_firm(9)), color = "blue", label="Demand", size = 5)+
+  geom_rect(xmin=0,xmax=6,ymin=0,ymax=5,fill="blue", alpha=0.5)+
+    geom_label(aes(x=3,y=3), color = "blue", label="R(6)=$30", size = 5)+
+  geom_segment(x=6, xend=6, y=0, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     labels=scales::dollar,                   
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Representative Firm",
+       x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.pull-right[
+
+- .shout[Total Revenue] $R(q)=pq$
+]
+
+---
+
+# Average and Marginal Revenues
+
+- .shout[Average Revenue]: revenue per unit of output
+$$AR(q)=\frac{R}{q}$$
+  - Is *always* equal to the price! Why?
+
+--
+
+- .shout[Marginal Revenue]: change in revenues for each additional unit of output sold:
+$$MR(q) = \frac{\Delta R(q)}{\Delta q} \approx \frac{R_2-R_1}{q_2-q_1}$$
+  - Calculus: first derivative of the revenues function
+  - For a *competitive* firm, always equal to the price!
+
+---
+
+# Average and Marginal Revenues: Example
+
+.content-box-green[
+.hi-green[**Example**]: A firm sells bushels of wheat in a very competitive market. The current market price is $10/bushel.
+]
+
+--
+
+.pull-left[
+
+For the 1<sup>st</sup> bushel sold:
+
+- What is the total revenue? 
+
+- What is the average revenue?
+
+]
+
+--
+
+.pull-right[
+For the 2<sup>nd</sup> bushel sold:
+
+- What is the total revenue?
+
+- What is the average revenue?
+
+- What is the marginal revenue?
+]
+
+---
+
+# Total Revenue, Example: Visualized
+
+.pull-left[
+
+| $q$ | $R(q)$ |
+|----:|-------:|
+| $0$ | $0$ |
+| $1$ | $10$ |
+| $2$ | $20$ |
+| $3$ | $30$ |
+| $4$ | $40$ |
+| $5$ | $50$ |
+| $6$ | $60$ |
+| $7$ | $70$ |
+| $8$ | $80$ |
+| $9$ | $90$ |
+| $10$ | $100$ |
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+revenues<-function(x){10*x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=revenues, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=revenues(9)), color = "blue", label=expression(R(q)), size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,120,10),
+                     limits=c(0,120),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Revenues ($)",
+       caption = expression(R(q)==10*q))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Average and Marginal Revenue, Example: Visualized
+
+.pull-left[
+
+| $q$ | $R(q)$ | $AR(q)$ | $MR(q)$ |
+|----:|-------:|--------:|--------:|
+| $0$ | $0$ | $-$ | $-$ |
+| $1$ | $10$ | $10$ | $10$ |
+| $2$ | $20$ | $10$ | $10$ |
+| $3$ | $30$ | $10$ | $10$ |
+| $4$ | $40$ | $10$ | $10$ |
+| $5$ | $50$ | $10$ | $10$ |
+| $6$ | $60$ | $10$ | $10$ |
+| $7$ | $70$ | $10$ | $10$ |
+| $8$ | $80$ | $10$ | $10$ |
+| $9$ | $90$ | $10$ | $10$ |
+| $10$ | $100$ | $10$ | $10$ |
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+mr<-function(x){10}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mr, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=mr(9)), color = "blue", label="MR(q)=AR(q)=10", size = 6)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  #scale_colour_manual("Curves", values = line_colors, guide=F)+
+  labs(x = "Output, q",
+       y = "Revenues per Unit ($/q)",
+       caption = expression(R(q)==10*q))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]

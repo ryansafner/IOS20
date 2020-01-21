@@ -22,6 +22,14 @@
   </url>
   
   <url>
+    <loc>https://ios20.classes.ryansafner.com/class/1.2-class/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ios20.classes.ryansafner.com/reading/1.2-reading/</loc>
+  </url>
+  
+  <url>
     <loc>https://ios20.classes.ryansafner.com/assignments/</loc>
   </url>
   
@@ -32,6 +40,11 @@
   
   <url>
     <loc>https://ios20.classes.ryansafner.com/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ios20.classes.ryansafner.com/reading/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

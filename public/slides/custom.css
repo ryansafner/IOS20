@@ -651,4 +651,18 @@ color: #23373B;
   float: bottom;
 }
 
+.tri-left {
+  width: 30%;
+  float: left;
+}
+
+.tri-middle {
+  width: 30%;
+  float: left;
+}
+
+.tri-right {
+  width: 30%;
+  float: left;
+}
 

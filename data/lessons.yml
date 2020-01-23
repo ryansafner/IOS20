@@ -11,9 +11,12 @@ lessons:
     reading: "1.2-reading"
     slides: "1.2-slides"
     
-  - title: "1.3 Perfect Competition I: Short Run"
+  - title: "1.3 Perfect Competition"
+    class: "1.3-class"
+    reading: "1.3-reading"
+    slides: "1.3-slides"
 
-  - title: "1.4 Perfect Competition II: Industry Equilibrium"
+  - title: "1.4 Perfect Competition"
 
   - title: "1.5 Monopoly I: Behavior"
 

@@ -1,0 +1,33 @@
+---
+title: "1.4 Perfect Competition II: Ong Run"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Tuesday, January 28, 2020*
+
+# Overview
+
+We continue our review/extension of perfect competition by looking at how to derive the equilibrium for the industryover the long run, where entry and exit are possible. We also discuss the role of economic rents.
+
+# Moblab
+
+Please register an account at [Moblab.com](https://moblab.com) and join our class section with the code below:
+
+![](https://www.dropbox.com/s/l9erzvqab73qzla/moblabio.png?raw=1)
+
+We may play our first "game" today or next class to understand perfect competition:
+
+- [<i class="far fa-file-powerpoint"></i> Price Takers Game Instructions](/moblab/1.4-price-takers.pptx)
+
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/1.4-slides.html)

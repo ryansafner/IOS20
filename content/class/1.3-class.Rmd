@@ -1,5 +1,5 @@
 ---
-title: "1.3 Perfect Competition"
+title: "1.3 Perfect Competition I: Short Run"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl
@@ -11,9 +11,11 @@ editor_options:
   chunk_output_type: console
 ---
 
+*Thursday, January 23, 2020*
+
 # Overview
 
-We begin our review/extension of basic production concepts from microeconomics. Today we focus primarily on production functions and costs. These will be relevant regardless of what kind of market structure we are looking at.  
+We begin our review/extension of perfect competition by looking at how firms maximize profits in the short run.  
 
 # Moblab
 

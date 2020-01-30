@@ -22,7 +22,10 @@ lessons:
     slides: "1.4-slides"
     
   - title: "1.5 Monopoly I: Behavior"
-
+    class: "1.5-class"
+    reading: "1.5-reading"
+    slides: "1.5-slides"
+    
   - title: "1.6 Monopoly II: Consequences"
 
   - title: "1.7 Monopoly III: Pricing"

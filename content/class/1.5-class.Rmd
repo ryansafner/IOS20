@@ -1,5 +1,5 @@
 ---
-title: "1.5 Monopoly I"
+title: "1.5 Monopoly I: Behavior"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl

@@ -1,5 +1,5 @@
 ---
-title: "1.5: Monopoly I"
+title: "1.5: Monopoly I: Behavior"
 subtitle: "ECON 326 · Industrial Organization · Spring 2020"
 author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i> safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/IOs20"><i class="fa fa-github fa-fw"></i> ryansafner/IOs20</a><br> <a href="https://IOs20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i> IOs20.classes.ryansafner.com</a><br>'
 #date:
@@ -47,13 +47,13 @@ theme_slides <- theme_light() +
 .left-column[
 .center[
 ![:scale 80%](https://www.dropbox.com/s/w5ecx0628ihm9n2/smith.png?raw=1)
-
+.smallest[
 Adam Smith
 
 1723-1790
 ]
 ]
-
+]
 .right-column[
 
 > *"People of the same trade seldom meet together, even for merriment and diversion, but the conversation ends in a conspiracy against the public, or in some contrivance to raise prices,* (Book I, Chapter 2.2)"
@@ -69,11 +69,11 @@ Adam Smith
 .pull-left[
 - All sellers would like to raise prices and extract more revenue from consumers
 
-- .whisper[Competition] from *other* sellers drives prices down to match $MC(q)$ (and bids costs and rents upwards to match prices)
+- .hi-purple[Competition] from *other* sellers drives prices down to match $MC(q)$ (and bids costs and rents upwards to match prices)
 
 - If a firm in a competitive market raised $p>MC(q)$, would lose *all* of its customers
 
-- A firm with .shout[market power] has the ability to raise price above its marginal cost and *not* lose *all* of its customers
+- .hi[Market power]: ability to raise $p>MC(q)$ and *not* lose *all* customers
 ]
 
 .pull-right[
@@ -88,14 +88,14 @@ Adam Smith
 
 .pull-left[
 
-- We start with a simple model of .shout[monopoly]: a market with a *single* seller
+- We start with a simple model of .hi[monopoly]: a market with a *single* seller
 
 1. Firm's products may have few close substitutes
 
-2. .shout[Barriers to entry], making entry costly
+2. .hi[Barriers to entry], making entry costly
 
-3. Firm is a .whisper["price-searcher"]: can set optimal price $p^*$ in addition to quantity $q^*$
-  - Must *search* for $(q^*,p^*)$ that maximizes $\pi$
+3. Firm is a .hi-purple["price-searcher"]: can set optimal price $p^*$ and quantity $q^*$
+  - Must **search** for $(q^*,p^*)$ that maximizes $\pi$
 
 ]
 
@@ -138,7 +138,7 @@ graph
 
 - Implications:
   - Monopolies can't set a price "as high as it wants"
-  - Monopolies can still earn losses (and exit in the long run)
+  - Monopolies can still earn losses!
 
 ]
 
@@ -240,13 +240,15 @@ $R(q)=$.green[`\\(p \Delta q\\)`] $+$ .red[`\\(q \Delta p\\)`]
 
 --
 
-- Divide both sides by $\Delta q$ to get .whisper[Marginal Revenue, `\\(MR(q)\\)`]:
+- Divide both sides by $\Delta q$ to get .hi-purple[Marginal Revenue, `\\(MR(q)\\)`]:
 
 $$\frac{\Delta R(q)}{\Delta q}=MR(q)=p+\frac{\Delta p}{\Delta q}q$$
 
 --
 
+.small[
 - Compare: demand for a **competitive** firm is perfectly elastic: $\frac{\Delta p}{\Delta}q=0$, so we saw $MR(q)=p$!
+]
 
 ---
 
@@ -266,7 +268,9 @@ $$MR(q)=p+\frac{\Delta p}{\Delta q}q$$
 
 - Recognize that $\frac{\Delta p}{\Delta q}$ is the slope, $b$, $\left(\frac{rise}{run} \right)$
 
---
+---
+
+# Monopoly and Revenues II
 
 $$\begin{align*}
 MR(q)&=p+(b)q\\
@@ -331,154 +335,31 @@ $$q=12.5-0.25p$$
 
 ---
 
-# Revenues and Price Elasticity of Demand
-
-- Marginal revenue is stgonly related to **price elasticity of demand**:
-
---
-
-$$\begin{align*}\small 
-p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&=MR(q) && \text{Definition of } MR(q)\\
-		\end{align*}$$
-
----
-
-# Revenues and Price Elasticity of Demand
-
-- Marginal revenue is related to price elasticity of demand:
-
-$$\begin{align*}\small 
-p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&=MR(q) && \text{Definition of } MR(q)\\
-\frac{p}{p}+\bigg(\frac{\Delta p}{\Delta q}\bigg) \frac{q}{p}&=\frac{MR(q)}{p} && \text{Dividing both sides by } p\\
-		\end{align*}$$
-
----
-
-# Revenues and Price Elasticity of Demand
-
-- Marginal revenue is related to price elasticity of demand:
-
-$$\begin{align*}\small 
-p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&=MR(q) && \text{Definition of } MR(q)\\
-\frac{p}{p}+\bigg(\frac{\Delta p}{\Delta q}\bigg) \frac{q}{p}&=\frac{MR(q)}{p} && \text{Dividing both sides by } p\\
-1+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}}&=\frac{MR(q)}{p} && \text{Simplifying}\\
-		\end{align*}$$
-
----
-
-# Revenues and Price Elasticity of Demand
-
-- Marginal revenue is related to price elasticity of demand:
-
-$$\begin{align*}\small 
-p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&=MR(q) && \text{Definition of } MR(q)\\
-\frac{p}{p}+\bigg(\frac{\Delta p}{\Delta q}\bigg) \frac{q}{p}&=\frac{MR(q)}{p} && \text{Dividing both sides by } p\\
-1+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}}&=\frac{MR(q)}{p} && \text{Simplifying}\\
-1+\frac{1}{\epsilon}&=\frac{MR(q)}{p} && \text{Recognize price elasticity } \epsilon=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
-		\end{align*}$$
-
----
-
-# Revenues and Price Elasticity of Demand
-
-- Marginal revenue is related to price elasticity of demand:
-
-$$\begin{align*}\small 
-p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&=MR(q) && \text{Definition of } MR(q)\\
-\frac{p}{p}+\bigg(\frac{\Delta p}{\Delta q}\bigg) \frac{q}{p}&=\frac{MR(q)}{p} && \text{Dividing both sides by } p\\
-1+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}}&=\frac{MR(q)}{p} && \text{Simplifying}\\
-1+\frac{1}{\epsilon}&=\frac{MR(q)}{p} && \text{Recognize price elasticity } \epsilon=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
-p\bigg(1+\frac{1}{\epsilon}\bigg)&=MR(q) && \text{Multiplying both sides by }p\\
-		\end{align*}$$
-
----
-
 # Measuring Markup Prices
 
 .pull-left[
-- How much does a monopolist mark up price over cost? 
-
-]
-
-.pull-right[
-.center[
-![](https://www.dropbox.com/s/rh4v98afnjit8zc/markup.jpg?raw=1)
-]
-]
-
----
-
-# Measuring Markup Prices
-
-.pull-left[
-- How much does a monopolist mark up price over cost? 
-
-$$\begin{align*}
-MR(q)&=MC(q)\\
-\end{align*}$$
-
-]
-
-.pull-right[
-.center[
-![](https://www.dropbox.com/s/rh4v98afnjit8zc/markup.jpg?raw=1)
-]
-]
-
----
-
-# Measuring Markup Prices
-
-.pull-left[
-- How much does a monopolist mark up price over cost? 
-
-$$\begin{align*}
-MR(q)&=MC(q)\\
-p\bigg(1+\frac{1}{\epsilon}\bigg)&=MC(q)\\
-\end{align*}$$
-
-]
-
-.pull-right[
-.center[
-![](https://www.dropbox.com/s/rh4v98afnjit8zc/markup.jpg?raw=1)
-]
-]
-
----
-
-# Measuring Markup Prices
-
-.pull-left[
-- How much does a monopolist mark up price over cost? 
-
-$$\begin{align*}
-MR(q)&=MC(q)\\
-p\bigg(1+\frac{1}{\epsilon}\bigg)&=MC(q)\\
-p&=\cfrac{MC(q)}{1+\frac{1}{\epsilon}}\\
-\end{align*}$$
-
-]
-
-.pull-right[
-.center[
-![](https://www.dropbox.com/s/rh4v98afnjit8zc/markup.jpg?raw=1)
-]
-]
-
----
-
-# Measuring Markup Prices
-
-.pull-left[
-
-$$p=\cfrac{MC(q)}{1+\frac{1}{\epsilon}}$$
 
 - Perfect competition: $p=MC(q)$ (allocatively efficient)
 
-- Monopolists .whisper[mark up] price above $MC(q)$
+- Monopolists .hi-purple[mark up] price above $MC(q)$
 
-- .whisper[Size of markup depends on **price elasticity of demand**]
+- How much does a monopolist mark up price over cost? 
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/rh4v98afnjit8zc/markup.jpg?raw=1)
+]
+]
+
+---
+
+# Measuring Markup Prices
+
+.pull-left[
+
+- .hi-purple[Size of markup depends on **price elasticity of demand**]
   - $\downarrow$ price elasticity: $\uparrow$ markup
   - i.e. the *less* responsive to prices consumers are, the *higher* the monopolist can charge
 ]
@@ -495,7 +376,7 @@ $$p=\cfrac{MC(q)}{1+\frac{1}{\epsilon}}$$
 
 .pull-left[
 
-- .shout[Lerner Index] measures market power as % of firm's price that is markup above (marginal) cost
+- .hi[Lerner Index] measures market power as % of firm's price that is markup above (marginal) cost
 
 $$L=\frac{p-MC(q)}{p} = -\frac{1}{\epsilon}$$
 
@@ -515,9 +396,10 @@ $$L=\frac{p-MC(q)}{p} = -\frac{1}{\epsilon}$$
 # The Lerner Index II
 
 .center[
+.smallest[
 The more (less) elastic a good, the less (more) the optimal markup: $L=\frac{p-MC(q)}{p}=-\frac{1}{\epsilon}$
 ]
-
+]
 .pull-left[
 
 .center[
@@ -534,7 +416,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   stat_function(fun=demand_i, geom="line", size=2, color = "blue")+
   geom_label(x=9,y=demand_i(9), color = "blue", label="Demand")+
   stat_function(fun=mr_i, geom="line", size=2, color = "purple")+
-  geom_label(x=9,y=mr_i(9), color = "purple", label="MR(q)")+
+  geom_label(x=3,y=mr_i(3), color = "purple", label="MR(q)")+
     scale_x_continuous(breaks=seq(0,10,1),
                      limits=c(0,10),
                      expand=expand_scale(mult=c(0,0.1)))+
@@ -572,7 +454,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   stat_function(fun=demand_e, geom="line", size=2, color = "blue")+
   geom_label(x=9,y=demand_e(9), color = "blue", label="Demand")+
   stat_function(fun=mr_e, geom="line", size=2, color = "purple")+
-  geom_label(x=9,y=mr_e(9), color = "purple", label="MR(q)")+
+  geom_label(x=3,y=mr_e(3), color = "purple", label="MR(q)")+
     scale_x_continuous(breaks=seq(0,10,1),
                      limits=c(0,10),
                      expand=expand_scale(mult=c(0,0.1)))+

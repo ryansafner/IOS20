@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Industrial Organization</title>
-    <link>https://ios20.classes.ryansafner.com/</link>
+    <link>https://ios20.classes.ryansafner.com/index.html</link>
     <description>Recent content on Industrial Organization</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,8 +10,8 @@
 	<atom:link href="https://ios20.classes.ryansafner.com/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>1.1. Introduction and Overview</title>
+  </channel>
+</rss>Introduction and Overview</title>
       <link>https://ios20.classes.ryansafner.com/class/1.1-class/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -74,7 +74,7 @@ Slides   Lecture Slides  </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ios20.classes.ryansafner.com/class/1.4-class/</guid>
-      <description>Contents  Overview Moblab Slides   Tuesday, January 28, 2020
+      <description>Contents  Overview Moblab Slides   Tuesday, January 28, 2020, Thursday, January 30, 2020
 Overview We continue our review/extension of perfect competition by looking at how to derive the equilibrium for the industryover the long run, where entry and exit are possible. We also discuss the role of economic rents.
 Moblab Please register an account at Moblab.com and join our class section with the code below:
 We may play our first “game” today or next class to understand perfect competition:</description>
@@ -89,6 +89,17 @@ We may play our first “game” today or next class to understand perfect compe
       <description>Required Readings:  NONE  Recommended Readings: This is a part of our review of major production concepts from Microeconomics. You should consider looking at the following textbooks if you are rusty or want to know more about these concepts:
   Ch. 3 in Dennis W Carlton and Jeffrey M PerloffModern Industrial Organization, 4th ed. (USA: Pearson, 2005).
   Ch. 2.1-2.2, 3.1 in Jeffrey Church and Roger WareIndustrial Organization: A Strategic Approach (New York: McGraw-Hill, 2000).</description>
+    </item>
+    
+    <item>
+      <title>1.5 Monopoly I</title>
+      <link>https://ios20.classes.ryansafner.com/class/1.5-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ios20.classes.ryansafner.com/class/1.5-class/</guid>
+      <description> Contents  Overview Slides   Thursday, January 30, 2020
+Overview We begin looking at monopoly.
+Slides   Lecture Slides  </description>
     </item>
     
     <item>

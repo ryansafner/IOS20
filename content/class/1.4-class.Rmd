@@ -11,7 +11,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-*Tuesday, January 28, 2020*
+*Tuesday, January 28, 2020, Thursday, January 30, 2020*
 
 # Overview
 

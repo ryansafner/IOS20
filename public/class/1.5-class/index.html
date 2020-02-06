@@ -134,16 +134,104 @@
 <ul>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#slides">Slides</a></li>
+<li><a href="#appendix">Appendix</a><ul>
+<li><a href="#price-elasticity-of-demand-refresher">Price Elasticity of Demand Refresher</a></li>
+<li><a href="#derivation-of-the-lerner-index">Derivation of the Lerner Index</a></li>
+</ul></li>
 </ul>
 </div>
 
-<p><em>Thursday, January 30, 2020</em></p>
+<p><em>Thursday, January 30, 2020</em> and <em>Thursday, February 6, 2020</em></p>
 <h2 id="overview">Overview</h2>
-<p>We begin looking at monopoly.</p>
+<p>We begin looking at monopoly by discussing how a monopolist (as compared to a price-taking firm) chooses both its output and its price to maximize profits.</p>
 <h2 id="slides">Slides</h2>
 <ul>
 <li><a href="/slides/1.5-slides.html"><i class="fas fa-external-link-square-alt"></i> Lecture Slides</a></li>
 </ul>
+<h2 id="appendix">Appendix</h2>
+<h3 id="price-elasticity-of-demand-refresher">Price Elasticity of Demand Refresher</h3>
+<p><strong>Price elasticity of demand</strong> measures <em>how much</em> (in %) quantity demanded changes in response to a (1%) change in price.</p>
+<p><span class="math display">\[\begin{align*}
+\epsilon_{q,p} &amp;= \frac{\% \Delta q}{\% \Delta p}\\
+&amp;= \cfrac{\left(\frac{\Delta q}{q}\right)}{\left(\frac{\Delta p}{p}\right)}\\
+&amp;= \frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+&amp;= \frac{1}{slope} \times \frac{p}{q}\\
+\end{align*}\]</span></p>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="19%" />
+<col width="28%" />
+<col width="21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>“Elastic”</th>
+<th>“Unit Elastic”</th>
+<th>“Inelastic”</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Intuitively</strong>:</td>
+<td><em>Large</em> response</td>
+<td>Proportionate response</td>
+<td><em>Little</em> response</td>
+</tr>
+<tr class="even">
+<td><strong>Mathematically</strong>:</td>
+<td><span class="math inline">\(\vert \epsilon_{q_D,p}\vert &gt; 1\)</span></td>
+<td><span class="math inline">\(\vert \epsilon_{q_D,p}\vert = 1\)</span></td>
+<td><span class="math inline">\(\vert \epsilon_{q_D,p} \vert &lt; 1\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Numerator <span class="math inline">\(&gt;\)</span> Denominator</td>
+<td>Numerator <span class="math inline">\(=\)</span> Denominator</td>
+<td>Numerator <span class="math inline">\(&lt;\)</span> Denominator</td>
+</tr>
+<tr class="even">
+<td><strong>A 1% change in <span class="math inline">\(p\)</span></strong></td>
+<td>More than 1% change in <span class="math inline">\(q_D\)</span></td>
+<td>1% change in <span class="math inline">\(q_D\)</span></td>
+<td>Less than 1% change in <span class="math inline">\(q_D\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Price elasticity of demand changes along the demand curve:</p>
+<p><img src="/class/1.5-class_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<h4 id="determinants-of-price-elasticity">Determinants of Price Elasticity</h4>
+<blockquote>
+<p>What determines how responsive your buying behavior is to a price change?</p>
+</blockquote>
+<ul>
+<li>More (fewer) <strong>substitutes</strong> <span class="math inline">\(\implies\)</span> more (less) elastic
+<ul>
+<li>Larger categories of products (less elastic) vs. specific brand (more elastic)</li>
+<li><strong>Necessities</strong> (less elastic) vs. <strong>luxuries</strong> (more elastic)</li>
+<li>Large (more elastic) vs. small (less elastic) <strong>portion of budget</strong></li>
+</ul></li>
+<li>More (less) <strong>time to adjust</strong> <span class="math inline">\(\implies\)</span> more (less) elastic</li>
+</ul>
+<h3 id="derivation-of-the-lerner-index">Derivation of the Lerner Index</h3>
+<p>Marginal revenue is strongly related to the <strong>price elasticity of demand</strong>, which is <span class="math inline">\(E_{D}=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\)</span><span><label for="sn-1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-1" class="margin-toggle"/><span class="sidenote">I sometimes simplify it as <span class="math inline">\(E_{D}=\frac{1}{slope} \times \frac{p}{q}\)</span>, where “slope” is the slope of the inverse demand curve (graph), since the slope is <span class="math inline">\(\frac{\Delta p}{\Delta q} = \frac{rise}{run}\)</span>.<br />
+<br />
+</span></span></p>
+<p>We derived marginal revenue (in the slides) as:
+<span class="math display">\[MR(q)=p+\frac{\Delta p}{\Delta q}q\]</span></p>
+<p>Firms will always maximize profits where:</p>
+<p><span class="math display">\[\begin{align*}
+MR(q)&amp;=MC(q) &amp;&amp; \text{Profit-max output}\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg)q&amp;=MC(q) &amp;&amp; \text{Definition of } MR(q)\\
+p+\bigg(\frac{\Delta p}{\Delta q}\bigg) q \times \frac{p}{p}&amp;=\frac{MR(q)}{p} &amp;&amp; \text{Multiplying the left by } \frac{p}{p} \text{ (i.e. 1)}\\
+p+\underbrace{\bigg(\frac{\Delta p}{\Delta q}\times \frac{q}{p} \bigg)}_{\frac{1}{\epsilon}} \times p &amp;=MC(q) &amp;&amp; \text{Rearranging the left}\\
+p+\frac{1}{\epsilon} \times p &amp;=MC(q) &amp;&amp; \text{Recognize price elasticity } \epsilon=\frac{\Delta q}{\Delta p} \times \frac{p}{q}\\
+p &amp;=MC(q) - \frac{1}{\epsilon} p &amp;&amp; \text{Subtract  }\frac{1}{\epsilon}p \text{ from both sides}\\
+p-MC(q) &amp;= -\frac{1}{\epsilon} p &amp;&amp; \text{Subtract  }MC(q) \text{ from both sides}\\
+\frac{p-MC(q)}{p} &amp;= -\frac{1}{\epsilon} &amp;&amp; \text{Divide both sides by  }p\\
+        \end{align*}\]</span></p>
+<p>The left side gives us the fraction of price that is markup <span class="math inline">\(\left(\frac{p-MC(q)}{p}\right)\)</span>, and the right side shows this is inversely related to price elasticity of demand.</p>
 
 
     </article>
@@ -202,6 +290,20 @@
     </footer>
 
     
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      },
+      "HTML-CSS": {
+        fonts: ["Asana-Math"]
+      }
+    });
+    </script>
+    <script async type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+    </script>
+
 
 </div>
 </body>

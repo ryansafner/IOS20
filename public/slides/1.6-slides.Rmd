@@ -156,6 +156,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
     geom_label(aes(x=6,y=mc(6)), color = "red", label=expression(MC(q)==AC(q)), size = 5)+
   geom_segment(x=8, xend=8, y=0, yend=2, size=1, linetype="dotted")+
   geom_label(aes(x=3, y= 5), label="CS", color="blue", size =5)+
+    geom_text(x=8.5,y=2.5,label=expression(paste("(",q^c,", ",p^c,")")), size=5)+
     scale_x_continuous(breaks=seq(0,10,1),
                      limits=c(0,10),
                      expand=expand_scale(mult=c(0,0.1)))+
@@ -175,7 +176,10 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-right[
 
-- Consider a market with some simplified cost assumptions
+- Consider a market with some simplified cost assumptions:
+  - No fixed costs
+  - Constant variable costs $2q$
+    - implies $MC(q)=AC(q)=2$
 
 - If this was a *competitive* market, firms would set $p=MC(q)$ and produce 8
   - .blue[Consumer surplus] maximized
@@ -230,7 +234,9 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   geom_segment(x=4, xend=4, y=0, yend=6, size=1, linetype="dotted")+
   
   geom_point(x=4,y=6, size=3)+
-  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^o,", ",p^o,")")), size=5)+
+  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^m,", ",p^m,")")), size=5)+
+    geom_text(x=8.5,y=2.5,label=expression(paste("(",q^c,", ",p^c,")")), size=5)+
+
     scale_x_continuous(breaks=seq(0,10,1),
                      limits=c(0,10),
                      expand=expand_scale(mult=c(0,0.1)))+
@@ -250,7 +256,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-right[
 
-- A **monopolist** faces the *entire* market demand and sets $(q^o,p^o)$:
+- A **monopolist** faces the *entire* market demand and sets $(q^m,p^m)$:
   - Sets .purple[`\\(MR(q)\\)`] $=$ .red[`\\(MC(q)\\)`] at **4**
   - Raises price to .blue[maximum consumers are WTP (Demand)]: **$6**
 
@@ -311,7 +317,8 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   geom_segment(x=4, xend=4, y=0, yend=6, size=1, linetype="dotted")+
   
   geom_point(x=4,y=6, size=3)+
-  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^o,", ",p^o,")")), size=5)+
+  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^m,", ",p^m,")")), size=5)+
+    geom_text(x=8.5,y=2.5,label=expression(paste("(",q^c,", ",p^c,")")), size=5)+
     scale_x_continuous(breaks=seq(0,10,1),
                      limits=c(0,10),
                      expand=expand_scale(mult=c(0,0.1)))+
@@ -353,8 +360,8 @@ dwl_x<-tibble(x=c(6,6,8),
 ggplot(data.frame(x=c(0,10)), aes(x=x))+
   
   # surpluses
-  geom_rect(xmin=0,xmax=6,ymin=2,ymax=4,fill="black", alpha=0.5)+ #profit
-  geom_polygon(data=dwl_x, aes(x=x,y=y), fill="black",alpha=0.5)+ #dwl
+  #geom_rect(xmin=0,xmax=6,ymin=2,ymax=4,fill="black", alpha=0.5)+ #profit
+  #geom_polygon(data=dwl_x, aes(x=x,y=y), fill="black",alpha=0.5)+ #dwl
   
   # surplus labels
   #geom_label(aes(x=5.5, y= 3.5), label="DWL", color="black", size =5)+
@@ -380,7 +387,8 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   geom_text(x=3.5,y=7.5,label=expression(paste("(",q^x,", ",p^x,")")), size=5)+
 
   geom_point(x=4,y=6, size=3)+
-  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^o,", ",p^o,")")), size=5)+
+  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^m,", ",p^m,")")), size=5)+
+    geom_text(x=8.5,y=2.5,label=expression(paste("(",q^c,", ",p^c,")")), size=5)+
     scale_x_continuous(breaks=seq(0,10,1),
                      limits=c(0,10),
                      expand=expand_scale(mult=c(0,0.1)))+
@@ -462,7 +470,8 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   geom_segment(x=4, xend=4, y=0, yend=6, size=1, linetype="dotted")+
   
   geom_point(x=4,y=6, size=3)+
-  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^o,", ",p^o,")")), size=5)+
+  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^m,", ",p^m,")")), size=5)+
+    geom_text(x=8.5,y=2.5,label=expression(paste("(",q^c,", ",p^c,")")), size=5)+
     scale_x_continuous(breaks=seq(0,10,1),
                      limits=c(0,10),
                      expand=expand_scale(mult=c(0,0.1)))+
@@ -542,27 +551,9 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 - This is a transfer of wealth from consumers/taxpayers to politically-favored groups
 
-]
----
-
-# Government Intervention Creates Rent-*Seeking*
-
-.pull-left[
-.center[
-![](https://www.dropbox.com/s/obqxaf2tz2se3jh/rents.jpg?raw=1)
-]
-]
-
-.pull-right[
-
-- The transfer is not the worst of it
-
-- The real problem is .hi-purple[you cannot give away money for free even if you tried!]
-
 - The promise of earning a rent breeds **competition over the rents** (.hi[rent-seeking])
 
 ]
-
 ---
 
 # Rent-Seeking II
@@ -649,11 +640,11 @@ class: inverse, center, middle
 .pull-right[
 
 **Sherman Antitrust Act (1890)**
-
+.smallest[
  > $\S$ 1: "Every contract, combination in the form of trust or otherwise, or conspiracy, in restraint of trade or commerce among the several States, or with foreign nations, is declared to be illegal." 
 
 > $\S$ 2: "Every person who shall monopolize, or attempt to monopolize, or combine or conspire with any other person or persons, to monopolize any part of the trade or commerce among the several States, or with foreign nations, shall be deemed guilty of a felony [...]"
-
+]
 
 ]
 
@@ -974,7 +965,7 @@ Source: [Mercatus Research (March 25, 2014): Occupational Licensing: Bad for Com
 
 .pull-left[
 .center[
-![:scale 40%](https://www.dropbox.com/s/espsohk14lgh4ef/hairbraidingnpr.png?raw=1)
+![:scale 90%](https://www.dropbox.com/s/espsohk14lgh4ef/hairbraidingnpr.png?raw=1)
 ]
 ]
 

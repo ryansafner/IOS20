@@ -1,0 +1,23 @@
+---
+title: "1.6 Monopoly II: Consequences"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Thursday, February 6, 2020* 
+
+# Overview
+
+We continue looking at monopoly and see what are the economic consequences of monopoly.
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/1.6-slides.html)
+

@@ -477,9 +477,10 @@ The more (less) elastic a good, the less (more) the optimal markup: $L=\frac{p-M
 .pull-left[
 
 .center[
+.smallest[
 "Inelastic" Demand Curve
 ]
-
+]
 ```{r, fig.align="center", fig.height=5.5}
 demand_i=function(x){20-2*x}
 mr_i=function(x){20-4*x}
@@ -515,7 +516,9 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 .pull-right[
 
 .center[
+.smallest[
 "Elastic" Demand Curve
+]
 ]
 
 ```{r, fig.align="center", fig.height=5.5}

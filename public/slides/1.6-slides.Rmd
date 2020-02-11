@@ -1322,147 +1322,7 @@ $$\mathbf{\text{Average cost}}=\frac{\$100,000}{1000}=\$100 \text{ per subscribe
 
 ---
 
-# Regulating Natural Monopolies I
-
-.pull-left[
-
-- Left to its own devices, a profit-maximizing monopolist finds $q^*: MR(q)=MC(q)$ and raises $p^*$ to Max WTP
-  - Lower .blue[consumer surplus], .green[`\\(\pi\\)` for monopolist], creates **deadweight loss**
-  - Compare to socially-optimal outcome ($4 at 8)
-]
-
-.pull-right[
-
-```{r, fig.retina=3}
-mr<-function(x){20-4*x}
-mc<-function(x){4}
-ac<-function(x){(0.25*x-2)^(2)+4}
-cs<-tribble(
-  ~x, ~y,
-  0, 20,
-  0, 12,
-  4, 12
-)
-dwl<-tribble(
-  ~x, ~y,
-  4, 12,
-  4, 4,
-  8, 4
-)
-
-natural<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  stat_function(fun=demand, geom="line", size=2, color="blue")+
-  geom_label(x = 9, y=demand(9), color = "blue", size = 5, label = "Demand")+
-  stat_function(fun=mr, geom="line", size=2, color="purple")+
-  geom_label(x = 4.5, y=mr(4.5), color = "purple", size = 5, label = "MR(q)")+
-  stat_function(fun=mc, geom="line", size=2, color="red")+
-  stat_function(fun=ac, geom="line", size=2, color="orange")+
-  geom_label(x = 1, y=ac(1), color = "orange", size = 5, label = "AC(q)")+
-  geom_label(x = 9, y=mc(9), color = "red", size = 5, label = "MC(q)")+
-    scale_x_continuous(breaks=seq(0,10,1),
-                     limits=c(0,10),
-                     expand=expand_scale(mult=c(0,0.1)))+
-  scale_y_continuous(breaks=seq(0,20,2),
-                     limits=c(0,20),
-                     labels=scales::dollar,
-                     expand=expand_scale(mult=c(0,0.1)))+
-  labs(x = "Quantity (thousands)",
-       y = "Price")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
-  theme(legend.position = "bottom")
-
-natural+
-  geom_segment(x=0, xend=4, y=12, yend=12, linetype="dotted", size=1)+
-  geom_segment(x=4, xend=4, y=0, yend=12, linetype="dotted", size=1)+
-  geom_rect(xmin=0,xmax=4,ymin=4,ymax=12, fill="green", alpha=0.4)+
-  geom_polygon(data=cs, aes(x=x,y=y), fill="blue", alpha=0.5)+
-  geom_polygon(data=dwl, aes(x=x,y=y), fill="black", alpha=0.5)+
-  geom_segment(x=8,xend=8,y=0,yend=4, size=1, linetype="dotted")+
-  geom_label(x=8,y=2,label="Opt.")
-```
-]
-
----
-
-# Regulating Natural Monopolies I
-
-.pull-left[
-
-- Left to its own devices, a profit-maximizing monopolist finds $q^*: MR(q)=MC(q)$ and raises $p^*$ to Max WTP
-  - Lower .blue[consumer surplus], .green[`\\(\pi\\)` for monopolist], creates **deadweight loss**
-  - Compared to the socially-optimal outcome ($4 at 8)
-
-- Government can regulate natural monopolist to charge less (at minimum $p=AC(q)$
-  - $\uparrow q$, $\downarrow p$
-  - More .blue[consumer surplus] and less **deadweight loss**
-  - Less .green[`\\(\pi\\)` for the monopolist]
-]
-
-.pull-right[
-
-```{r, fig.retina=3}
-mr<-function(x){20-4*x}
-mc<-function(x){4}
-ac<-function(x){(0.25*x-2)^(2)+4}
-cs2<-tribble(
-  ~x, ~y,
-  0, 20,
-  0, 4,
-  8, 4
-)
-
-natural+
-  geom_segment(x=0, xend=4, y=12, yend=12, linetype="dotted", size=1)+
-  geom_segment(x=4, xend=4, y=0, yend=12, linetype="dotted", size=1)+
-  geom_polygon(data=cs2, aes(x=x,y=y), fill="blue", alpha=0.5)+
-  geom_segment(x=8,xend=8,y=0,yend=4, size=1, linetype="dotted")+
-  geom_label(x=8,y=2,label="Opt.")
-```
-]
-
----
-
-# Regulating Natural Monopolies I
-
-.pull-left[
-
-- Left to its own devices, a profit-maximizing monopolist finds $q^*: MR(q)=MC(q)$ and raises $p^*$ to Max WTP
-  - Lower .blue[consumer surplus], .green[`\\(\pi\\)`] for monopolist, creates **deadweight loss**
-  - Compared to the socially-optimal outcome ($4 at 8)
-
-- Government can regulate natural monopolist to charge less (at minimum $p=AC(q)$
-  - $\uparrow q$, $\downarrow p$
-  - More .blue[consumer surplus] and less **deadweight loss**
-  - Less .green[`\\(\pi\\)`] for the monopolist
-
-- .hi-purple[Tradeoff between incentivizing monopolist with profits and reducing harms of monopoly]
-]
-
-.pull-right[
-
-```{r, fig.retina=3}
-mr<-function(x){20-4*x}
-mc<-function(x){4}
-ac<-function(x){(0.25*x-2)^(2)+4}
-cs2<-tribble(
-  ~x, ~y,
-  0, 20,
-  0, 4,
-  8, 4
-)
-
-natural+
-  geom_segment(x=0, xend=4, y=12, yend=12, linetype="dotted", size=1)+
-  geom_segment(x=4, xend=4, y=0, yend=12, linetype="dotted", size=1)+
-  geom_polygon(data=cs2, aes(x=x,y=y), fill="blue", alpha=0.5)+
-  geom_segment(x=8,xend=8,y=0,yend=4, size=1, linetype="dotted")+
-  geom_label(x=8,y=2,label="Opt.")
-```
-]
-
----
-
-# Regulating Natural Monopolies II
+# Regulating Natural Monopolies
 
 .pull-left[
 
@@ -1483,7 +1343,7 @@ natural+
 
 ---
 
-# Regulating Natural Monopolies III
+# Regulating Natural Monopolies II
 
 .center[
 ![:scale 80%](https://www.dropbox.com/s/54bt62h4y54p950/broadbandcompetition.PNG?raw=1)
@@ -1491,7 +1351,3 @@ natural+
 Locations with only 1 (wireline) broadband provider Source: [FCC: Broadband Provider Map](http://broadbandmap.gov/number-of-providers)	
 
 ]
-
----
-
-# The Good of Monopoly?

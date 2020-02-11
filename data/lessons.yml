@@ -36,8 +36,11 @@ lessons:
     reading: "1.7-reading"
     slides: "1.7-slides"
     
-  - title: "Discussion 1: Monopoly"
+  - title: "**Discussion 1: Monopoly**"
     reading: "01-discussion"
+
+  - title: "**Problem Set 1**"
+    assignment: "01-homework"
 
   - title: "1.8 Oligopoly: Cartels"
 

@@ -787,3 +787,163 @@ $$q=300-0.2p$$
 3. How much of Apple's price is markup over (marginal) cost?
 4. What is the price elasticity of demand at Apple's profit-maximizing output?
 ]
+
+---
+
+class: inverse, center, middle
+
+# Responses to Market Conditions
+
+---
+
+# Responses to Market Conditions
+
+.pull-left[
+
+- Firms in different market structures respond to changes in market conditions *differently*
+  - Competitive firm vs. firm with market power
+
+- We'll consider two types of market changes
+  - Changes in costs
+  - Changes in market demand
+]
+
+.pull-right[
+
+]
+
+---
+
+# Change in Costs: A Competitive Firm
+
+.pull-left[
+```{r, fig.retina=3, fig.height=4.5}
+mr<-function(x){10}
+mc<-function(x){2*x}
+ac=function(x){x+10/x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=mr, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9.5,y=mr(9.5)), color = "blue", label="MR(q)", size = 4)+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9.5,y=mc(9.5)), color = "red", label="MC(q)", size = 4)+
+  stat_function(fun=ac, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=0.75,y=ac(0.75)), color = "orange", label="AC(q)", size = 4)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     labels=scales::dollar,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  labs(x = "Output, q",
+       y = "$/Unit")+
+  
+  geom_segment(x=5, xend=5, y=0, yend=10, size=1, linetype="dotted")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)#+
+  #annotate("segment", x = 0.5, xend = 3.5, y = 8, yend = 8, color = "green", size=2, alpha=0.9, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))
+```
+]
+
+.pull-right[
+- Consider any representative firm in a competitive industry
+
+]
+
+---
+
+# Change in Costs: A Competitive Firm
+
+.pull-left[
+```{r, fig.retina=3, fig.height=4.5}
+demand_firm<-function(x){10}
+mc_cc<-function(x){3*x^2-8*x+9}
+ac_cc<-function(x){x^2-4*x+10+10/x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand_firm, geom="line", size=2, color = "blue")+
+  geom_label(aes(x=4.5,y=demand_firm(4.5)), color = "blue", label="Demand", size = 5)+
+    stat_function(fun=mc_cc, geom="line", size=2, color = "red")+
+  geom_label(aes(x=3.5,y=mc_cc(3.5)), color = "red", label="MC(q)", size = 5)+
+    stat_function(fun=ac_cc, geom="line", size=2, color = "orange")+
+  geom_label(aes(x=4.5,y=ac_cc(4.5)), color = "orange", label="MC(q)", size = 5)+
+  geom_segment(x=2.8, xend=2.8, y=0, yend=10, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=NULL,
+                     limits=c(0,5),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=NULL,
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Representative Firm",
+       x = "Quantity",
+       y = "Price")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.pull-right[
+- Consider any representative firm in a competitive industry
+
+]
+
+---
+
+.pull-left[
+```{r, fig.retina=3}
+#C=5x^2+200x+1000
+#MC_m1=function(x){10*x+200}
+#AC_m1=function(x){5*x+200+(1000/x)}
+#AVC_m1=function(x){5*x+200}
+
+MC_m1=function(x){300}
+MC_m2=function(x){500}
+
+#AC_m1=function(x){5*x+200+(1000/x)}
+Demand_m1=function(x){1000-5*x}
+MR_m1=function(x){1000-10*x}
+
+Demand_m2=function(x){500-5*x}
+MR_m2=function(x){500-10*x}
+
+ggplot(data.frame(x=c(0,12)), aes(x=x))+
+  stat_function(fun=MC_m1, geom="line", color="red", size=1)+
+  geom_label(x=80,y=MC_m1(80), color = "red", label="MC(q)")+
+  
+  stat_function(fun=MC_m2, geom="line", color="darkred", size=1)+
+  geom_label(x=80,y=MC_m2(80), color = "darkred", label="MC(q)'")+
+
+  #stat_function(fun=AC_m1, geom="line", color="orange", size=1)+
+  #geom_label(x=5,y=AC_m1(5), color = "orange", label="AC(q)")+
+  stat_function(fun=Demand_m1, geom="line", color="blue", size=1)+
+  geom_label(x=90,y=Demand_m1(90), color = "blue", label="Demand")+
+  stat_function(fun=MR_m1, geom="line", color="purple", size=1)+
+  geom_label(x=90,y=MR_m1(90), color = "purple", label="MR(q)")+
+  
+  # first eq
+  geom_segment(x=70,xend=70,y=0,yend=650,linetype=3, size=1)+
+  geom_segment(x=0,xend=70,y=650,yend=650,linetype=3, size=1)+
+  
+  # second eq
+  geom_segment(x=50,xend=50,y=0,yend=750,linetype=3, size=1)+
+  geom_segment(x=0,xend=50,y=750,yend=750,linetype=3, size=1)+
+
+  scale_x_continuous(breaks=seq(0,100,10),
+                     limits=c(0,100),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks=seq(0,1000,100),
+                     limits=c(0,1000),
+                     expand=c(0,0),
+                     labels=scales::dollar)+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+
+```
+]
+
+.pull-right[
+
+-
+
+]

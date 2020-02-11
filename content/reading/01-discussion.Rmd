@@ -1,0 +1,26 @@
+---
+title: "Discussion 1: Monopoly - Readings"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+*Tuesday, February 18, 2020*
+
+# Required Readings:
+
+- <i class="fas fa-book"></i> Thiel (2014), "Zero to One" Chs. 3-5
+
+This will be the first major reading and discussion that we will have this semester. On Thursday I will explain how we will hold discussions, as well as provide more context for you to interpret the readings.  
+
+# Questions and Tips to Guide Your Reading
+
+In combination with the lectures and all the readings, think about: 
+
+- How can we precisely define monopoly? i.e. how do we "know it when we see it"?
+
+- How are the economic models (i.e. fictional constructions) of "perfect competition" and "perfect monopoly" useful and/or useless for reality?
+
+- Can monopolies emerge (and persist) naturally in the market, or does monopoly always require government intervention?
+
+- Is monopoly "good," "bad," or some combination? 

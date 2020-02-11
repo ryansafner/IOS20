@@ -32,6 +32,12 @@ lessons:
     slides: "1.6-slides"
     
   - title: "1.7 Monopoly III: Pricing"
+    class: "1.7-class"
+    reading: "1.7-reading"
+    slides: "1.7-slides"
+    
+  - title: "Discussion 1: Monopoly"
+    reading: "01-discussion"
 
   - title: "1.8 Oligopoly: Cartels"
 

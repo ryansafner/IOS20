@@ -1,5 +1,5 @@
 ---
-title: "1.4 Perfect Competition II: Ong Run"
+title: "1.4 Perfect Competition II: Long Run"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl

@@ -1,0 +1,26 @@
+---
+title: "1.6 Monopoly III: Pricing"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Tuesday, February 11, 2020* and *Thursday, February 13, 2020*
+
+# Overview
+
+We finish our look at monopoly and market power with a look at how a firm with market power decides how to set multiple prices.
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/1.6-slides.html)
+
+# Readings and Discussion
+
+For next class, we will have our first discussion on monopoly, please see the [relevant readings](01-discussion) and questions. 

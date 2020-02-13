@@ -227,11 +227,6 @@ $$MRP_L=MP_L* MR(q)$$
 $$MRP_L=MP_L*p$$
 where $p$ is the price of the firm's output
 
-- Marginal benefit of hiring labor, $MRP_L$ falls with more labor used
-    - production exhibits diminishing marginal returns to labor
-
-- Choke price for labor demand: price too high for firm to purchase any labor
-
 ]
 
 ```{r, fig.retina=3}
@@ -272,10 +267,10 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 $$MRP_L=MP_L* p$$
 
-- Marginal benefit of hiring labor, $MRP_L$ falls with more labor used
-    - production exhibits diminishing marginal returns to labor
+- Marginal benefit of hiring labor, $MRP_L$ **falls** with more labor used
+    - production exhibits **diminishing marginal returns to labor**!
 
-- Choke price for labor demand: price too high for firm to purchase any labor
+- .hi[Choke price for labor demand]: price too high for firm to purchase any labor
 
 ]
 
@@ -372,8 +367,8 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 - We've seen a falling $MRP_L$, the marginal benefit of hiring labor
 
-- Marginal cost of hiring labor, $w$, remains constant
-  - so long as firm is not a big purchaser in the factor market
+- .hi[Marginal cost of hiring labor], $w$, remains constant
+  - so long as firm is not a big purchaser (has no market power) in the labor market 
 
 ]
 

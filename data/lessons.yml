@@ -36,13 +36,16 @@ lessons:
     reading: "1.7-reading"
     slides: "1.7-slides"
     
+  - title: "1.8 Factor Markets"
+    slides: "1.8-slides"
+
   - title: "**Discussion 1: Monopoly**"
     reading: "01-discussion"
 
   - title: "**Problem Set 1**"
     assignment: "01-homework"
 
-  - title: "1.8 Oligopoly: Cartels"
+  - title: "1.9 Oligopoly: Cartels"
 
   - title: '<span class="fake-header-table">II Competition</span>'
     header: True

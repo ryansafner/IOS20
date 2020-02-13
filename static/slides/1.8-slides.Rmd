@@ -1,0 +1,779 @@
+---
+title: "1.8: Factor Markets"
+subtitle: "ECON 326 · Industrial Organization · Spring 2020"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i> safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/IOs20"><i class="fa fa-github fa-fw"></i> ryansafner/IOs20</a><br> <a href="https://IOs20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i> IOs20.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    df_print: paged
+    #seal: false
+    css: [custom.css, custom-fonts.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      message = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("ggrepel")
+
+theme_slides <- theme_light() + 
+  theme(
+    text = element_text(family = "Fira Sans", size = 24)
+  )
+
+```
+
+# Returning to Firms
+
+.pull-left[
+- Recall a firm uses technology that buys inputs, transforms them, and sells output
+$$q=f(k,l)$$
+  - We classified inputs into the .hi[factors of production]: land, labor, capital
+
+- We *assumed* fixed factor prices
+  - show up in total cost $=wL+rK$
+
+- Where do they come from? .hi[Factor markets]
+]
+
+.pull-right[
+.center[
+![:scale 70%](https://www.dropbox.com/s/zu2c5ijzqvz5sbh/inputoutput.png?raw=1)
+]
+]
+
+---
+
+# Circular Flow
+
+.center[
+![:scale 60%](https://www.dropbox.com/s/fepwbznjbdoa9dk/circularflow.png?raw=1)
+]
+
+---
+
+# Supply and Demand in Factor Markets
+
+.pull-left[
+
+- The price of a factor is governed by the same market forces as output:
+
+- .hi-red[Supply of Factor]: willingness of factor owners to accept and sell/rent their services to firms
+  - landowners, workers, capitalists, resource owners, suppliers
+
+- .hi-blue[Demand for Factor]: willingness of firms to pay for/hire factor services
+]
+
+.pull-right[
+```{r, fig.retina=3}
+demand<-function(x){10-x}
+supply<-function(x){x}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=supply, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply(9)), color = "red", label="Supply", size = 5)+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=c(0,5),
+                       labels=c(0,expression(x)),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,5),
+                     labels=c(0,expression(p[x])),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Factor Market",
+       x = "Quantity of Factor (x)",
+       y = expression(paste("Price of Factor, ", p[x])))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Factor Market Prices and Opportunity Costs
+
+.pull-left[
+
+- .onfire[Factor price represents **opportunity cost** of hiring a factor for an alternative use]
+  - Firms not only pay for direct use of a factor, but also indirectly for *not using* it in an alternate process!
+
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/mb9yaadujqe38fj/disappear.jpg?raw=1)
+]
+]
+---
+
+# Factor Market Prices and Opportunity Costs
+
+.pull-left[
+
+- .green[**Example**]: a producer of hammers buys steel, pays (the opportunity cost) for "taking" the steel away from alternative uses
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/mb9yaadujqe38fj/disappear.jpg?raw=1)
+]
+]
+
+---
+
+# Factor Market Prices and Opportunity Costs
+
+.pull-left[
+
+- .green[**Example**]: e.g. salary for a skilled worker must be high enough to keep them at their current firm, and not be attracted to other firms/industries
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/mb9yaadujqe38fj/disappear.jpg?raw=1)
+]
+]
+
+---
+# Labor Markets
+
+.pull-left[
+- Empirically, about 70% of total cost of production comes from labor
+
+- We'll focus just on the .hi[market for labor] as an example factor market
+
+- Can do the same for *any* factor market 
+  - (e.g. capital, land, materials, etc.)
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/uwqthhm8l339l8f/labormarket.jpg?raw=1)
+]
+]
+
+---
+
+# Derived Demand in Factor Markets
+
+.pull-left[
+- Demand for factors (inputs) is a .hi-purple["derived demand"]:
+    - Firm only demands inputs to the extent they contribute to producing sellable output
+
+- Firm faces a .hi-purple[tradeoff] when **hiring more labor**, as more labor $\Delta L$ creates:
+  1. .hi[Marginal Benefit]: Increases output and thus revenue
+  2. .hi[Marginal Cost]: Increases costs
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/usjcm7s1euszomm/firms.png?raw=1)
+]
+]
+
+---
+
+# Marginal Revenue Product (of Labor)
+
+- Hiring more labor increases output (i.e. labor's .hi-purple[`\\(MP_L\\)`])
+  - Recall: $MP_L=\frac{\Delta q}{\Delta L}$, where $q$ is units of output
+
+--
+
+- Additional output generates (i.e. labor's .hi-purple[`\\(MR(q)\\)`])
+  - Recall: $MR(q)=\frac{\Delta R(q)}{\Delta q}$, where $R(q)$ is total revenue
+--
+
+- Hiring more labor, on the margin, generates a benefit, called the .hi[marginal revenue product of labor, `\\(MRP_L\\)`]:
+$$MRP_L=MP_L* MR(q)$$
+  - i.e. the number of new products a new worker makes times the revenue earned by selling the new products
+
+
+---
+
+# Marginal Revenue Product for *Competitive* Firms
+
+.pull-left[
+
+$$MRP_L=MP_L* MR(q)$$
+
+- For a firm in a .hi[competitive (output) market], firm's $MR(q)=p$, hence:
+
+$$MRP_L=MP_L*p$$
+where $p$ is the price of the firm's output
+
+- Marginal benefit of hiring labor, $MRP_L$ falls with more labor used
+    - production exhibits diminishing marginal returns to labor
+
+- Choke price for labor demand: price too high for firm to purchase any labor
+
+]
+
+```{r, fig.retina=3}
+library("mosaic")
+Demand=function(x){10-2*x}
+MC=function(x){2}
+
+# make plot 
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  # surpluses
+  #geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
+
+  # labels 
+  #geom_text(aes(x=q_PC,y=w,label="N.E.",family = "Yanone Kaffeesatz Regular"),hjust=-0.1, vjust=-0.25, color="black")+
+  annotate(geom = "label", x = 2, y = Demand(2), label = expression("Demand"==MRP[L]),
+           color = "blue", size = 6) +
+  scale_x_continuous(breaks = c(0),
+                     labels = c(0),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,10),
+                     labels = c(0,expression(choke)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity of Labor (L)",
+       y = "Price of Labor (w)")
+```
+
+---
+
+# Marginal Revenue Product for *Competitive* Firms
+
+.pull-left[
+
+$$MRP_L=MP_L* p$$
+
+- Marginal benefit of hiring labor, $MRP_L$ falls with more labor used
+    - production exhibits diminishing marginal returns to labor
+
+- Choke price for labor demand: price too high for firm to purchase any labor
+
+]
+
+```{r, fig.retina=3}
+library("mosaic")
+Demand=function(x){10-2*x}
+MC=function(x){2}
+
+# make plot 
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  # surpluses
+  #geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
+
+  # labels 
+  #geom_text(aes(x=q_PC,y=w,label="N.E.",family = "Yanone Kaffeesatz Regular"),hjust=-0.1, vjust=-0.25, color="black")+
+  annotate(geom = "label", x = 2, y = Demand(2), label = expression("Demand"==MRP[L]),
+           color = "blue", size = 6) +
+  scale_x_continuous(breaks = c(0),
+                     labels = c(0),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,10),
+                     labels = c(0,expression(choke)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity of Labor (L)",
+       y = "Price of Labor (w)")
+```
+
+---
+
+# A Competitive *Factor* Market
+
+.pull-left[
+```{r, fig.retina=3, fig.height=5}
+demand<-function(x){10-x}
+supply<-function(x){x}
+supply_firm<-function(x){5}
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=supply_firm, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply_firm(9)), color = "red", label="Supply", size = 5)+
+    scale_x_continuous(breaks=c(0),
+                       labels=c(0),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,5),
+                     labels=c(0,"w*"),
+                     limits=c(0,10),                   
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Representative Firm",
+       x = "Quantity of Labor (L)",
+       y = "Price of Labor, (w)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+.pull-right[
+```{r, fig.retina=3, fig.height=5}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=supply, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply(9)), color = "red", label="Supply", size = 5)+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=c(0,5),
+                       labels=c(0,"L*"),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,5),
+                     labels=c(0,"w*"),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Labor Market",
+       x = "Quantity of Labor (L)",
+       y = "Price of Labor, (w)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+- If the .hi[*factor* market is competitive], labor supply for an individual firm is *perfectly elastic* at the market price of labor $(w^*)$
+
+---
+
+# Labor Supply and Firm Demand
+
+.pull-left[
+
+- We've seen a falling $MRP_L$, the marginal benefit of hiring labor
+
+- Marginal cost of hiring labor, $w$, remains constant
+  - so long as firm is not a big purchaser in the factor market
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MC, geom="line", size=2, color="red")+
+  annotate(geom = "label", x = 2, y = Demand(2), label = expression("Demand"==MRP[L]),
+           color = "blue", size = 6) +
+  annotate(geom = "label", x = 8, y = 2, label = expression("Supply" == w), color="red", size=6)+
+  scale_x_continuous(breaks = c(0),
+                     labels = c(0),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,10),
+                     labels = c(0,expression(choke)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity of Labor (L)",
+       y = "Price of Labor (w)")
+```
+]
+
+
+---
+
+# Labor Supply and Firm Demand
+
+.pull-left[
+- At low amounts of labor, marginal benefit $(MRP_L) < w$ marginal cost
+
+- Firm will hire more labor
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MC, geom="line", size=2, color="red")+
+    annotate(geom = "label", x = 2, y = Demand(2), label = expression("Demand"==MRP[L]),
+           color = "blue", size = 6) +
+  annotate(geom = "label", x = 8, y = 2, label = expression("Supply" == w), color="red", size=6)+
+  annotate("segment", x = 1, xend = 3, y = 3, yend = 3, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+  scale_x_continuous(breaks = c(0),
+                     labels = c(0),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,10),
+                     labels = c(0,expression(choke)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity of Labor (L)",
+       y = "Price of Labor (w)")
+```
+]
+
+---
+
+# Labor Supply and Firm Demand
+
+.pull-left[
+
+- At high amounts of labor, marginal benefit $(MRP_L) < w$ marginal cost
+
+- Firm will hire less labor
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MC, geom="line", size=2, color="red")+
+  annotate("segment", x = 9, xend = 4, y = 3, yend = 3, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+    annotate(geom = "label", x = 2, y = Demand(2), label = expression("Demand"==MRP[L]),
+           color = "blue", size = 6) +
+  annotate(geom = "label", x = 8, y = 2, label = expression("Supply" == w), color="red", size=6)+
+  scale_x_continuous(breaks = c(0),
+                     labels = c(0),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,10),
+                     labels = c(0,expression(choke)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity of Labor (L)",
+       y = "Price of Labor (w)")
+```
+]
+
+---
+
+# Labor Supply and Firm Demand
+
+.pull-left[
+
+- Firm hires $L^*$ optimal amount of labor where $w=MRP_L$ 
+
+- i.e. marginal cost of labor $=$ marginal benefit of labor
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+library("mosaic")
+Demand=function(x){10-2*x}
+MC=function(x){2}
+
+# make plot 
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=2, color="blue")+
+  stat_function(fun=MC, geom="line", size=2, color="red")+
+  # surpluses
+  #geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
+
+  # labels 
+  geom_segment(aes(x=4,y=0),xend=4,yend=2,linetype=3)+
+  geom_point(aes(x=4,y=2), color="black", size =3 )+ 
+  #geom_text(aes(x=q_PC,y=w,label="N.E.",family = "Yanone Kaffeesatz Regular"),hjust=-0.1, vjust=-0.25, color="black")+
+  annotate(geom = "label", x = 2, y = Demand(2), label = expression("Demand"==MRP[L]),
+           color = "blue", size = 6) +
+  annotate(geom = "label", x = 8, y = 2, label = expression("Supply" == w),
+           color = "red", size = 6) +
+  #annotate(geom = "label", x = 1.3, y = 5, label = "Consumer Surplus",
+  #         color = "blue", size = 4.5) +
+  scale_x_continuous(breaks = c(0,4),
+                     labels = c(0,expression(L^{"*"})),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,2,10),
+                     labels = c(0,expression(w^{"*"}),expression(choke)),
+                     limits = c(0,10),
+                     expand=c(0,0))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
+  labs(x = "Quantity of Labor (L)",
+       y = "Price of Labor (w)")
+```
+]
+
+---
+
+# Example
+
+.content-box-green[
+.green[**Example**]: Victoria’s Tours is a travel company that offers guided tours of nearby mountain biking trails. Its marginal revenue product of labor is given by $MRP_L = 1,000 – 40l$, where $l$ is the number of tour-guide weeks it hires and $MRP_L$ is measured in dollars per tour-guide week. The going market wage for Victoria’s Tours is $600 per tour-guide week.
+
+]
+
+1. What is the optimal amount of labor for Victoria’s Tours to hire?
+
+2. At and above what market wage would Victoria’s Tours not want to hire anyone?
+
+3. What is the most labor Victoria’s Tours would ever hire, given its marginal revenue product? 
+
+---
+
+class: inverse, center, middle
+
+# Back to Economic Rents
+
+---
+
+
+# Economic Rent I
+
+.pull-left[
+
+- Recall .hi-red[supply] is the **minimum willingness to accept**, the minimum price necessary to bring a resource to market
+
+- But all (equivalent) labor is paid the market wage, $w^*$ determined by market labor supply and labor demand
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+
+rent<-tribble(
+  ~x, ~y,
+  0, 0,
+  5, 5,
+  0, 5
+)
+# make plot 
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=rent, aes(x=x,y=y, fill="red"), alpha=0.5)+ #CS
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=supply, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply(9)), color = "red", label="Supply", size = 5)+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=c(0,5),
+                       labels=c(0,"L*"),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,5),
+                     labels=c(0,"w*"),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Labor Market",
+       x = "Quantity of Labor (L)",
+       y = "Price of Labor, (w)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Economic Rent I
+
+.pull-left[
+
+- Some workers would have accepted a job for less than $w^*$
+
+- Labor earns .hi[economic rent] in excess of what is needed to bring it into the market (its opportunity cost)
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+
+rent<-tribble(
+  ~x, ~y,
+  0, 0,
+  5, 5,
+  0, 5
+)
+# make plot 
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=rent, aes(x=x,y=y, fill="red"), alpha=0.5)+ #CS
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=supply, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply(9)), color = "red", label="Supply", size = 5)+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=c(0,5),
+                       labels=c(0,"L*"),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,5),
+                     labels=c(0,"w*"),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Labor Market",
+       x = "Quantity of Labor (L)",
+       y = "Price of Labor, (w)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+# Economic Rent II
+
+.pull-left[
+
+- Consider a factor (such as land) for which the supply is perfectly inelastic (e.g. a fixed supply)
+
+- Then the **entire value of the land is economic rent**!
+
+- .hi-purple[The *less* elastic the supply of a factor, the *more* economic rent it generates!]
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3}
+# make plot 
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0,xmax=5,ymin=0,ymax=5, fill="red", alpha=0.3)+ #CS
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  geom_vline(xintercept=5, size=2, color = "red")+
+    geom_label(aes(x=5,y=10), color = "red", label="Supply", size = 5)+
+  geom_segment(x=5, xend=5, y=0, yend=5, size=1, linetype="dotted")+
+  geom_segment(x=0, xend=5, y=5, yend=5, size=1, linetype="dotted")+
+    scale_x_continuous(breaks=c(0,5),
+                       labels=c(0,"T*"),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=c(0,5),
+                     labels=c(0,"r*"),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(title = "Land Market",
+       x = "Quantity of Land (T)",
+       y = "Price of Land, (r)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+```
+]
+
+---
+
+class: inverse, center, middle
+
+# Monopsony Power
+
+---
+
+# Monosony
+
+.pull-left[
+
+- What if the firm has .hi-purple[market power in a factor market]?
+
+- Consider extreme example: .hi[monopsony]: a factor market with a **single buyer**
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/6t0gb5f38aoe7pn/monopolyman.jpg?raw=1)
+]
+]
+
+---
+
+# Monosony and Market Supply of Labor
+
+.pull-left[
+```{r, fig.retina=3}
+supply=function(x){2+2*x}
+
+graph<-ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=supply, geom="line", size=2, color = "red")+
+    geom_label(aes(x=9,y=supply(9)), color = "red", label="Supply", size = 5)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,20,2),
+                     limits=c(0,20),
+                     expand=expand_scale(mult=c(0,0.1)),
+                     labels = function(x){paste("$", x, sep="")})+
+  labs(x = "Labor (L)",
+       y = "Wage (w)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
+graph
+```
+]
+
+.pull-right[
+
+- Market power in buying labor implies that the firm faces the **whole market factor supply curve** for labor
+
+- Market supply is upward sloping
+
+- .hi-red[Factor (inverse) supply] describes minimum price workers are willing to accept to work
+
+]
+
+---
+
+# Monopsony and Marginal Cost of Labor
+
+
+- If monopsonist wants to hire more labor, $\Delta L$, its marginal costs would change by:
+
+.center[
+
+$MC(L)=$.green[`\\(w \Delta L\\)`] $+$ .red[`\\(L \Delta w\\)`]
+
+]
+
+--
+
+- .green[Output effect]: increases number of labor hired $(\Delta L)$ times wage $w$ per worker
+
+--
+
+- .red[Price effect]: raises wage per worker $(\Delta w)$ on *all* workers hired $(L)$
+
+--
+
+- Divide both sides by $\Delta L$ to get .hi-purple[Marginal Cost of Labor, `\\(MC(L)\\)`]:
+
+$$\frac{\Delta C(L)}{\Delta L}=MC(L)=w+\frac{\Delta w}{\Delta L}L$$
+
+--
+
+.small[
+- Compare: supply for a **price-taking** firm is perfectly elastic: $\frac{\Delta w}{\Delta}L=0$, so we saw $MC(q)=w$!
+]
+

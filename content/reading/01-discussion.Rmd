@@ -9,7 +9,7 @@ csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 
 # Required Readings:
 
-- <i class="fas fa-book"></i> Thiel (2014), *Zero to One* Chs. 3-5^[Sorry about the quality of the PDF if that is what you use to read it. The required reading starts on page 17, "All Happy Comapanies Are Different", through the end of the document.]
+- [<i class="fas fa-book"></i> Thiel (2014), *Zero to One* Chs. 3-5](/readings/Thiel-Masters-2014-Chs1-5.pdf)^[Sorry about the quality of the PDF if that is what you use to read it. The required reading starts on page 17, "All Happy Comapanies Are Different", through the end of the document.]
 
 You are required to read chapters 3-5, though I highly recommend you read chapters 1 and 2 as well. This is a very short (and hopefuly interesting and readable) book, so reading many chapters from it is not as daunting as it sounds!
 

@@ -9,9 +9,15 @@ csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 
 # Required Readings:
 
-- <i class="fas fa-book"></i> Thiel (2014), "Zero to One" Chs. 3-5
+- <i class="fas fa-book"></i> Thiel (2014), ["Zero to One"](/readings/Thiel-Masters-2014-Chs1-5.pdf) Chs. 3-5
 
-This will be the first major reading and discussion that we will have this semester. On Thursday I will explain how we will hold discussions, as well as provide more context for you to interpret the readings.  
+You are required to read chapters 3-5, though I highly recommend you read chapters 1 and 2 as well. This is a very short (and hopefuly interesting and readable) book, so reading many chapters from it is not as daunting as it sounds!
+
+Focus on what Thiel has to say about competition and monopoly, and look for things that sound different from what we learn in our textbook/blackboard models (i.e., that we have been covering). 
+
+This will be the first major reading and discussion that we will have this semester. It will be a little while until our next one (again, we are still stuck in the "theory" $\frac{1}{3}$ of the course).
+
+Before we begin on Tuesday, I will explain how we will hold discussions, as well as provide more context for you to interpret the readings. **Before class Tuesday, please email me 2-3 questions about the reading (that somehow indicate that you've read it).**^[So not questions that can, for example, be answered in a sentence!]
 
 # Questions and Tips to Guide Your Reading
 
@@ -23,4 +29,12 @@ In combination with the lectures and all the readings, think about:
 
 - Can monopolies emerge (and persist) naturally in the market, or does monopoly always require government intervention?
 
-- Is monopoly "good," "bad," or some combination? 
+- Is monopoly "good," "bad," or some combination?
+
+- What are the benefits of monpoly, according to Thiel?
+
+- Where does creativity and innovation come from?
+
+- What's the difference between "first-mover advantage" and "last-mover advantage," according to Thiel?
+
+- How do you think we should view eccentric billionaires spending millions of money on things like life extension, cryogenics, space tourism, etc?

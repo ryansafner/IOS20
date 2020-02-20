@@ -41,6 +41,8 @@ lessons:
 
   - title: "1.8 Factor Markets"
     slides: "1.8-slides"
+    class: "1.8-class"
+    reading: "1.8-reading"
 
   - title: "**Problem Set 1** due Thurs Feb 27"
 

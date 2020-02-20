@@ -1029,7 +1029,7 @@ $$\frac{\Delta C(L)}{\Delta L}=MC(L)=w+\frac{\Delta w}{\Delta L}L$$
 - Compare: supply for a **price-taking** firm is perfectly elastic: $\frac{\Delta w}{\Delta L}=0$, so we saw $MC(L)=w$!
 ]
 
-.footnote[Note: this is the same equation as Marginal Revenue for a monopoly! Just replace $p$ with $w$ and $Q$ with $L$.]
+.footnote[Note: this is the same equation as Marginal Revenue for a monopoly! Just replace `\\(p\\)` with `\\(w\\)` and `\\(Q\\)` with `\\(L\\)`.]
 
 ---
 
@@ -1043,7 +1043,7 @@ $$w=a+bL$$
 --
 
 - Marginal cost of labor again is defined as:
-$$MC(L)=w+\frac{\Delta q}{\Delta L}L$$
+$$MC(L)=w+\frac{\Delta w}{\Delta L}L$$
 
 --
 
@@ -1368,9 +1368,6 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   stat_function(fun=MR_l, geom="line", color="purple", size=1)+
   geom_label(x=1.75,y=MR_l(1.75), color = "purple", label="MR(L)")+
   
-  stat_function(fun=MC_mon, geom="line", color="darkred", size=1)+
-  geom_label(x=1.75,y=MC_mon(1.75), color = "darkred", label="MC(L)")+
-
   geom_segment(x=1.325,y=0,xend=1.325,yend=7.325,linetype=3, size=1)+
   geom_segment(x=0,y=7.325,xend=1.325,yend=7.325, linetype=3, size=1)+
   
@@ -1406,57 +1403,27 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 - .hi-green[Example]: A labor union
 
 - Faces entire market demand for labor, and thus its marginal revenue curve too
+
+- Acts like a monopolist, restricts $L_u < L_c$ to push up $w_u > w_c$
 ]
 
 ---
 
-# Bilateral Monopoly?
+# The Problem of Bilateral Monopoly
 
 .pull-left[
-```{r, fig.retina=3}
 
-ggplot(data.frame(x=c(0,10)), aes(x=x))+
-  #geom_polygon(data=dwl, aes(x=x,y=y), fill="black",alpha=0.5)+ #dwl
-  stat_function(fun=supply, geom="line", color="red", size=1)+
-  geom_label(x=3.5,y=supply(3.5), color = "red", label="MC(L)")+
-  stat_function(fun=Demand, geom="line", color="blue", size=1)+
-  geom_label(x=4,y=Demand(4), color = "blue", label="Market Demand")+
-  stat_function(fun=MR_l, geom="line", color="purple", size=1)+
-  geom_label(x=1.75,y=MR_l(1.75), color = "purple", label="MR(L)")+
-  geom_segment(x=1.325,y=0,xend=1.325,yend=7.325,linetype=3, size=1)+
-  geom_segment(x=0,y=7.325,xend=1.325,yend=7.325, linetype=3, size=1)+
-  
-  # competitive
-  geom_segment(x=0,y=6,xend=2,yend=6,linetype=3, size=1)+
-  geom_segment(x=2,y=0,xend=2,yend=6, linetype=3, size=1)+
+- What if **both** sides of the market **have market power**?
+  - A downstream .hi-blue[monopsonist buyer] vs. an upstream .hi-red[monopolist seller]
 
-  # arrows
-  
-  annotate("segment", x = 2, xend = 1.325, y = 2, yend = 2, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
+- This is the problem of .hi[bilateral monopoly]
 
-  annotate("segment", x = 0.5, xend = 0.5, y = 6, yend = 7.325, colour = "purple", size=2, alpha=1, arrow=arrow(length=unit(0.5,"cm"), ends="last", type="closed"))+
-
-  scale_x_continuous(breaks=c(1.325,2),
-                     limits=c(0,5),
-                     labels=c(expression(L[u]),expression(L[c])),
-                     expand=c(0,0))+
-  scale_y_continuous(breaks=c(6,7.325),
-                     limits=c(0,10),
-                     expand=c(0,0),
-                     labels=c(expression(w[c]),expression(w[u])))+
-  labs(x = "Labor (L)",
-       y = "Wage (w)")+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)
-
-```
+- We'll talk about this later
+  - One solution is .hi-purple[vertical integration]: merge into a single firm across both markets
 ]
 
 .pull-right[
-
-- If seller/s of labor has market power, can act like a monopolist on the labor market
-
-- .hi-green[Example]: A labor union
-
-- Faces entire market demand for labor, and thus its marginal revenue curve too
+.center[
+![](https://www.dropbox.com/s/yxmwhodig74frfs/negotiation.jpg?raw=1)
 ]
----
+]

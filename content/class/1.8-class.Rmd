@@ -1,0 +1,26 @@
+---
+title: "1.8 Factor Markets"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Thursday, February 20, 2020*
+
+# Overview
+
+Today we cover a topic that often does not get covered in microeconomics courses, but is important nonetheless for our purposes: markets for factors of production (e.g. land, labor, capital, supplies, etc). We discuss what determines prices in these markets, and how they vary with monopoly power and **monopsony power** (a buyer with market power). We primarily focus on **labor markets** as the main factor market. 
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/1.8-slides.html)
+
+# Homework 1 due February 27
+
+Homework 1 will be posted and is due for Thursday, February 27. 

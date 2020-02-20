@@ -1,0 +1,22 @@
+---
+title: "1.8. Factor Markets - Readings"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Required Readings:
+
+- NONE
+
+# Recommended Readings:
+
+This is a part of our review of major production concepts from Microeconomics. You should consider looking at the following textbooks if you are rusty or want to know more about these concepts:   
+
+- <i class="fas fas fa-book"></i> Ch. 4 (Monopsony) in @Carlton
+
+Unfortunately, Church and Ware do not cover factor markets or monopsony power. If you have any old textbooks from ECON 206 or 306, you might look for a chapter on Factor Markets and/or Monpsony (sometimes a section of a Monopoly chapter, or part of a Factor Markets chapter.) 
+
+Much of my analysis and examples come from the textbook I use in ECON 306:
+
+- <i class="fas fas fa-book"></i> Ch. 13  in Goolsbee, Syverson, and Levitt, 2013, *Microeconomics*

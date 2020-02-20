@@ -1029,8 +1029,6 @@ $$\frac{\Delta C(L)}{\Delta L}=MC(L)=w+\frac{\Delta w}{\Delta L}L$$
 - Compare: supply for a **price-taking** firm is perfectly elastic: $\frac{\Delta w}{\Delta L}=0$, so we saw $MC(L)=w$!
 ]
 
-.footnote[Note: this is the same equation as Marginal Revenue for a monopoly! Just replace `\\(p\\)` with `\\(w\\)` and `\\(Q\\)` with `\\(L\\)`.]
-
 ---
 
 # Monopsony and Marginal Cost of Labor II

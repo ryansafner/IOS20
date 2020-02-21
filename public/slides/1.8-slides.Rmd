@@ -1029,8 +1029,6 @@ $$\frac{\Delta C(L)}{\Delta L}=MC(L)=w+\frac{\Delta w}{\Delta L}L$$
 - Compare: supply for a **price-taking** firm is perfectly elastic: $\frac{\Delta w}{\Delta L}=0$, so we saw $MC(L)=w$!
 ]
 
-.footnote[Note: this is the same equation as Marginal Revenue for a monopoly! Just replace `\\(p\\)` with `\\(w\\)` and `\\(Q\\)` with `\\(L\\)`.]
-
 ---
 
 # Monopsony and Marginal Cost of Labor II
@@ -1219,7 +1217,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   scale_y_continuous(breaks=c(4.625,6),
                      limits=c(0,10),
                      expand=c(0,0),
-                     labels=c(expression(w[c]),expression(w[m])))+
+                     labels=c(expression(w[m]),expression(w[c])))+
   labs(x = "Labor (L)",
        y = "Wage (w)")+
   theme_classic(base_family = "Fira Sans Condensed", base_size=20)

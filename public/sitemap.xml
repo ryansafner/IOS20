@@ -78,6 +78,11 @@
   </url>
   
   <url>
+    <loc>https://ios20.classes.ryansafner.com/assignment/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ios20.classes.ryansafner.com/assignments/</loc>
   </url>
   
@@ -92,6 +97,10 @@
   
   <url>
     <loc>https://ios20.classes.ryansafner.com/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ios20.classes.ryansafner.com/assignment/01-problem-set/</loc>
   </url>
   
   <url>

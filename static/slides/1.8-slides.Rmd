@@ -1217,7 +1217,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
   scale_y_continuous(breaks=c(4.625,6),
                      limits=c(0,10),
                      expand=c(0,0),
-                     labels=c(expression(w[c]),expression(w[m])))+
+                     labels=c(expression(w[m]),expression(w[c])))+
   labs(x = "Labor (L)",
        y = "Wage (w)")+
   theme_classic(base_family = "Fira Sans Condensed", base_size=20)

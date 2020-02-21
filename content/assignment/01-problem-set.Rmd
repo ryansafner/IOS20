@@ -10,7 +10,7 @@ library(pander)
 source(file.path(here::here(), "lib", "graphics.R"))
 ```
 
-- [<i class="fas fa-file-pdf"></i> `Download as PDF`](/homeworks/06-problem-set-pdf.pdf)
+- [<i class="fas fa-file-pdf"></i> `Download as PDF`](/homeworks/01-problem-set-pdf.pdf)
 
 Please write your answers to the following questions on a piece of paper, or download and print a PDF copy (link above) to write on. You may also type your answers and print out a hard copy.
 
@@ -22,7 +22,7 @@ You may work together (and I highly encourage that) but you must turn in your ow
 
 ## Question 1
 
-1. In a competitive industry, why are economic profits normal (zero) in the long run? What about if firms are not identical, and have different costs?
+In a competitive industry, why are economic profits normal (zero) in the long run? What about if firms are not identical, and have different costs?
 
 ## Question 2
 

@@ -47,7 +47,8 @@ lessons:
   - title: "**Problem Set 1** due Thurs Feb 27"
     assignment: "01-problem-set"
     
-  - title: "1.9 Oligopoly: Cartels"
+  - title: "1.9 Imperfect Competition"
+    slides: "1.9-slides"
 
   - title: '<span class="fake-header-table">II Competition</span>'
     header: True

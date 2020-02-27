@@ -54,7 +54,8 @@ lessons:
     header: True
 
   - title: "2.1 Bertrand Competition"
-
+    slides: "2.1-slides"
+    
   - title: "2.2 Cournot Competition"
 
   - title: "2.3 Stackelberg Competition"

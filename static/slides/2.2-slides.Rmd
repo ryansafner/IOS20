@@ -951,7 +951,7 @@ q_i^*&=30-0.5q_{sa}\\
 --
 - Saudi Arabia knows exactly how Iran will respond to its output
 
-$$q_i^*&=30-0.5q_{sa}$$
+$$q_i^*=30-0.5q_{sa}$$
 
 --
 

@@ -57,7 +57,8 @@ lessons:
     slides: "2.1-slides"
     
   - title: "2.2 Cournot Competition"
-
+    slides: "2.2-slides"
+    
   - title: "2.3 Stackelberg Competition"
 
   - title: "2.4 Contestable Markets"

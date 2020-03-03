@@ -338,7 +338,7 @@ iran<-ggplot(tibble(x=c(0,10)), aes(x=x))+
   theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
   labs(x = expression(paste("Iran's Output, ", q[I]), sep=" "),
        y = expression(paste("Saudi Arabia's Output, ", q[SA]), sep=" "))
-saudi
+iran
 ```
 ]
 
@@ -571,9 +571,9 @@ saudi+
 
 .pull-right[
 
-- **Cournot Competition**: each firm produces 20 and earns $1,200
+- .hi-purple[Cournot Competition]: each firm produces 20 and earns $1,200
 
-- **Collusion**: each firm produces 15 and earns $1,400 
+- .hi-orange[Cournot Collusion]: each firm produces 15 and earns $1,400 
 
 ]
 
@@ -601,9 +601,9 @@ saudi+
 
 .pull-right[
 
-- **Cournot Competition**: each firm produces 20 and earns $1,200
+- .hi-purple[Cournot Competition]: each firm produces 20 and earns $1,200
 
-- **Collusion**: each firm produces 15 and earns $1,400 
+- .hi-orange[Cournot Collusion]: each firm produces 15 and earns $1,400 
 
 - But is collusion a Nash equilibrium?
 ]
@@ -731,7 +731,7 @@ ggplot(tibble(x=c(0,10)), aes(x=x))+
 
 # Bertrand Competition for our Example
 
-- Imagine *Bertrand* competition between Saudi Arabia and Iran instead (price competition)
+- Imagine .hi[Bertrand competition] between Saudi Arabia and Iran instead (price competition)
 
 - **Nash equilibrium**: Firms will set $P=MC$, so:
 

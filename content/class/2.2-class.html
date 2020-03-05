@@ -1,0 +1,45 @@
+---
+title: "2.2 Cournot Competition"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
+
+<h2>Contents</h2>
+<div id="TOC">
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#slides">Slides</a></li>
+<li><a href="#appendix">Appendix</a><ul>
+<li><a href="#cournot-theorem">Cournot Theorem</a></li>
+</ul></li>
+</ul>
+</div>
+
+<p><em>Thursday, February 20, 2020</em></p>
+<h2 id="overview">Overview</h2>
+<p>Today we cover a topic that often does not get covered in microeconomics courses, but is important nonetheless for our purposes: markets for factors of production (e.g. land, labor, capital, supplies, etc). We discuss what determines prices in these markets, and how they vary with monopoly power and <strong>monopsony power</strong> (a buyer with market power). We primarily focus on <strong>labor markets</strong> as the main factor market.</p>
+<h2 id="slides">Slides</h2>
+<ul>
+<li><a href="/slides/1.8-slides.html"><i class="fas fa-external-link-square-alt"></i> Lecture Slides</a></li>
+</ul>
+<h2 id="appendix">Appendix</h2>
+<h3 id="cournot-theorem">Cournot Theorem</h3>
+<p>For any arbitrary number of firms <span class="math inline">\(N&gt;1\)</span>
+- linear (inverse) market demand: <span class="math inline">\(P=a-bQ\)</span>
+- constant identical marginal costs: <span class="math inline">\(C(q_i)=c\)</span></p>
+<p>Then each firm <span class="math inline">\(i\)</span> produces <span class="math display">\[q_i &amp; = \frac{Q}{N} = \frac{a-c}{b(N+1)}\]</span>, setting a market-clearing price of <span class="math display">\[p=a-b(Nq)=\frac{a+Nc}{N+1}\]</span>, and each firm earns profits of <span class="math display">\[\pi_i = \left(\frac{a-c}{N+1} \right)^2 \left(\frac{1}{b}\right)\]</span></p>
+<p>.hi<a href="#cournot-theorem">Cournot Theorem</a>: with no fixed costs, as the number of firms in the market increases, market output <span class="math inline">\(Nq\)</span> goes to the competitive level, and price converges to <span class="math inline">\(c\)</span>.
+<span class="math display">\[\lim_{N \to \infty} p = c\]</span>
+With fixed costs, the number of firms in the market is endogenously determined by the fixed costs (competitors enter until the marginal firm’s profit is zero). Let fixed costs be <span class="math inline">\(f\)</span>, then:</p>
+<p><span class="math display">\[N=\frac{a-c}{\sqrt{fb}}-1\]</span>
+and each firm will produce <span class="math inline">\(q=\frac{\sqrt{fb}}{b}\)</span>.</p>

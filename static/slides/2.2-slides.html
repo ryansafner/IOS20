@@ -555,6 +555,29 @@ Q&amp;=q_1+q_2\\
 
 ---
 
+# Cournot Competition
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/ktz9roh3jds8myp/Cournot.jpg?raw=1)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+- .hi[Cournot Theorem]: as the number of firms `\((N)\)` in the market increases, market output `\(Nq\)` goes to the competitive level, and price converges to `\(c\)`.
+  - Assuming no fixed costs, and an identical constant marginal cost for firms
+
+- .hi-purple[More (fewer) firms reduce (increase) market distortions from market power]
+
+]
+
+---
+
 # Cournot Competition on Moblab
 
 .center[
@@ -598,193 +621,6 @@ Q&amp;=q_1+q_2\\
 ![](https://www.dropbox.com/s/7kj9inpjs0h8kwt/cournotmoblab.png?raw=1)
 ]
 ]
-
----
-
-class: inverse, center, middle
-
-# Stackelberg Competition
-
----
-
-# Stackelberg Competition
-
-.left-column[
-.center[
-![:scale 80%](https://www.dropbox.com/s/62dj39fuv7v4jvd/stackelberg.jpeg?raw=1)
-
-.smaller[
-Henrich von Stackelberg
-
-1905-1946
-]
-]
-]
-.right-column[
-- .hi["Stackelberg competition"]: Cournot-style competition, two (or more) firms compete on **quantity** to sell the **same good**
-
-- Firms set their quantities **sequentially**
-  - **Leader** produces first
-  - **Follower** produces second
-
-- Firms' joint output determines the market price faced by all firms
-]
-
----
-
-# Stackelberg Competition: Example
-
-.content-box-green[
-.hi-green[Example]: Return to Saudi Arabia `\((sa)\)` and Iran `\((i)\)`, again with the market (inverse) demand curve:
-`$$\begin{align*}
-P&amp;=200-3Q\\
-Q&amp;=q_{sa}+q_i\\
-\end{align*}$$`
-
-]
-
---
-
-- We solved for Saudi Arabia and Iran's reaction functions:
-`$$\begin{align*}
-q_{sa}^*&amp;=30-0.5q_i\\
-q_i^*&amp;=30-0.5q_{sa}\\
-\end{align*}$$`
-
-
----
-
-# Stackelberg Competition: Example
-
-`$$\begin{align*}
-q_{sa}^*&amp;=30-0.5q_i\\
-q_i^*&amp;=30-0.5q_{sa}\\
-\end{align*}$$`
-
-- Suppose Saudi Arabia is the **Stackelberg leader** and sets its output first
-
---
-- Saudi Arabia knows exactly how Iran will respond to its output
-
-`$$q_i^*=30-0.5q_{sa}$$`
-
---
-
-- Saudi Arabia, as leader, essentially faces entire market demand
-  - But can't act like a pure monopolist!
-  - knows that follower will still produce, which pushes down market price!
-
----
-
-# Stackelberg Competition: Example
-
-- Substitute follower's reaction function into (inverse) market demand function
-
---
-
-`$$\begin{align*}
-P&amp;=200-3q_{sa}-3(30-0.5q_{sa})\\
-P&amp;=110-1.5q_{sa}\\
-\end{align*}$$`
-
---
-
-- Now find `\(MR(q)\)` for Saudi Arabia from this
-
---
-
-`$$MR_{sa}=110-3q_{sa}$$`
-
----
-
-# Stackelberg Competition: Example
-
-- Now Saudi Arabia can find its optimal quantity:
-
-`$$\begin{align*}
-MR&amp;=MC\\
-110-3q_{sa}&amp;=20\\
-30&amp;=q_{sa}^*\\
-\end{align*}$$`
-
---
-
-- Iran will respond and produce:
-
-`$$\begin{align*}
-q_i^*&amp;=30-0.5q_{sa}\\
-q_i^*&amp;=30-0.5(30)\\
-q_i^*&amp;=15\\
-\end{align*}$$`
-
----
-
-# Stackelberg Equilibrium, Graphically
-
-.pull-left[
-&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-15-1.png" width="504" style="display: block; margin: auto;" /&gt;
-]
-
-.pull-right[
-
-- **Stackelberg Nash Equilibrium**: `$$\big( \color{red}{30}, \color{blue}{15} \big)$$`
-
-]
-
----
-
-# Stackelberg Competition: Example
-
-- With `\(q^*_{sa}=30\)` and `\(q^*_i=15\)`, this sets a market price of
-
-`$$\begin{align*}
-P&amp;=200-3(45)\\
-P&amp;=65\\
-\end{align*}$$`
-
---
-
-.pull-left[
-- Saudi Arabia's profit would be:
-
-`$$\begin{align*}
-\pi_{sa}&amp;=30(65-20)\\
-\pi_{sa}&amp;=\$1,350\\
-\end{align*}$$`
-
-]
-
---
-
-.pull-right[
-- Iran's profit would be:
-
-`$$\begin{align*}
-\pi_{i}&amp;=15(65-20)\\
-\pi_{i}&amp;=\$675\\
-\end{align*}$$`
-
-]
-
----
-
-# Stackelberg Equilibrium, The Market
-
-&lt;img src="2.2-slides_files/figure-html/unnamed-chunk-16-1.png" width="504" style="display: block; margin: auto;" /&gt;
-
----
-
-# Cournot vs. Stackelberg Competition
-
-.center[
-![](https://www.dropbox.com/s/19qs6st61ri235d/cournot-stackelberg-compare.png?raw=1)
-
-]
-- **Leader** Saudi Arabia `\(\uparrow\)` its output and `\(\uparrow\)` profits
-
-- **Follower** Iran forced to `\(\downarrow\)` its output and accept `\(\downarrow\)` profits
-
----
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

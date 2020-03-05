@@ -147,7 +147,9 @@ p&=a-b(q_1+q_2)\\
 p&=\underbrace{(a-bq_2)}_{intercept}-\underbrace{b}_{slope}q_1\\
 \end{align*}$$
 
-- Firm 2 will produce some amount, $q_2$. Firm 1 takes this as given, to find its own residual demand
+- Firm 2 will produce some amount, $\color{purple}{q_2}$. 
+
+- Firm 1 takes this as given, to find its own residual demand
   - Intercept: $a-bq_2$
   - Slope: $b$ (in front of $q_1)$
 
@@ -336,7 +338,7 @@ iran<-ggplot(tibble(x=c(0,10)), aes(x=x))+
   theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
   labs(x = expression(paste("Iran's Output, ", q[I]), sep=" "),
        y = expression(paste("Saudi Arabia's Output, ", q[SA]), sep=" "))
-saudi
+iran
 ```
 ]
 
@@ -569,9 +571,9 @@ saudi+
 
 .pull-right[
 
-- **Cournot Competition**: each firm produces 20 and earns $1,200
+- .hi-purple[Cournot Competition]: each firm produces 20 and earns $1,200
 
-- **Collusion**: each firm produces 15 and earns $1,400 
+- .hi-orange[Cournot Collusion]: each firm produces 15 and earns $1,400 
 
 ]
 
@@ -599,9 +601,9 @@ saudi+
 
 .pull-right[
 
-- **Cournot Competition**: each firm produces 20 and earns $1,200
+- .hi-purple[Cournot Competition]: each firm produces 20 and earns $1,200
 
-- **Collusion**: each firm produces 15 and earns $1,400 
+- .hi-orange[Cournot Collusion]: each firm produces 15 and earns $1,400 
 
 - But is collusion a Nash equilibrium?
 ]
@@ -729,7 +731,7 @@ ggplot(tibble(x=c(0,10)), aes(x=x))+
 
 # Bertrand Competition for our Example
 
-- Imagine *Bertrand* competition between Saudi Arabia and Iran instead (price competition)
+- Imagine .hi[Bertrand competition] between Saudi Arabia and Iran instead (price competition)
 
 - **Nash equilibrium**: Firms will set $P=MC$, so:
 
@@ -838,6 +840,29 @@ Q&=q_1+q_2\\
 
 ---
 
+# Cournot Competition
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/ktz9roh3jds8myp/Cournot.jpg?raw=1)
+
+.smaller[
+Antoine Augustin Cournot
+
+1801-1877
+]
+]
+]
+.right-column[
+- .hi[Cournot Theorem]: as the number of firms $(N)$ in the market increases, market output $Nq$ goes to the competitive level, and price converges to $c$.
+  - Assuming no fixed costs, and an identical constant marginal cost for firms
+
+- .hi-purple[More (fewer) firms reduce (increase) market distortions from market power]
+
+]
+
+---
+
 # Cournot Competition on Moblab
 
 .center[
@@ -881,266 +906,3 @@ Q&=q_1+q_2\\
 ![](https://www.dropbox.com/s/7kj9inpjs0h8kwt/cournotmoblab.png?raw=1)
 ]
 ]
-
----
-
-class: inverse, center, middle
-
-# Stackelberg Competition
-
----
-
-# Stackelberg Competition
-
-.left-column[
-.center[
-![:scale 80%](https://www.dropbox.com/s/62dj39fuv7v4jvd/stackelberg.jpeg?raw=1)
-
-.smaller[
-Henrich von Stackelberg
-
-1905-1946
-]
-]
-]
-.right-column[
-- .hi["Stackelberg competition"]: Cournot-style competition, two (or more) firms compete on **quantity** to sell the **same good**
-
-- Firms set their quantities **sequentially**
-  - **Leader** produces first
-  - **Follower** produces second
-
-- Firms' joint output determines the market price faced by all firms
-]
-
----
-
-# Stackelberg Competition: Example
-
-.content-box-green[
-.hi-green[Example]: Return to Saudi Arabia $(sa)$ and Iran $(i)$, again with the market (inverse) demand curve:
-$$\begin{align*}
-P&=200-3Q\\
-Q&=q_{sa}+q_i\\
-\end{align*}$$
-
-]
-
---
-
-- We solved for Saudi Arabia and Iran's reaction functions:
-$$\begin{align*}
-q_{sa}^*&=30-0.5q_i\\
-q_i^*&=30-0.5q_{sa}\\
-\end{align*}$$
-
-
----
-
-# Stackelberg Competition: Example
-
-$$\begin{align*}
-q_{sa}^*&=30-0.5q_i\\
-q_i^*&=30-0.5q_{sa}\\
-\end{align*}$$
-
-- Suppose Saudi Arabia is the **Stackelberg leader** and sets its output first
-
---
-- Saudi Arabia knows exactly how Iran will respond to its output
-
-$$q_i^*&=30-0.5q_{sa}$$
-
---
-
-- Saudi Arabia, as leader, essentially faces entire market demand
-  - But can't act like a pure monopolist!
-  - knows that follower will still produce, which pushes down market price!
-
----
-
-# Stackelberg Competition: Example
-
-- Substitute follower's reaction function into (inverse) market demand function
-
---
-
-$$\begin{align*}
-P&=200-3q_{sa}-3(30-0.5q_{sa})\\
-P&=110-1.5q_{sa}\\
-\end{align*}$$
-
---
-
-- Now find $MR(q)$ for Saudi Arabia from this
-
---
-
-$$MR_{sa}=110-3q_{sa}$$
-
----
-
-# Stackelberg Competition: Example
-
-- Now Saudi Arabia can find its optimal quantity:
-
-$$\begin{align*}
-MR&=MC\\
-110-3q_{sa}&=20\\
-30&=q_{sa}^*\\
-\end{align*}$$
-
---
-
-- Iran will respond and produce:
-
-$$\begin{align*}
-q_i^*&=30-0.5q_{sa}\\
-q_i^*&=30-0.5(30)\\
-q_i^*&=15\\
-\end{align*}$$
-
----
-
-# Stackelberg Equilibrium, Graphically
-
-.pull-left[
-```{r}
-saudi+
-  stat_function(fun=Iran, geom="line", size=2, color="blue")+
-    annotate(geom = "label", x = 15, y = Iran(15) , label = "Iran",color = "blue", size = 4) +
-  geom_segment(x=20,xend=20,y=0,yend=20, size=1, linetype="dotted", color="blue")+
-  geom_segment(x=0,xend=20,y=20,yend=20, size=1, linetype="dotted", color="red")+
-  geom_point(x=20,y=20,size=5,color="purple")+
-  annotate(geom = "label", x = 32, y = 24 , label = "Cournot-Nash Equilibrium",color = "purple", size = 5)+
-    geom_point(x=15,y=15,size=5,color="orange")+
-  annotate(geom = "label", x = 10, y = 11 , label = "Collusion",color = "orange", size = 5)+
-    geom_segment(x=15,xend=15,y=0,yend=15, size=1, linetype="dotted", color="orange")+
-  geom_segment(x=0,xend=15,y=15,yend=15, size=1, linetype="dotted", color="orange")+
-
-    geom_point(x=15,y=30,size=5,color="green")+
-  annotate(geom = "label", x = 25, y = 35 , label = "Stackelberg (S.A. Leads)",color = "darkgreen", size = 5)+
-    geom_segment(x=15,xend=15,y=0,yend=30, size=1, linetype="dotted", color="darkgreen")+
-  geom_segment(x=0,xend=15,y=30,yend=30, size=1, linetype="dotted", color="darkgreen")
-
-```
-]
-
-.pull-right[
-
-- **Stackelberg Nash Equilibrium**: $$\big( \color{red}{30}, \color{blue}{15} \big)$$
-
-]
-
----
-
-# Stackelberg Competition: Example
-
-- With $q^*_{sa}=30$ and $q^*_i=15$, this sets a market price of
-
-$$\begin{align*}
-P&=200-3(45)\\
-P&=65\\
-\end{align*}$$
-
---
-
-.pull-left[
-- Saudi Arabia's profit would be:
-
-$$\begin{align*}
-\pi_{sa}&=30(65-20)\\
-\pi_{sa}&=\$1,350\\
-\end{align*}$$
-
-]
-
---
-
-.pull-right[
-- Iran's profit would be:
-
-$$\begin{align*}
-\pi_{i}&=15(65-20)\\
-\pi_{i}&=\$675\\
-\end{align*}$$
-
-]
-
----
-
-# Stackelberg Equilibrium, The Market
-
-```{r}
-CS_3<-tribble(
-  ~x, ~y,
-  0, 200,
-  0, 65,
-  45, 65
-)
-
-DWL_3<-tribble(
-  ~x, ~y,
-  45, 20,
-  45, 65,
-  60, 20
-)
-
-ggplot(tibble(x=c(0,10)), aes(x=x))+
-  geom_polygon(data=CS_3, aes(x=x,y=y), fill="blue",alpha=0.5)+ #cs
-  geom_rect(xmin=0, xmax=45, ymin=20, ymax=65, fill="green", alpha=0.5)+ # pi
-  geom_polygon(data=DWL_3, aes(x=x,y=y), fill="black",alpha=0.5)+ #dwl
-  stat_function(fun=Demand_market, geom="line", size=2, color="blue")+
-    stat_function(fun=MR_market, geom="line", size=2, color="purple")+
-  annotate(geom = "label", x = 50, y = Demand_market(50) , label = "Market Demand",color = "blue", size = 4) +
-    annotate(geom = "label", x = 25, y = MR_market(25) , label = "MR(q)",color = "purple", size = 4) +
-  
-      stat_function(fun=MC_market, geom="line", size=2, color="red")+
-  annotate(geom = "label", x = 70, y = MC_market(70) , label = "MC(q)=AC(q)",color = "red", size = 4) +
-
-  geom_point(x=40,y=80,size=5,color="purple")+
-  annotate(geom = "label", x = 50, y = 95 , label = "Cournot-Nash Equilibrium",color = "purple", size = 4)+
-  
-    geom_point(x=30,y=110,size=5,color="purple")+
-  annotate(geom = "label", x = 30, y = 125 , label = "Collusion",color = "purple", size = 4)+
-
-    geom_segment(x=30,xend=30,y=0,yend=110,linetype="dotted", size =1)+
-  geom_segment(x=0,xend=30,y=110,yend=110,linetype="dotted", size =1)+
-
-  geom_segment(x=40,xend=40,y=0,yend=80,linetype="dotted", size =1)+
-  geom_segment(x=0,xend=40,y=80,yend=80,linetype="dotted", size =1)+
-  
-  
-  geom_point(x=50,y=65,size=5,color="purple")+
-  annotate(geom = "label", x = 50, y = 70 , label = "Stackelberg",color = "purple", size = 4)+
-
-  geom_segment(x=45,xend=45,y=0,yend=65,linetype="dotted", size =1)+
-  geom_segment(x=0,xend=45,y=65,yend=65,linetype="dotted", size =1)+
-  
-  scale_x_continuous(breaks = seq(0,80,10),
-                     limits = c(0,80),
-                     expand=c(0,0))+
-  scale_y_continuous(breaks = seq(0,200,20),
-                     labels = scales::dollar,
-                     limits = c(0,200),
-                     expand=c(0,0))+
-  theme_classic(base_family = "Fira Sans Condensed", base_size=20)+
-  labs(x = "Industry Output, Q",
-       y = "Market Price, p",
-       title = "Oil Industry")
-```
-
----
-
-# Cournot vs. Stackelberg Competition
-
-.center[
-![](https://www.dropbox.com/s/19qs6st61ri235d/cournot-stackelberg-compare.png?raw=1)
-
-]
-- **Leader** Saudi Arabia $\uparrow$ its output and $\uparrow$ profits
-
-- **Follower** Iran forced to $\downarrow$ its output and accept $\downarrow$ profits
-
----
-

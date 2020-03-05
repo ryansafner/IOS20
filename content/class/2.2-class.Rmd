@@ -1,0 +1,39 @@
+---
+title: "2.2 Cournot Competition"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Thursday, February 20, 2020*
+
+# Overview
+
+Today we cover a topic that often does not get covered in microeconomics courses, but is important nonetheless for our purposes: markets for factors of production (e.g. land, labor, capital, supplies, etc). We discuss what determines prices in these markets, and how they vary with monopoly power and **monopsony power** (a buyer with market power). We primarily focus on **labor markets** as the main factor market. 
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/1.8-slides.html)
+
+# Appendix
+
+## Cournot Theorem
+
+For any arbitrary number of firms $N>1$
+- linear (inverse) market demand: $P=a-bQ$
+- constant identical marginal costs: $C(q_i)=c$
+
+Then each firm $i$ produces $$q_i & = \frac{Q}{N} = \frac{a-c}{b(N+1)}$$, setting a market-clearing price of $$p=a-b(Nq)=\frac{a+Nc}{N+1}$$, and each firm earns profits of $$\pi_i = \left(\frac{a-c}{N+1} \right)^2 \left(\frac{1}{b}\right)$$
+
+.hi[Cournot Theorem]: with no fixed costs, as the number of firms in the market increases, market output $Nq$ goes to the competitive level, and price converges to $c$.
+$$\lim_{N \to \infty} p = c$$
+With fixed costs, the number of firms in the market is endogenously determined by the fixed costs (competitors enter until the marginal firm's profit is zero). Let fixed costs be $f$, then:
+
+$$N=\frac{a-c}{\sqrt{fb}}-1$$
+and each firm will produce $q=\frac{\sqrt{fb}}{b}$.

@@ -23,6 +23,35 @@ Today we cover a topic that often does not get covered in microeconomics courses
 
 # Appendix
 
+## Cournot Competition, Abstracted
+
+Let all firms have the same technology, $$C(q)=cq$$. The absence of fixed costs, and a single constant $c$ implies that the firm's average cost and marginal cost both equal $c$.
+
+Let the (inverse) market demand be linear, and the total market quantity be the sum of each individual firm's quantity:
+
+$$\begin{align*}
+P&=a-bQ\\
+Q&=q_1+q_2 \\
+\end{align*}$$
+
+The demand for firm $1$'s output, treating the output of the other firm $(q_{2})$ as a constant, is:
+
+$$P=(a-bq_2)-bq_1$$
+
+making its marginal revenue:
+
+$$MR(q_1)=(a-bq_2)-2bq_1$$
+
+Firm 1 produces to maximize profit where
+
+$$\begin{align*}
+MR(q_1)=MC \\
+(a-bq_2)-2bq_1 & = c\\
+(a-bq_2)&=c+2bq_1\\
+(a-bq_2)-c&=2bq_1\\
+\frac{a-bq_2-c}{2b}&=q_1\\
+\end{align*}$$
+
 ## Cournot Theorem
 
 For any arbitrary number of firms $N>1$

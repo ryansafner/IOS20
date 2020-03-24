@@ -27,6 +27,14 @@ See the above video for a brief overview of Zoom.
 
 - [<i class="fas fa-video"></i> Zoom Live Class Meetings (starts Tuesday at 2:00)](https://zoom.us/j/486416690)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q_sh9M8PyBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YRqs3oosgU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4FNGeaxuRSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eH8tsE12S8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Slides
 
 - [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/2.4-slides.html)

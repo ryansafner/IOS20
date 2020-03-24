@@ -65,13 +65,11 @@ lessons:
   - title: '<i class="fas fa-exclamation-circle"></i> **Transition to Online Courses** (Please read)'
     class: "online-transition"
     
-  - title: "2.4 Contestable Markets"
-
-  - title: "2.5 Entry Barriers"
+  - title: "2.4 Sequential Games and Contestable Markets"
+    slides: "2.4-slides"
+    class: "2.4-class"
 
   - title: "2.6 The Competitive Environment"
-
-  - title: "2.7 Innovation"
 
   - title: '<i class="fas fa-laptop-code"></i> **Midterm Exam**'
 

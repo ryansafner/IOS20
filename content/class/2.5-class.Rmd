@@ -1,0 +1,40 @@
+---
+title: "2.5 Contestability & Entrepreneurship"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Thursday, March 26, 2020*
+
+*Quarantine Lecture 2*
+
+# Overview
+
+Today we take a deeper dive into game theory, as some more advanced tools will help us think about firms and industries going forward.
+
+# Class Livestream/Lecture Videos
+
+- [<i class="fas fa-video"></i> Zoom Live Class Meetings (starts Tuesday at 2:00)](https://zoom.us/j/486416690)
+
+If needed, see my [<i class="fab fa-youtube"></i> brief overview of Zoom](https://www.youtube.com/embed/gOgSF8QZDQM) for help. 
+
+Check back later today when videos will be posted.
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/2.5-slides.html)
+
+# Assignments: Homework 2, Midterm Exam
+
+[Homework 2](assignment/02-problem-set) will be posted today, and is due via email, on Sunday, April 5, by 11:59PM. The answer key will be posted Monday, April 6.
+
+I will post your Homework 1 grades on Blackboard and the answer key on the original assignment page.
+
+Our midterm exam will be the week of April 6. It will likely be a take home series of questions that you can spend a few days to work on, and will email to me when you complete.

@@ -65,16 +65,16 @@ lessons:
   - title: '<i class="fas fa-exclamation-circle"></i> **Transition to Online Courses** (Please read)'
     class: "online-transition"
     
-  - title: "2.4 Sequential Games and Contestable Markets"
+  - title: "2.4 Sequential Games"
     slides: "2.4-slides"
     class: "2.4-class"
 
-  - title: "2.6 Competition: Theory vs. Practice"
+  - title: "2.5 Contestability & Entrepreneurship"
 
   - title: "**Problem Set 2** due Sunday April 5"
     assignment: "02-problem-set"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Midterm Exam**'
+  - title: '<i class="fas fa-laptop-code"></i> **Midterm Exam** week of April 6'
 
   - title: '<span class="fake-header-table">III Theory of the Firm</span>'
     header: True

@@ -1,0 +1,1533 @@
+---
+title: "2.5: Contestability & Entrepreneurship"
+subtitle: "ECON 326 · Industrial Organization · Spring 2020"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i> safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/IOs20"><i class="fa fa-github fa-fw"></i> ryansafner/IOs20</a><br> <a href="https://IOs20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i> IOs20.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    df_print: paged
+    #seal: false
+    css: [custom.css, custom-fonts.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      message = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("ggrepel")
+
+theme_slides <- theme_light() + 
+  theme(
+    text = element_text(family = "Fira Sans", size = 24)
+  )
+
+```
+
+class: inverse, center, middle
+
+# Contestable Markets
+
+---
+
+# Is Monopoly a Nash Equilibrium?
+
+.pull-left[
+
+- Now that we understand Nash equilibrium...
+
+- Are outcomes of other market structures Nash equilibria?
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ut01gm60urzbmtl/goingoutofbusiness.jpg?raw=1)
+
+![:scale 75%](https://www.dropbox.com/s/20ghw4p6te0776x/entry.jpg?raw=1)
+]
+]
+
+---
+
+# Is Monopoly a Nash Equilibrium?
+
+.pull-left[
+
+- Now that we understand Nash equilibrium...
+
+- Are outcomes of other market structures Nash equilibria?
+
+- **Perfect competition**: no firm wants to raise or lower price given the market price $\checkmark$
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ut01gm60urzbmtl/goingoutofbusiness.jpg?raw=1)
+
+![:scale 75%](https://www.dropbox.com/s/20ghw4p6te0776x/entry.jpg?raw=1)
+]
+]
+
+---
+
+# Is Monopoly a Nash Equilibrium?
+
+.pull-left[
+
+- **Monopolist** maximizes $\pi$ by setting $q^*$: $MR=MC$ and $p^*=Demand(q^*)$
+
+- This is *an* equilibrium, but is it the *only* equilibrium?
+
+- We've assumed just a *single* player in the model
+
+- .hi-purple[What about *potential* competition?]
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ut01gm60urzbmtl/goingoutofbusiness.jpg?raw=1)
+
+![:scale 75%](https://www.dropbox.com/s/20ghw4p6te0776x/entry.jpg?raw=1)
+]
+]
+
+---
+
+# Contestable Markets I
+
+.pull-left[
+
+- Model the market as an .hi-purple[entry game], with two players:
+
+1. .hi-red[**Incumbent**] which sets its price $\color{red}{p_I}$
+
+2. .hi-blue[**Entrant**] decides to **stay out** or **enter** the market, setting its price $\color{blue}{p_E}$
+
+- Bertrand price competition between the two firms with similar products $\implies$ consumers buy only from the firm with the lower price
+
+]
+
+.pull-right[
+
+.center[
+![](https://www.dropbox.com/s/ut01gm60urzbmtl/goingoutofbusiness.jpg?raw=1)
+
+![:scale 75%](https://www.dropbox.com/s/20ghw4p6te0776x/entry.jpg?raw=1)
+]
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- Suppose firms have costs of 
+$$\begin{align*}
+C(q)&=cq\\
+MC(q)&=c\\ \end{align*}$$
+
+- If .hi-red[Incumbent] sets $\color{red}{p_I}>c$, then .hi-blue[Entrant] would enter and set $\color{blue}{p_E}=\color{red}{p_I}-\epsilon$ (for arbitrary $\epsilon>0)$
+
+
+]
+
+.pull-right[
+
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- Suppose firms have costs of 
+$$\begin{align*}
+C(q)&=cq\\
+MC(q)&=c\\ \end{align*}$$
+  
+- If .hi-red[Incumbent] sets $\color{red}{p_I}>c$, then .hi-blue[Entrant] would enter and set $\color{blue}{p_E}=\color{red}{p_I}-\epsilon$ (for arbitrary $\epsilon>0)$
+  - .hi-red[Incumbent] would forsee this, and try to price lower than $\color{blue}{p_E}$
+  - undercutting continues until...
+
+
+]
+
+.pull-right[
+
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- .hi[Nash Equilibrium]: incumbent sets $\color{red}{p_I}=c$, **no entry**
+
+- .hi-purple[A single firm, but the **competitive outcome**!]
+  - $p^*=MC$, $\pi=0$
+  - competitive $q^*$
+  - max Consumer Surplus, no DWL
+]
+
+--
+
+.pull-right[
+
+```{r, fig.retina=3} 
+# Demand function, format: p=d-eq
+a<-10
+b<-2
+f<-5
+c<-2
+
+Demand=function(x){a-b*x}
+MR=function(x){a-2*b*x}
+MC=function(x){c}
+AC=function(x){f/x+c}
+
+q_choke=a/b
+q_PC<-(a-c)/(b)
+
+CS<-data.frame(x=c(0,0,q_PC),
+               y=c(Demand(q_PC),a,Demand(q_PC)))
+
+line_colors <- c("Demand" = "blue", "MR" = "purple", "MC" = "red", "AC" = "orange")
+surplus_colors <-c("Consumer" = "blue", "Profit" = "green", "DWL" = "black")
+
+# make plot 
+
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=1, aes(color="Demand"))+
+  stat_function(fun=MR, geom="line", size=1, aes(color="MR"))+
+  stat_function(fun=MC, geom="line", size=1, aes(color="MC"))+
+  # surpluses
+  geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
+
+  # labels 
+  geom_segment(x=q_PC,y=0,xend=q_PC,yend=c,linetype=3)+
+  geom_point(x=q_PC,y=c, color="black", size=3)+ 
+  geom_text(x=q_PC,y=c+0.5,label="N.E.",color="black")+
+  annotate(geom = "label", x = 4.5, y = Demand(4.5), label = "Demand",
+           color = "blue") +
+  annotate(geom = "label", x = 2.25, y = MR(2.25), label = "MR",
+           color = "purple") +
+  annotate(geom = "label", x = 4.5, y = c, label = "MC",
+           color = "red") +
+  annotate(geom = "label", x = 1.3, y = 5, label = "Consumer Surplus",
+           color = "blue") +
+  scale_x_continuous(breaks = c(0,q_PC),
+                     labels = c(0,expression(q[p=MC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c,a),
+                     labels = c(0,expression(c),expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  scale_colour_manual("Curves", values = line_colors)+
+  scale_fill_manual("Surpluses", values = surplus_colors, guide = guide_legend(override.aes = list(alpha = 0.5)))+
+  guides(color = F, fill = F)+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+```
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- What if the .hi-blue[entrant] has *higher costs* than the .hi-red[incumbent]: $\color{blue}{c_E}>\color{red}{c_I}$?
+
+]
+
+.pull-right[
+]
+
+---
+
+# Contestable Markets II
+
+.pull-left[
+
+- What if the .hi-blue[entrant] has *higher costs* than the .hi-red[incumbent]: $\color{blue}{c_E}>\color{red}{c_I}$?
+
+- .hi[Nash equilibrium]: .hi-red[incumbent] sets $\color{red}{p_I}=\color{blue}{p_E}-\epsilon$
+  - arbitrary $\epsilon > 0$
+
+- .hi-blue[Entrant] stays out
+  
+- One firm, but not a *worst case* monopoly
+]
+
+--
+
+.pull-right[
+
+```{r, fig.retina=3} 
+a<-10
+b<-2
+f<-5
+c<-2
+d<-4.5
+e<-4
+
+Demand=function(x){a-b*x}
+MR=function(x){a-2*b*x}
+MCi=function(x){c}
+MCe=function(x){d}
+AC=function(x){f/x+c}
+
+q_choke=a/b
+q_PC<-(a-c)/(b)
+
+q_star<-(a-e)/b
+q_monopoly<-(a-c)/(2*b)
+
+CS<-data.frame(x=c(0,0,q_star),
+               y=c(Demand(q_star),a,Demand(q_star)))
+DWL<-data.frame(x=c(q_star,q_star,q_PC),
+               y=c(c,e,c))
+
+line_colors <- c("Demand" = "blue", "MR" = "purple", "MCi" = "red", "MCe" = "red4")
+surplus_colors <-c("Consumer" = "blue", "Profit" = "green", "DWL" = "black")
+
+# make plot 
+
+library("ggplot2")
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=1, aes(color="Demand"))+
+  stat_function(fun=MR, geom="line", size=1, aes(color="MR"))+
+  stat_function(fun=MCi, geom="line", size=1, aes(color="MCi"))+
+  stat_function(fun=MCe, geom="line", size=1, aes(color="MCe"))+
+  # surpluses
+  geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
+  geom_rect(aes(xmin=0,xmax=q_star,ymin=c,ymax=e,fill="Profit"),alpha=0.25) + # Profits
+  geom_polygon(data=DWL, aes(x=x,y=y, fill="DWL"), alpha=0.5)+ #CS
+  # labels 
+  
+  # P.C. point 
+  geom_segment(aes(x=q_PC,y=0),xend=q_PC,yend=c,linetype=3)+
+  geom_point(x=q_PC,y=c, color="black", size=3)+ 
+  geom_text(x=q_PC,y=c+0.5,label="P.C.",color="black")+
+  
+  # N.E. point 
+  geom_segment(aes(x=q_star,y=0),xend=q_star,yend=e,linetype=3)+
+  geom_segment(aes(x=0,y=e),xend=q_star,yend=e,linetype=3)+
+  geom_point(aes(x=q_star,y=e), color="black", size=3)+ 
+  geom_text(x=q_star+0.5,y=e,label="N.E.", color="black")+
+  
+  # Monopoly point 
+  geom_segment(aes(x=q_monopoly,y=0),xend=q_monopoly,yend=Demand(q_monopoly),linetype=3)+
+  geom_segment(aes(x=0,y=Demand(q_monopoly)),xend=q_monopoly,yend=Demand(q_monopoly),linetype=3)+
+  geom_point(aes(x=q_monopoly,y=Demand(q_monopoly)), color="black", size=3)+ 
+  geom_text(aes(x=q_monopoly,y=Demand(q_monopoly)),label="Monopoly", hjust=-0.1, vjust=-0.25, color="black")+
+  annotate(geom = "label", x = 4.5, y = Demand(4.5), label = "Demand",
+           color = "blue") +
+  annotate(geom = "label", x = 2.25, y = MR(2.25), label = "MR",
+           color = "purple") +
+  annotate(geom = "label", x = 4.5, y = c, label = expression(MC[i]),
+           color = "red") +
+  annotate(geom = "label", x = 4.5, y = d, label = expression(MC[e]),
+           color = "red4") +
+  annotate(geom = "label", x = 1.25, y = 6, label = "Consumer Surplus",
+           color = "blue") +
+  annotate(geom = "label", x = 1.25, y = 3, label = "Profit",
+           color = "green") +
+  annotate(geom = "label", x = 3.2, y = 3, label = "DWL",
+           color = "black") +
+  scale_x_continuous(breaks = c(0,q_monopoly,q_star,q_PC),
+                     labels = c(0,expression(q[m]),expression(q[NE]),expression(q[p=MC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c,d,e,Demand(q_monopoly),a),
+                     labels = c(0,expression(MC[i]),expression(MC[e]),expression(p[i]==MC[e]-epsilon),expression(p[m]),expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  theme_light()+
+  scale_colour_manual("Curves", values = line_colors)+
+  scale_fill_manual("Surpluses", values = surplus_colors, guide = guide_legend(override.aes = list(alpha = 0.5)))+
+  guides(color = F, fill = F)+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+```
+]
+
+---
+
+# Contestable Markets III
+
+.pull-left[
+
+- What if there are **fixed costs**, $f$?
+
+$$\begin{align*}
+C(q)&=cq+f \\
+MC(q)&=c \\
+AC(q)&=c+\frac{f}{q} \\
+\end{align*}$$
+
+- With high enough $f$, .hi[Economies of scale] may prevent marginal cost pricing from a being profitable Nash Equilibrium
+
+$$\pi_{p=MC}=-\frac{f}{q}<0$$
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3} 
+# Demand function, format: p=d-eq
+a<-10
+b<-2
+f<-5
+c<-2
+
+Demand=function(x){a-b*x}
+MR=function(x){a-2*b*x}
+MC=function(x){c}
+AC=function(x){f/x+c}
+
+q_choke<-(a/b)
+MR_choke<-(a/(2*b))
+q_PC<-(a-c)/(b)
+
+CS<-data.frame(x=c(0,0,q_PC),
+               y=c(Demand(q_PC),a,Demand(q_PC)))
+
+line_colors <- c("Demand" = "blue", "MR" = "purple", "MC" = "red", "AC" = "orange")
+surplus_colors <-c("Consumer" = "blue", "Loss" = "black", "DWL" = "black")
+
+# make plot 
+
+library("ggplot2")
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=1, aes(color="Demand"))+
+  stat_function(fun=MR, geom="line", size=1, aes(color="MR"))+
+  stat_function(fun=MC, geom="line", size=1, aes(color="MC"))+
+  stat_function(fun=AC, geom="line", size=1, aes(color="AC"))+
+  
+  # surpluses
+  geom_rect(aes(xmin=0,xmax=q_PC,ymin=c,ymax=AC(q_PC),fill="Loss"),alpha=0.25) + # Losses
+  
+   # labels 
+  geom_segment(aes(x=q_PC,y=0),xend=q_PC,yend=c,linetype=3)+
+  geom_point(aes(x=q_PC,y=c), color="black", size=3)+ 
+  geom_text(x=q_PC+0.5,y=c,label="P.C.", color="black")+
+  annotate(geom = "label", x = 4.5, y = Demand(4.5), label = "Demand",
+           color = "blue") +
+  annotate(geom = "label", x = 2.25, y = MR(2.25), label = "MR",
+           color = "purple") +
+  annotate(geom = "label", x = 4.5, y = c, label = "MC",
+           color = "red") +
+  annotate(geom = "label", x = 4.5, y = AC(d), label = "AC",
+           color = "orange") +
+  annotate(geom = "label", x = 1.25, y = 2.5, label = "Loss",
+           color = "black") +
+  scale_x_continuous(breaks = c(0,q_PC),
+                     labels = c(0,expression(q[p=MC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c,AC(q_PC),a),
+                     labels = c(0,expression(c),expression(c+f/q),expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  theme_light(base_family = "Yanone Kaffeesatz Regular")+
+  scale_colour_manual("Curves", values = line_colors)+
+  scale_fill_manual("Surpluses", values = surplus_colors, guide = guide_legend(override.aes = list(alpha = 0.5)))+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  guides(color = F, fill = F)+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+```
+]
+
+---
+
+# Contestable Markets IV
+
+.pull-left[
+
+- .hi[Nash equilibrium]: .hi-red[Incumbent] prices at $\color{red}{p_I}=AC$ earns $\pi=0$
+
+- .hi-blue[Entrant] stays out
+
+- Again, single firm, but not a monopoly
+  - no profits
+  - not allocatively efficient, $p>MC$, some DWL
+
+]
+
+.pull-right[
+
+```{r, fig.retina=3} 
+# Demand function, format: p=d-eq
+a<-10
+b<-2
+f<-5
+c<-2
+
+Demand=function(x){a-b*x}
+MR=function(x){a-2*b*x}
+MC=function(x){c}
+AC=function(x){f/x+c}
+
+q_choke<-(a/b)
+MR_choke<-(a/(2*b))
+q_PC<-(a-c)/(b)
+q_AC<-((a-c)+sqrt((a-c)^2-4*b*f))/(2*b) # needed quadratic formula, heh 
+
+CS<-data.frame(x=c(0,0,q_AC),
+               y=c(Demand(q_AC),a,Demand(q_AC)))
+
+DWL<-data.frame(x=c(q_AC,q_AC,q_PC),
+                        y=c(c,Demand(q_AC),c))
+
+line_colors <- c("Demand" = "blue", "MR" = "purple", "MC" = "red", "AC" = "orange")
+surplus_colors <-c("Consumer" = "blue", "Profit" = "green", "DWL" = "black")
+
+# make plot 
+ggplot(data.frame(x=c(0,q_choke)), aes(x=x))+
+  
+  # curves 
+  stat_function(fun=Demand, geom="line", size=1, aes(color="Demand"))+
+  stat_function(fun=MR, geom="line", size=1, aes(color="MR"))+
+  stat_function(fun=MC, geom="line", size=1, aes(color="MC"))+
+  stat_function(fun=AC, geom="line", size=1, aes(color="AC"))+
+  
+  # surpluses
+  geom_polygon(data=CS, aes(x=x,y=y, fill="Consumer"), alpha=0.5)+ #CS
+  geom_polygon(data=DWL, aes(x=x,y=y, fill="DWL"), alpha=0.5)+ #DWL
+  
+   # labels 
+  geom_segment(aes(x=q_PC,y=0),xend=q_PC,yend=c,linetype=3)+
+  geom_point(aes(x=q_PC,y=c), color="black",size=3)+ 
+  geom_text(x=q_PC+0.25,y=c,label="P.C.", color="black")+
+  geom_segment(aes(x=q_AC,y=0),xend=q_AC,yend=Demand(q_AC), linetype=3)+
+  geom_segment(aes(x=0,y=Demand(q_AC)),xend=q_AC,yend=Demand(q_AC), linetype=3)+
+  geom_point(x=q_AC,y=Demand(q_AC), color="black",size=3)+ 
+  geom_text(x=q_AC+0.25,y=Demand(q_AC),label="N.E.", color="black")+
+  annotate(geom = "label", x = 4.5, y = Demand(4.5), label = "Demand",
+           color = "blue") +
+  annotate(geom = "label", x = 2.25, y = MR(2.25),  label = "MR",
+           color = "purple") +
+  annotate(geom = "label", x = 4.5, y = c, label = "MC",
+           color = "red") +
+  annotate(geom = "label", x = 4.5, y = AC(d), label = "AC",
+           color = "orange") +
+  annotate(geom = "label", x = 1.25, y = 6, label = "Consumer Surplus",
+           color = "blue") +
+  annotate(geom = "label", x = 3.5, y = 2.5, label = "DWL",
+           color = "black") +
+  scale_x_continuous(breaks = c(0,q_AC,q_PC),
+                     labels = c(0,expression(q[p=AC]),expression(q[p=MC])),
+                     expand=c(0,0))+
+  scale_y_continuous(breaks = c(0,c,AC(q_AC),a),
+                     labels = c(0,expression(c),expression(c+f/q),expression(a)),
+                     limits = c(0,a),
+                     expand=c(0,0))+
+  theme_light(base_size=22,base_family = "Yanone Kaffeesatz Regular")+
+  scale_colour_manual("Curves", values = line_colors)+
+  scale_fill_manual("Surpluses", values = surplus_colors, guide = guide_legend(override.aes = list(alpha = 0.5)))+
+  labs(x = "Quantity (q)",
+       y = "Price (p)")+
+  guides(color = F, fill = F)+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+```
+]
+
+---
+
+# What About *Sunk* Costs? I
+
+.pull-left[
+- Fixed costs $\implies$ do not vary with output
+
+- If firm exits, could sell these assets (e.g. machines, real estate) to recover costs
+  - Thus, .hi-purple["hit-and-run" competition] remains potentially profitable
+  - Maintains .hi-purple[credible threat] against incumbent acting as a monopolist
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/89uh92uh19y6z89/sunkcost.jpg?raw=1)
+]
+]
+
+---
+
+# What About *Sunk* Costs? I
+
+.pull-left[
+
+- But what if assets are *not* sellable and costs *not* recoverable - i.e. .hi[sunk costs]?
+
+- e.g. research and development, spending to build brand equity, advertising, worker-training for industry-specific skills, etc 
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/89uh92uh19y6z89/sunkcost.jpg?raw=1)
+]
+]
+
+---
+
+# What About *Sunk* Costs? II
+
+.pull-left[
+- These are bygones to the .hi-red[Incumbent], who has already committed to producing
+
+- But are *new* costs and risk to .hi-blue[Entrant], lowering expected profits
+
+- In effect, sunk costs raise $\color{blue}{c_E}>\color{red}{c_I}$, and return us back to our second example
+
+- .hi[Nash equilibrium]: .hi-red[Incumbent] deters entry with $\color{red}{p_I}=\color{blue}{p_E}-\epsilon$
+  - Inefficient, $p>AC$, but again not monopoly
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/89uh92uh19y6z89/sunkcost.jpg?raw=1)
+]
+]
+
+---
+
+# Contestable Markets: Recap
+
+.pull-left[
+- .hi-purple[Markets are **contestable** if]:
+  1. There are no barriers to entry or exit
+  2. Firms have similar technologies (i.e. similar cost structure)
+  3. There are no sunk costs
+  
+- Economies of scale need not be inconsistent with competitive markets (as is assumed) if they are contestable
+
+- Generalizes "prefect competition" model in more realistic way, also game-theoretic
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+---
+
+# Contestable Markets: Summary
+
+.left-column[
+
+.center[
+![:scale 80%](https://www.dropbox.com/s/1jv6qkmg15bmvq5/baumol1.jpg?raw=1)
+
+William Baumol
+
+(1922--2017)
+
+]
+]
+
+.right-column[
+
+> "This means that...an incumbent, even if he can threaten retaliation after entry, dare not offer profit-making opportunities to potential entrants because an entering firm can hit and run, gathering in the available profits and departing when the going gets rough." 
+
+]
+
+.source[Baumol, William, J, 1982, "Contestable Markets: An Uprising in the Theory of Industry Structure," *American Economic Review,* 72(1): 1-15]
+
+---
+
+class: inverse, center, middle
+
+# Implications for Competition
+
+---
+
+# Implications for Competition
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+- "Old" industrial organization (pre-1980s)
+    - Structure $\implies$ Conduct $\implies$ Performance (SCP) paradigm
+
+- Number of firms in an industry is **exogenous**
+    - Determined solely by unchanging parameters: technology, costs, demand
+
+]
+
+---
+
+# Implications for Competition
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+- Regulation & antitrust (once) focus(ed) on *number* of firms
+    - "Count the number of firms, if it's 1, it's a monopoly!"
+
+- .hi-purple[Perfect competition as "gold standard", only market arrangement that is socially efficient]:
+    - .hi-purple[Allocatively efficient]: $p=MC$, $DWL=0$
+    - .hi-purple[Productively efficient]: $p=AC_{min}$
+]
+
+---
+
+# Implications for Competition
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+- But number of firms is **endogenous** and **can evolve over time**!
+  - Function of how firms mutually interact strategically
+
+- A more **dynamic** situation: firms respond over time
+
+]
+
+---
+
+# Implications for Competition
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+- Perfect competition not the only socially efficient market-structure
+  - Small number of firms (including 1) may be efficient .hi[if they are contestable]
+
+- .hi-purple[Regulation and antitrust should consider whether a market is *contestable*, not just the *number* of firms]
+  - Free entry
+  - No sunk costs
+]
+
+---
+# Implications for Competition
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/otgtujqdnspc3me/marketcompetition.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+- Firms engaging in egregious monopolistic behavior $(\downarrow q$, $\uparrow p$, $p>MC$, $\pi>0$) largely persist because of .hi-purple[barriers to entry]
+  - Attempts to market **uncontestable**
+
+- Business activities or political dealings with the goal to raise $\color{blue}{c_E}>\color{red}{c_I}$
+  - Again: lower your own costs, or raise your rivals'!
+
+]
+
+---
+
+# Monopoly Or Contestable Market?
+
+.center[
+![](https://www.dropbox.com/s/tl7qk98zyhi0od7/microsoftantitrust.png?raw=1)
+]
+
+---
+
+# Contestable Markets
+
+.pull-left[
+.center[
+![:scale 100%](https://www.dropbox.com/s/2i4r8go8mi8yr3m/browsers.png?raw=1)
+]
+]
+
+.pull-right[
+
+> "Of far greater concern to Microsoft is the competition from new and emerging technologies, some of which are currently visible and others of which certainly are not. This array of known, emerging, and wholly unknown competitors places enormous pressure on Microsoft to price competitively and innovate aggressively." (Schmalensee 1999)
+
+]
+
+---
+
+# Contestable Markets
+
+.center[
+![](https://www.dropbox.com/s/qwnx5pnuvugz6qj/amazoncloudcontest3.png?raw=1)
+]
+
+---
+
+class: inverse, center, middle
+
+# Uncertainty, Competition, and Profits
+
+---
+
+# The Model is Not the Reality
+
+.pull-left[
+
+- Our models so far have given us interesting results
+
+- But are **fictional**, a static picture of the world with a lot of assumptions
+
+- But **still** show us useful insights about how a market economy works
+
+- Some great readings in today's readings page to help you understand
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/17cb7ceqipgi8fs/citymodel.jpg?raw=1)
+]
+]
+
+---
+
+# The Model is Not the Reality
+
+.center[
+![:scale 25%](https://www.dropbox.com/s/in42z1ia3f8c18t/smbcmicro.png?raw=1)
+
+Source: [SMBC](https://www.smbc-comics.com/comic/2013-09-19)
+
+"Shame on the three of you who enjoyed this joke"
+]
+
+---
+
+# Profits and Uncertainty
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/0odct9z45lzonyb/frankknight.png?raw=1)
+
+.smallest[
+Frank H. Knight
+
+1885-1972
+]
+]
+]
+
+.right-column[
+
+.smaller[
+> ".hi[Uncertainty must be taken in a sense radically distinct from the familiar notion of Risk], from which it has never been properly separated...The essential fact is that .hi['risk' means in some cases a quantity susceptible of measurement], while at other times it is something distinctly not of this character; and there are far-reaching and crucial differences in the bearings of the phenomena depending on which of the two is really present and operating...It will appear that a measurable uncertainty, or 'risk' proper, as we shall use the term, is so far different from an unmeasurable one that it is not in effect an uncertainty at all," (p.21)
+
+]
+]
+
+.source[Knight, Frank H, 1921, [*Risk, Uncertainty, and Profit*](https://oll.libertyfund.org/titles/knight-risk-uncertainty-and-profit)]
+
+---
+
+# Uncertainty $\neq$ Risk
+
+.center[
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GiPe1OiKQuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+]
+
+---
+
+# Uncertainty $\neq$ Risk
+
+.left-column[
+.center[
+![:scale 100%](https://www.dropbox.com/s/wc7sv1ynyodxas4/rumsfeld.png?raw=1)
+]
+]
+
+.right-column[
+
+- **"Known knowns"**: .hi-purple[perfect information]
+
+- **"Known unknowns"**: .hi-purple[risk]
+  - We know the probability distribution of states that *could* happen
+  - We just don't know *which* state will be realized
+  - We can estimate probabilities, maximize expected value, minimize variance, etc.
+
+]
+
+---
+
+# Uncertainty $\neq$ Risk
+
+.left-column[
+.center[
+![:scale 100%](https://www.dropbox.com/s/wc7sv1ynyodxas4/rumsfeld.png?raw=1)
+]
+]
+
+.right-column[
+
+- **"Unknown unknowns**: .hi[uncertainty]
+  - We don't even know the probability distribution of states that *could* happen
+  - No model to optimize in a world of uncertainty!
+]
+
+---
+
+# Profits and Uncertainty
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/un3exmcx34b0t3p/keynes2.png?raw=1)
+
+.smallest[
+John Maynard Keynes
+
+1883-1946
+]
+]
+]
+
+.right-column[
+
+> "By 'uncertain' knowledge...I do not mean merely to distinguish what is known for certain from what is only probable. The game of roulette is not subject, in this sense, to uncertainty...The sense in which I am using the term is that in which the prospect of a European war is uncertain, or the price of copper and the rate of interest twenty years hence, or the obsolescence of a new invention...About these matters there is no scientific basis on which to form any calculable probability whatever. We simply do not know!"
+
+
+]
+
+.source[Keynes, John Maynard, 1936, *The General Theory of Employment, Interest, and Money*]
+
+---
+
+# Aside: Uncertainty vs. Behavioral Economics
+
+.left-column[
+.center[
+![](https://www.dropbox.com/s/a4qoue9v7kj2ldc/rationalityformortals.jpg?raw=1)
+]
+]
+
+.right-column[
+
+- Decisions under uncertainty $\neq$ decisions under risk
+  - impossible to *optimize* because you don't know what model to use!
+
+- Behavioral Economics: humans systematically make "wrong" or "irrational" decisions
+  - But "irrational" is defined according to an ideal optimization model under *risk*, not uncertainty!
+
+]
+
+.source[Gigerenzer, Gerd, 2012, [<i class="fab fa-youtube"></i> "What Can Economists Know?"](https://www.youtube.com/watch?v=DdEEwoKkfMA)], Institute for New Economic Thinking's (INET) Paradigm Lost Conference, Berlin
+
+Smith, Vernon, L, 2003, [<i class="fab fa-youtube"></i> "Constructivist and Ecological Rationality in Economics (Nobel Prize Lecture)](https://www.nobelprize.org/prizes/economic-sciences/2002/smith/lecture/)]
+
+---
+
+# Aside: Uncertainty vs. Behavioral Economics
+
+.left-column[
+.center[
+![](https://www.dropbox.com/s/a4qoue9v7kj2ldc/rationalityformortals.jpg?raw=1)
+]
+]
+
+.right-column[
+
+- .hi-purple[Heuristics] under uncertainty allow us to be .hi-purple["ecologically rational"]
+
+
+]
+
+.source[Gigerenzer, Gerd, 2012, [<i class="fab fa-youtube"></i> "What Can Economists Know?"](https://www.youtube.com/watch?v=DdEEwoKkfMA)], Institute for New Economic Thinking's (INET) Paradigm Lost Conference, Berlin
+
+Smith, Vernon, L, 2003, [<i class="fab fa-youtube"></i> "Constructivist and Ecological Rationality in Economics (Nobel Prize Lecture)](https://www.nobelprize.org/prizes/economic-sciences/2002/smith/lecture/)]
+
+---
+
+# Profits and Uncertainty
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/0odct9z45lzonyb/frankknight.png?raw=1)
+
+.smallest[
+Frank H. Knight
+
+1885-1972
+]
+]
+]
+
+.right-column[
+
+> "The .hi[primary attribute of competition.]..is the .hi['tendency' to eliminate profit or loss], and .hi[bring the value of economic goods to equality with their cost]...Hence .hi[the problem of profit is one way of looking at the problem between perfect competition and actual competition]....hi[The key to the whole tangle will be found to lie in the notion of risk or uncertainty] and the ambiguities concealed therein," (pp.18-19).
+
+]
+
+.source[Knight, Frank H, 1921, [*Risk, Uncertainty, and Profit*](https://oll.libertyfund.org/titles/knight-risk-uncertainty-and-profit)]
+
+---
+
+# Profits and Uncertainty
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/0odct9z45lzonyb/frankknight.png?raw=1)
+
+.smallest[
+Frank H. Knight
+
+1885-1972
+]
+]
+]
+
+.right-column[
+
+.smaller[
+
+> "It is this .hi['true' uncertainty], and .hi[not risk], as has been argued, which .hi[forms the basis of a valid theory of profit] and .hi[accounts for the divergence between actual and theoretical competition]," (pp.18-19).
+
+> "The prime essential to that perfect competition which would secure in fact those results to which actual competition only 'tends,' is the absence of Uncertainty (in the true, unmeasurable sense)...[Risk] does not preclude perfect planning [and] cannot prevent the complete realization of the tendencies of competitive forces, or give rise to profit.," (pp.20-21)
+
+]
+]
+
+.source[Knight, Frank H, 1921, [*Risk, Uncertainty, and Profit*](https://oll.libertyfund.org/titles/knight-risk-uncertainty-and-profit)]
+
+---
+
+# The Role of Entrepreneurial Judgment
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/0odct9z45lzonyb/frankknight.png?raw=1)
+
+.smallest[
+Frank H. Knight
+
+1885-1972
+]
+]
+]
+
+.right-column[
+
+- "Knightian uncertainty": not that we can't assign probabilities to each outcome; we do not have the knowledge necessary to list all possible outcomes!
+
+- Requires .hi-purple[entrepreneurial judgment] to *both*:
+  1. estimate possible actions and
+  2. estimate the likelihood of their success
+]
+
+.source[Langlois, Richard L. and Metin Cosgel, 1993, "Frank Knight on Risk, Uncertainty, and the Firm: A New Interpretation," *Economic Inquiry* 31]
+
+---
+
+# Entrepreneurial Judgment
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/xfnv96uz5qsmixj/henryford.jpg?raw=1)
+.smallest[
+Henry Ford
+
+1863-1947
+]
+]
+
+]
+
+.right-column[
+
+> "If I had asked people what they wanted, they would have said **faster horses**. - Henry Ford
+
+]
+
+---
+
+# Entrepreneurial Judgment
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/jtew2r1ue9pxaff/steve_jobs_iphone.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+> "It's really hard to design products by focus groups. A lot of times, **people don't know what they want until you show it to them**." - Steve Jobs
+]
+
+---
+
+# Entrepreneurship and the Pursuit of Profit
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/upp9rl729r2i6jn/kirzner.jpg?raw=1)
+
+.smallest[
+Israel M. Kirzner
+
+1930-
+]
+]
+]
+
+.right-column[
+
+> The entrepreneurial element in the economic behavior of market participants consists in their .hi[alertness to] previously unnoticed changes in .hi[circumstances which may make it possible to get far more in exchange for whatever they have to offer than was hitherto possible], (p.15).
+
+]
+
+.source[Kirzner, Israel M, 1973, *Competition and Entrepreneurship*]
+---
+
+
+# Entrepreneurship and the Pursuit of Profit
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/upp9rl729r2i6jn/kirzner.jpg?raw=1)
+
+.smallest[
+Israel M. Kirzner
+
+1930-
+]
+]
+]
+
+.right-column[
+
+.smallest[
+
+> In this process the .hi[plans of consumers and of resource owners are gradually brought into greater and greater consistency with one another.]  Consumers’ .hi[initial ignorance] of the kinds of commodities technologically possible with currently available resources and of the relative prices at which these commodities can in principle be produced .hi[gradually diminishes]...The .hi[new knowledge is acquired through changes in the prices of resources and of products], brought about by the bids and offers of the entrepreneur-producers who are eagerly competing for the profits to be won by discovering where resource owners and consumers have (in effect) underestimated each other's eagerness to buy or sell. (p.18).
+
+]
+]
+
+.source[Kirzner, Israel M, 1973, *Competition and Entrepreneurship*]
+---
+
+# Entrepreneurship and the Pursuit of Profit
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/upp9rl729r2i6jn/kirzner.jpg?raw=1)
+
+.smallest[
+Israel M. Kirzner
+
+1930-
+]
+]
+]
+
+.right-column[
+
+> [Entrepreneurship is] the ability to see where new products have become unsuspectedly valuable to consumers and where new methods of production have, unknown to others, become feasible. [It] consists not of shifting the curves of cost or of revenues which face him, but of noticing that they have in fact shifted. (p.15).
+
+]
+
+.source[Kirzner, Israel M, 1973, *Competition and Entrepreneurship*]
+
+---
+
+# Entrepreneurship and the Pursuit of Profit
+
+
+.pull-left[
+
+- .hi[Entrepreneurship]: being alert to **profit opportunities** and entering a market as a seller to try to capture gains from trade/innovation
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/pjp9bpvqp54ldn4/individual1.png?raw=1)
+]
+]
+
+---
+
+# Entrepreneurship and the Pursuit of Profit
+
+.center[
+![:scale 80%](https://www.dropbox.com/s/zbx1qdjzc2cs55z/20onsidewalk.jpg?raw=1)
+]
+
+---
+
+# Entrepreneurship and the Pursuit of Profit
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/hapdit98qmjgzlj/zuckerberg.png?raw=1)
+
+Mark Zuckerberg
+
+1984-
+]
+]
+
+.right-column[
+
+> "Why were we the ones to build [Facebook]? We were just students. We had way fewer resources than big companies. If they had focused on this problem, they could have done it. 
+The only answer I can think of is: **we just cared more**. 
+**While some doubted** that connecting the world was actually important, **we were building**. While others doubted that this would be sustainable, **we were forming lasting connections**."
+
+]
+
+
+---
+# Firm's Can't "Maximize Profits" in Uncertainty! 
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/rvktfao7k0p9db9/alchian.jpg?raw=1)
+
+.smallest[
+Armen A. Alchian
+
+1914-2013
+]
+]
+]
+
+.right-column[
+
+.smaller[
+
+> ".hi[In the presence of uncertainty] - a necessary condition for the existence of profits - .hi[there is no meaningful criterion for selecting the decision that will 'maximize profits.'] The maximum-profit criterion is not meaningful as a basis *for selecting* the action which will, in fact, result in an outcome with higher profits than any other action would have..." (p.212).
+
+> "The only way to make 'profit maximization' a specifically meaningful action is to postulate a model containing certainty," (p.213).
+
+]
+]
+
+.source[Alchian, Armen A, 1950, "Uncertainty, Evolution, and Economic Theory," *Journal of Political Economy* 58(3): 211-221]
+
+
+---
+
+# Firm's Can't "Maximize Profits" in Uncertainty! 
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/rvktfao7k0p9db9/alchian.jpg?raw=1)
+
+.smallest[
+Armen A. Alchian
+
+1914-2013
+]
+]
+]
+
+.right-column[
+
+> "In an economic system the realization of profits is the criterion according to which successful and surviving firms are selected...Realized positive profits, not *maximum* profits, are the mark of success and viability. It does not matter through what process of reasoning or motivation such success was achieved. The fact of its accomplishment is sufficient. This is the criterion by which the economic system selects survivors: those who realize *positive profits* are the survivors; those who suffer losses disappear," (p.213).
+
+]
+
+.source[Alchian, Armen A, 1950, "Uncertainty, Evolution, and Economic Theory," *Journal of Political Economy* 58(3): 211-221]
+
+
+---
+
+# Firm's Can't "Maximize Profits" in Uncertainty! 
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/rvktfao7k0p9db9/alchian.jpg?raw=1)
+
+.smallest[
+Armen A. Alchian
+
+1914-2013
+]
+]
+]
+
+.right-column[
+
+.smaller[
+> "Positive profits accrue to those who are better than their actual competitors, even if the participants are ignorant, intelligent, skillful, etc. The crucial element is one's aggregate position relative to actual competitors, not hypotheticallhy perfect competitors. As in a race, the award goes to the relatively fastest, even if all the competitors loaf. Even in a world of stupid men there would still be profits. Also, the greater the uncertainties of the world, the greater is the possibility that profits would go to venturesome and lucky rather than to logical, careful, fact-gathering, individuals," (p.213).
+
+]
+]
+
+.source[Alchian, Armen A, 1950, "Uncertainty, Evolution, and Economic Theory," *Journal of Political Economy* 58(3): 211-221]
+
+---
+
+# Firm's Can't "Maximize Profits" in Uncertainty! 
+
+.left-column[
+.center[
+![:scale 80%](https://www.dropbox.com/s/rvktfao7k0p9db9/alchian.jpg?raw=1)
+
+.smallest[
+Armen A. Alchian
+
+1914-2013
+]
+]
+]
+
+.right-column[
+
+> "[A]lthough individual participants may not know their cost and revenue situations, the economist can predict the consequences of higher wage rates, taxes, government policy, etc. Like the biologist, the economist predicts the effects of environmental changes on the surviving class of living organisms; the economist need not assume that each participant is aware of, or acts according to, his cost and demand situation," (p.220-221).
+
+]
+
+.source[Alchian, Armen A, 1950, "Uncertainty, Evolution, and Economic Theory," *Journal of Political Economy* 58(3): 211-221]
+
+---
+
+class: inverse, center, middle
+
+# Assessing "Perfect Competition"
+
+---
+
+# Assessing "Perfect Competition"
+
+.left-column[
+.center[
+![:scale 70%](https://www.dropbox.com/s/nr3zendpjgtqg4s/hayekpipe.jpg?raw=1)
+
+.smallest[
+Friedrich A. Hayek
+
+1899-1992
+
+Economics Nobel 1974
+]
+]
+]
+
+.right-column[
+
+.smaller[
+> "It appears to be generally held that the so-called theory of 'perfect competition' provides the appropriate model for judging the effectiveness of competition in real life and that, to the extent that real competition differs from that model, it is undesirable and even harmful. For this attitude there seems to me to exist very little justification....[W]hat the theory of perfect competition discusses has little claim to be called 'competition' at all, and that its conclusions are of little use as guides to policy."
+
+]
+]
+
+.source[Hayek, Friedrich A, 1948, "The Meaning of Competition," Chapter V in *Individualism and Economic Order*]
+
+---
+
+# Assessing "Perfect Competition"
+
+.left-column[
+.center[
+![:scale 70%](https://www.dropbox.com/s/nr3zendpjgtqg4s/hayekpipe.jpg?raw=1)
+
+.smallest[
+Friedrich A. Hayek
+
+1899-1992
+
+Economics Nobel 1974
+]
+]
+]
+
+.right-column[
+
+.smaller[
+
+> "[The Perfect competition model] throughout assumes that state of affairs *already to exist* which...the *process of competition* tends to *bring about* (or to approximate) and that, if the state of affairs assumed by the theory of perfect competition ever existed, it would not only deprive of their scope all the activities which the verb "to compete" describes but would make them virtually impossible. ... Advertising, undercutting, and improving ('differentiating') the goods or services produced are all excluded by definition — 'perfect' competition means indeed the absence of all competitive activities."
+
+]
+]
+
+.source[Hayek, Friedrich A, 1948, "The Meaning of Competition," Chapter V in *Individualism and Economic Order*]
+
+---
+
+# Assessing "Perfect Competition"
+
+.left-column[
+.center[
+![:scale 70%](https://www.dropbox.com/s/nr3zendpjgtqg4s/hayekpipe.jpg?raw=1)
+
+.smallest[
+Friedrich A. Hayek
+
+1899-1992
+
+Economics Nobel 1974
+]
+]
+]
+
+.right-column[
+
+.smaller[
+
+> When we deal, however, with a situation in which a number of persons are attempting to work out their separate plans...the problem becomes one of how the "data" of the different individuals on which they base their plans are adjusted to the objective facts of their environment (which includes the actions of the other people).
+
+> Or, to anticipate our main conclusion in a brief statement, competition is by its nature a dynamic process whose essential characteristics are assumed away by the assumptions underlying static analysis [in the perfect competition model].
+
+]
+]
+
+.source[Hayek, Friedrich A, 1948, "The Meaning of Competition," Chapter V in *Individualism and Economic Order*]
+
+---
+
+# Assessing "Perfect Competition"
+
+.left-column[
+.center[
+![:scale 70%](https://www.dropbox.com/s/nr3zendpjgtqg4s/hayekpipe.jpg?raw=1)
+
+.smallest[
+Friedrich A. Hayek
+
+1899-1992
+
+Economics Nobel 1974
+]
+]
+]
+
+.right-column[
+
+.smallest[
+
+> Yet the current tendency in discussion is to be intolerant about the imperfections and to be silent about the prevention of competition. We can probably still learn more about the real significance of competition by studying the results which regularly occur where competition is deliberately suppressed than by concentrating on the shortcomings of actual competition compared with an ideal which is irrelevant for the given facts.
+
+> "I say advisedly "where competition is deliberately suppressed" and not merely "where it is absent," because its main effects are usually operating, even if more slowly, so long as it is not outright suppressed with the assistance or the tolerance of the state."
+
+]
+]
+
+.source[Hayek, Friedrich A, 1948, "The Meaning of Competition," Chapter V in *Individualism and Economic Order*]
+
+---
+
+# Assessing "Perfect Competition"
+
+.left-column[
+.center[
+![:scale 70%](https://www.dropbox.com/s/nr3zendpjgtqg4s/hayekpipe.jpg?raw=1)
+
+.smallest[
+Friedrich A. Hayek
+
+1899-1992
+
+Economics Nobel 1974
+]
+]
+]
+
+.right-column[
+
+.smallest[
+
+> "The evils which experience has shown to be the regular consequence of a suppression of competition are on a different plane from those which the imperfections of competition may cause. Much more serious than the fact that prices may not correspond to marginal cost is the fact that, with an entrenched monopoly, costs are likely to be much higher than is necessary."
+
+> "A monopoly based on superior efficiency, on the other hand, does comparatively little harm so long as it is assured that it will disappear as soon as anyone else becomes more efficient in providing satisfaction to the consumers."
+
+]
+]
+
+.source[Hayek, Friedrich A, 1948, "The Meaning of Competition," Chapter V in *Individualism and Economic Order*]
+
+---
+
+# So What's the Point of the Models?
+
+.pull-left[
+- In perfect competition (model):
+  - price-taking firms set price equal to marginal cost
+  - long run economic profits are zero
+  - allocative efficiency: consumer and producer surplus maximized
+
+- This is a *tendency* .hi[only because of **free entry and exit**]
+
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://www.dropbox.com/s/2xhn4z2xle73n6v/donotenter.png?raw=1)
+]
+]
+
+---
+
+# So What's the Point of the Models?
+
+.pull-left[
+
+- **Don't judge real markets by their similarity to the perfect competition model**
+
+- Judge them more on their level of contestability, ease of potential entry
+
+.smallest[
+> "...In that Empire, the Art of Cartography attained such Perfection that the map of a single Province occupied the entirety of a City, and the map of the Empire, the entirety of a Province.  In time, those Unconscionable Maps no longer satisfied, and the Cartographers Guilds struck a Map of the Empire whose size was that of the Empire, and which coincided point for point with  it. The following Generations, who were not so fond of the Study of Cartography as their Forebears had been, saw that that vast Map was Useless..."
+
+]
+
+]
+
+.pull-right[
+.center[
+![](https://www.dropbox.com/s/17cb7ceqipgi8fs/citymodel.jpg?raw=1)
+]
+]

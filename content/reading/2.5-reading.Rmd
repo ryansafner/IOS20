@@ -1,0 +1,17 @@
+---
+title: "2.5 Contestability & Entrepreneurship - Readings"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Recommended Readings:
+
+- [<i class="fas fa-file-pdf"></i> Baumol (1950), "Uncertainty, Evolution, and Economic Theory"](/readings/Alchian-1950.pdf)
+- [<i class="fas fa-file-pdf"></i> Alchian (1950), "Uncertainty, Evolution, and Economic Theory"](/readings/Alchian-1950.pdf)
+- <i class="fas fas fa-book"></i> Knight, Frank H, 1921, [*Risk, Uncertainty, and Profit*](https://oll.libertyfund.org/titles/knight-risk-uncertainty-and-profit)
+- <i class="fab fa-youtube"></i> Gigerenzer, Gerd, 2012, ["What Can Economists Know?"](https://www.youtube.com/watch?v=DdEEwoKkfMA)], Institute for New Economic Thinking's (INET) Paradigm Lost Conference, Berlin
+- [<i class="fas fa-file-pdf"></i> Hayek (1945), "The Use of Knowledge in Society"](/readings/Hayek-1945.pdf)
+- <i class="fab fa-youtube"></i> Smith, Vernon, L, 2003, ["Constructivist and Ecological Rationality in Economics (Nobel Prize Lecture)](https://www.nobelprize.org/prizes/economic-sciences/2002/smith/lecture/)
+- <i class="fas fas fa-book"></i> Kirzner, Israel M, 1973, [*Competition and Entrepreneurship*](http://www.sjsu.edu/people/john.estill/courses/158-s15/Israel%20Kirzner%20-%20Competition%20And%20Entrepreneurship.pdf)
+- <i class="fas fas fa-book"></i> Hayek, Friedrich A, 1948, ["The Meaning of Competition"](https://mises.org/library/meaning-competition), Chapter V in *Individualism and Economic Order*

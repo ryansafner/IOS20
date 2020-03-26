@@ -70,7 +70,10 @@ lessons:
     class: "2.4-class"
 
   - title: "2.5 Contestability & Entrepreneurship"
-
+    slides: "2.5-slides"
+    class: "2.5-class"
+    reading: "2.5-reading"
+    
   - title: "**Problem Set 2** due Sunday April 5"
     assignment: "02-problem-set"
 

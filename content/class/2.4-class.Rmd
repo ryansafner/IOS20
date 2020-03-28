@@ -1,5 +1,5 @@
 ---
-title: "2.4 Sequential Games and Contestable Markets"
+title: "2.4 Sequential Games"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-syllabus-no-bib.csl

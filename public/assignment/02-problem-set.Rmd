@@ -1,0 +1,67 @@
+---
+title: "Problem Set 2"
+author: "ECON 326 - Industrial Organization - Spring 2020"
+date: "Due by 11:59 PM Sunday, April 5, 2020 by email"
+output: pdf_document
+header-includes:
+- \usepackage{amsmath}
+- \usepackage{multirow, multicol, booktabs}
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+Please **type** your answers to the following questions in a document and **email it** (as MS Word, PDF, etc) to me. You may still handwrite answers if you will be able to scan and email them if they are easily readable, but this is *not preferred*.
+
+For the few questions that ask you to draw a **graph/diagram**, *try* to do so *on your computer* (use MS Paint, the drawing tools in MS Word or MS Powerpoint, plot points in MS Excel, drawing/notetaking apps, etc.), and save it as an image to include on your homework document. Again, they need not be perfect or to scale, just show that you understand the broad idea. Being able to understand and sketch the graphs is still a very important and useful skill! If all else fails, I will be lenient in grading graph questions if you are unable to technologically include a graph. 
+
+You may work together (and I highly encourage that) but you must turn in your own answers. Your TA, under my supervision, will grade homeworks 70% for completion, and for the remaining 30%, pick one question to grade for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.
+
+# Competitive Markets
+
+1. Explain what cartels are, the problems that they face, and some methods by which these problems might be overcome.
+
+\clearpage
+
+2. Describe the major differences between Bertrand competition, Cournot competition, and Stackelberg competition. How do firms compete, and what are the results in terms of market price, industry output, and profits for firms?
+
+\clearpage
+
+3. Describe the conditions required to make a market *contestable*. Describe and compare the Nash equilibrium of a contestable market with a pure monopoly, and with perfect competition.    
+
+
+\clearpage
+
+4. Suppose Comcast $(C)$ and Verizon $(V)$ have a constant $MC=AC=\$20$ per customer connected to their internet network. The market (inverse) demand curve for basic internet service is given by:
+$$\begin{aligned}
+P&=80-2Q\\
+Q&=q_C+q_V\\
+\end{aligned}$$
+
+a. Find the Cournot-Nash equilibrium output, price, and profit for each firm.
+b. Find the output, price, and profit for each firm if the two were to collude.
+c. Suppose now Comcast is a Stackelberg leader. Find each firm's output, price, and profit.
+d. Find the output, price, and profit for each firm they were to compete on *price* instead of *quantity.*
+
+\clearpage
+
+5. What makes a threat credible? In your answer, use the concept of subgame perfection.
+
+\clearpage 
+
+6. Boeing (a U.S. company), and Airbus (a European company) are fierce competitors that together, about evenly dominate the market for aircraft. Airbus decides whether it is going to launch a *new plane*, or keep its *old planes*. Boeing must then respond and determine if it is also going to launch a *new plane* or keep its *old planes*. 
+
+> Developing a new plane is very expensive. If both companies produce *new planes*, they will have spent a lot on producing the new plane, but neither will gain any market share. If only one company releases a new plane, they will capture more of the market, making the extra cost of development worthwhile. This game is depicted in extensive form below:
+
+![](iohwgame.png)
+
+a. List all of Airbus' possible strategies and list all of Boeing's possible strategies.
+b. Circle (or describe) all of the subgames of this game.
+c. Solve for the "rollback equilibrium" using backwards induction.
+d. Draw this game in normal form. Find all Nash equilibria.^[Hint: think carefully about the players' strategies, as you listed out in Part A.] Which is subgame perfect, and why?
+e. Suppose Boeing, who has to move second, announces the following threat to Airbus makes its initial decision: *if Airbus produces a new plane, Boeing will respond by also producing a new plane.* Is this threat credible? Why or why not?
+f. The U.S. government considers the aircraft industry to be of strategic importance. Suppose Boeing lobbies the government to gain a subsidy to produce the plane. Boeing's payoff increases by $s$ only when it chooses to produce the new plane. How big must $s$ need to be in order to make Boeing's threat in Part e credible?

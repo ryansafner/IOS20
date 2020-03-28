@@ -17,15 +17,19 @@ editor_options:
 
 # Overview
 
-Today we take a deeper dive into game theory, as some more advanced tools will help us think about firms and industries going forward.
+Today we wrap up Unit 2 with a brief final application of game theory to contestable markets, and then a more literary-inspired discussion of the shortcomings of "perfect competition" as a realistic, policy-relevant model.
 
 # Class Livestream/Lecture Videos
 
-- [<i class="fas fa-video"></i> Zoom Live Class Meetings (starts Tuesday at 2:00)](https://zoom.us/j/486416690)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IiIX5U9PiME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-If needed, see my [<i class="fab fa-youtube"></i> brief overview of Zoom](https://www.youtube.com/embed/gOgSF8QZDQM) for help. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QQql9vfATOo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Check back later today when videos will be posted.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y_TaLwnChEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZDMI4f9m-F4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jBRWdnEbOwA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Slides
 
@@ -33,7 +37,7 @@ Check back later today when videos will be posted.
 
 # Assignments: Homework 2, Midterm Exam
 
-[Homework 2](assignment/02-problem-set) will be posted today, and is due via email, on Sunday, April 5, by 11:59PM. The answer key will be posted Monday, April 6.
+[Homework 2](assignment/02-problem-set) is posted, and is due via email, on Sunday, April 5, by 11:59PM. The answer key will be posted Monday, April 6.
 
 I will post your Homework 1 grades on Blackboard and the answer key on the original assignment page.
 

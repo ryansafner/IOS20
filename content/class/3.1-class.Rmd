@@ -1,0 +1,36 @@
+---
+title: "3.1 Why Are There Firms?"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Tuesday, March 31, 2020*
+
+*Quarantine Lecture 3*
+
+# Overview
+
+# Class Livestream/Lecture Videos
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/3.1-slides.html)
+
+# Assignments: Homework 2, Midterm Exam
+
+[Homework 2](assignment/02-problem-set) is posted, and is due via email, on Sunday, April 5, by 11:59PM. The answer key will be posted Monday, April 6. **Please attach your document as a PDF!**
+
+Homework 1 grades are on Blackboard and the answer key is on the original assignment page.
+
+Our midterm exam will be the week of April 6. It will likely be a take home series of questions that you can spend a few days to work on, and will email to me when you complete.
+
+# Midterm Course Grades
+
+As per the Registrar, all faculty were required to issue midterm course grades on Monday March 30. I *estimated* your grade based on the assignments we have completed so far - just HW 1. You can again estimate your final course grade (out of 100%) on the [<i class="fas fa-calculator"></i> `Grade Calculator`](https://ryansafner.shinyapps.io/326_grade_calculator/) at the top of the [Assignments page](/assignments).

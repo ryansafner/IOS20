@@ -82,7 +82,9 @@ lessons:
   - title: '<span class="fake-header-table">III Theory of the Firm</span>'
     header: True
     
-  - title: "3.1 Why Firms Exist"
+  - title: "3.1 Why Are There Firms?"
+    slides: "3.1-slides"
+    class: "3.1-class"
 
   - title: "3.2 Agency Theory"
 

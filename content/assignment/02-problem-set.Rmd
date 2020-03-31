@@ -14,7 +14,7 @@ source(file.path(here::here(), "lib", "graphics.R"))
 
 - [<i class="fas fa-file-pdf"></i> `Download as PDF`](/assignment/02-problem-set-pdf.pdf)
 
-Please **type** your answers to the following questions in a document and **email it** (as MS Word, PDF, etc) to me. You may still handwrite answers if you will be able to scan and email them if they are easily readable, but this is *not preferred*.
+Please **type** your answers to the following questions in a document and **email a PDF attachment** to me.^[In MS Word, or Pages, or most word processing software, File -> Save As -> PDF, or File -> Export -> PDF.] You may still handwrite answers if you will be able to scan and email them, **as a PDF**, if they are easily readable, but this is *not preferred*. It will be *much* easier for me to grade, annotate, and return to you as a PDF, so please save me some trouble.
 
 For the few questions that ask you to draw a **graph/diagram**, *try* to do so *on your computer* (use MS Paint, the drawing tools in MS Word or MS Powerpoint, plot points in MS Excel, drawing/notetaking apps, etc.), and save it as an image to include on your homework document. Again, they need not be perfect or to scale, just show that you understand the broad idea. Being able to understand and sketch the graphs is still a very important and useful skill! If all else fails, I will be lenient in grading graph questions if you are unable to technologically include a graph. 
 

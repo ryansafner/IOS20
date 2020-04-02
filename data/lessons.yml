@@ -89,10 +89,10 @@ lessons:
 
   - title: "3.2 The Firm as Nexus of Contracts"
     slides: "3.2-slides"
+    class: "3.2-class"
+    reading: "3.2-reading"
 
-  - title: "3.3 Mergers and Vertical Integration"
-
-  - title: "3.4 The Market for Corporate Control"
+  - title: "3.3 Asset Specificity and Vertical Integration"
 
   - title: '<span class="fake-header-table">Applications</span>'
     header: True

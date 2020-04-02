@@ -253,7 +253,7 @@ Steven N.S. Cheung
 
 .right-column[
 .smaller[
-> "My own favorite example is riverboat pulling in China before the communist regime, when a large group of workers marched along the shore towing a good-sized wooden boat. \textcolor{red}{The unique interest of this example is that the collaborators actually agreed to the hiring of a monitor to whip them.} The point here is that even if every puller were perfectly ``honest,'' it would still be too costly to measure the effort each has contributed to the movement of the boat, but to choose a different measurement agreeable to all would be so difficult that the arbitration of an agent is essential," (p.8-9).
+> "My own favorite example is riverboat pulling in China before the communist regime, when a large group of workers marched along the shore towing a good-sized wooden boat. .hi[The unique interest of this example is that the collaborators actually agreed to the hiring of a monitor to whip them.] The point here is that even if every puller were perfectly "honest," it would still be too costly to measure the effort each has contributed to the movement of the boat, but to choose a different measurement agreeable to all would be so difficult that the arbitration of an agent is essential," (p.8-9).
 ]
 
 .source[Steven N.S. Cheung, 1983, "The Contractual Nature of the Firm," *Journal of Law and Economics* 26(1): 1-21]
@@ -312,7 +312,7 @@ R: Harold Demsetz (1930-2019)
 
 ---
 
-# The Firm as Nexus of Contracts: Aligning the Monitor's Incentives
+# The Firm: Aligning the Monitor's Incentives
 
 .left-column[
 .center[

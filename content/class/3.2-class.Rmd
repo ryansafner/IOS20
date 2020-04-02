@@ -1,0 +1,56 @@
+---
+title: "3.2 The Firm as Nexus of Contracts"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Tuesday, March 31, 2020*
+
+*Quarantine Lecture 3*
+
+# Overview
+
+Today we continue looking at the "theory of the firm" launched by Coase (1937). We explore a famous interpretation (among other intepretations) of the firm as a "**nexus of contracts**" in the marketplace. This comes from a famous paper by **Alchian and Demsetz (1972)**, which views the firm not as a command-and-control hierarchy, but another nexus of voluntary market transactions, where collaborating factors of production find it in their interest to hire a monitor to minimize shirking, and give the monitor residual claimancy over the output.
+
+We extend this view by discussing **agency costs**, which often (but not exclusively) arise from the separation of ownership and control, as in corporate businesses. We discuss the famous paper by **Jensen and Meckling (1976)** on agency costs, and then discuss **corporate governance** strategies on how firms attempt to minimize these agency costs, including a final discussion of the **market for corporate control.**
+
+# Readings
+
+See today's [readings](/reading/3.2-reading) which may help you understand the concepts, and which are the primary source of what I discuss today.
+
+# Class Livestream/Lecture Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EgYEABrhb10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HK_wCiUrhbw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/khVbn8xHZvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HkyfAhJ7jUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/3.2-slides.html)
+
+# Discussion Board
+
+I have opened up a discussion board on Blackboard^[Go to this course on Blackboard, on the blue navigation bar on the left, see Discussion Board.] on the theory of the firm for this week and next week's topics. You can use this to post questions, comments, or anything you'd like us to talk about regarding the theory of the firm. There are a lot of interpretations, and a fair amount of different literatures on this, so I am happy to discuss this. I am also genuinely curious and interested in what you think.
+
+For now, I am not grading this in any way. Use this as a way to connect and make sure we are understanding the readings. (And I really enjoyed our first discussion!)
+
+Perhaps later, when we get to applications and policy, we will take this up more seriously and I will grade for participation.
+
+# Assignments: Homework 2, Midterm Exam
+
+[Homework 2](assignment/02-problem-set) is posted, and is due via email, on Sunday, April 5, by 11:59PM. The answer key will be posted Monday, April 6. **Please attach your document as a PDF!**
+
+Homework 1 grades are on Blackboard and the answer key is on the original assignment page.
+
+Our midterm exam will be a series of short essay questiosn. It will be posted on **Tuesday April 7**, and you will have until **8 PM Saturday April 11** to email answers to me. More instructions will be on the Midterm page, to be found on the [schedule page](/schedule) once posted.

@@ -11,9 +11,9 @@ editor_options:
   chunk_output_type: console
 ---
 
-*Tuesday, March 31, 2020*
+*Thursday, April 2, 2020*
 
-*Quarantine Lecture 3*
+*Quarantine Lecture 4*
 
 # Overview
 
@@ -34,6 +34,8 @@ See today's [readings](/reading/3.2-reading) which may help you understand the c
 <iframe width="560" height="315" src="https://www.youtube.com/embed/khVbn8xHZvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HkyfAhJ7jUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Note**: I had to trim video 3, which shows a clip from *Wall Street*, that YouTube forced me to cut, in order to avoid the video being blocked on Copyright grounds.^[Despite this arguably being a "fair use", copyright enforcement is relentless! Honestly, I don't know how the original video exists and doesn't violate copyright law worse than my use here... End of rant.] that you should still watch [via the slides](https://ios20.classes.ryansafner.com/slides/3.2-slides.html#25).
 
 # Slides
 

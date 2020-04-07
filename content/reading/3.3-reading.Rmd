@@ -5,7 +5,12 @@ bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 ---
 
-# Recommended Readings:
+# Recommended Readings and Primary Sources:
+
+- [<i class="fas fa-file-pdf"></i> Klein, Crawford, and Alchian, 1978, "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process"](/readings/Alchian-Demsetz-1972.pdf)
+- [<i class="fas fa-file-pdf"></i> Williamson, 1983, "Credible Commitments: Using Hostages to Support Exchange"](/readings/Williamson-1983.pdf)
+- [<i class="fas fa-file-pdf"></i> Williamson, 1998, "The Institutions of Governance"](/readings/Williamson-1998.pdf)
+- [<i class="fas fa-file-pdf"></i> Williamson, 2009, "Transaction Cost Economics: The Natural Progression" (Nobel Prize Lecture)](https://www.nobelprize.org/prizes/economic-sciences/2009/williamson/lecture/)
 
 The free IO textbook pretty extensively covers asset specificity theory, appropriable quasi-rents, and even the Fisher Body example (it's very famous):
 

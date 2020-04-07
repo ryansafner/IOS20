@@ -11,17 +11,33 @@ editor_options:
   chunk_output_type: console
 ---
 
-*Thursday, April 2, 2020*
+*Tuesday, April 7, 2020*
 
-*Quarantine Lecture 4*
+*Quarantine Lecture 6*
 
 # Overview
+
+Today we cover another major framework for studying the theory of the firm, the theory of asset specificity. This approach focuses on the threat of opportunism by parties that have signed a contract and made specific investments (sunk costs) by depending on one another: parties could try to extort greater quasi-rents from one another, or else threaten to pull out of the contract, harming the other party.
+
+Better-written enforceable contracts are one method of trying to minimize this type of transaction cost, but another method is vertical integration - merging the two parties (e.g. perhaps a manufacturer and a retailer) as a single firm, that does not have to worry about such opportunism.
 
 # Readings
 
 See today's [readings](/reading/3.3-reading) which may help you understand the concepts, and which are the primary source of what I discuss today.
 
 # Class Livestream/Lecture Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_iVtLfwswGw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BXJVzfzjVFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W8I3NImZjSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vkZTI68LfaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8-QlYVvd7aM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vhA8uIIhY-Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Slides
 

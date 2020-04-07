@@ -1,0 +1,12 @@
+---
+title: "3.3 Asset Specificity Theory - Readings"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Recommended Readings:
+
+The free IO textbook pretty extensively covers asset specificity theory, appropriable quasi-rents, and even the Fisher Body example (it's very famous):
+
+- <i class="fas fas fa-book"></i> pp.69-79 in @Church^[Again, there is [a free PDF](https://works.bepress.com/jeffrey_church/23/) from the authors.]

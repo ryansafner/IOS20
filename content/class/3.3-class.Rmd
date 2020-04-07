@@ -1,0 +1,40 @@
+---
+title: "3.3 Asset Specificity Theory"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Thursday, April 2, 2020*
+
+*Quarantine Lecture 4*
+
+# Overview
+
+# Readings
+
+See today's [readings](/reading/3.3-reading) which may help you understand the concepts, and which are the primary source of what I discuss today.
+
+# Class Livestream/Lecture Videos
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/3.3-slides.html)
+
+# Discussion Board
+
+I have opened up a discussion board on Blackboard^[Go to this course on Blackboard, on the blue navigation bar on the left, see Discussion Board.] on the theory of the firm for this week and next week's topics. You can use this to post questions, comments, or anything you'd like us to talk about regarding the theory of the firm. There are a lot of interpretations, and a fair amount of different literatures on this, so I am happy to discuss this. I am also genuinely curious and interested in what you think.
+
+For now, I am not grading this in any way. Use this as a way to connect and make sure we are understanding the readings. (And I really enjoyed our first discussion!)
+
+Perhaps later, when we get to applications and policy, we will take this up more seriously and I will grade for participation.
+
+# Assignments: Midterm Exam Due 8 PM Saturday April 11
+
+Our midterm is [posted](/assignment/midterm), and is due **by email as a PDF at 8:00PM Saturday April 11**.

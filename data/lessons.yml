@@ -93,6 +93,9 @@ lessons:
     reading: "3.2-reading"
 
   - title: "3.3 Asset Specificity and Vertical Integration"
+    slides: "3.3-slides"
+    class: "3.3-class"
+    reading: "3.3-reading"
 
   - title: '<span class="fake-header-table">Applications</span>'
     header: True

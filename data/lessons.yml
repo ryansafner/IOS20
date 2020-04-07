@@ -77,8 +77,9 @@ lessons:
   - title: "**Problem Set 2** due Sunday April 5"
     assignment: "02-problem-set"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Midterm Exam** week of April 6'
-
+  - title: '<i class="fas fa-laptop-code"></i> **Midterm Exam** due 8 PM Sat Apr. 11'
+    assignment: "midterm"
+    
   - title: '<span class="fake-header-table">III Theory of the Firm</span>'
     header: True
     

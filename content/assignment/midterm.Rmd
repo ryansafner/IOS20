@@ -14,7 +14,7 @@ source(file.path(here::here(), "lib", "graphics.R"))
 
 # Instructions
 
-Choose four questions to answer. Questions draw from course lectures, discussions, and readings.
+**Choose four** questions to answer. Questions draw from course lectures, discussions, and readings.
 
 You may discuss the questions, but you must write your own responses and turn in your own work. Answers that are substantially similar will be interpretted cheating and punished accordingly. I will not answer any questions about course content during while the exam is outstanding.
 
@@ -24,11 +24,9 @@ Each question is worth **25 points.** This assignment is due to me by email by *
 
 2. Verizon currently provides the *only* cellular service in a remote area. Assume Verizon has a constant marginal cost per internet connection, and has no fixed costs.
 
-a. (10 points) Under what conditions is this market with a single producer *both* a competitive outcome and a Nash equilibrium?
-
-b. (5 points) What if Verizon has fixed costs? How will this Nash equilibrium change? Compare this to the monopoly and the competitive outcomes.
-
-c. (10 points) Suppose T-Mobile is considering providing service in this remote area as well. However, TA-Mobile has significantly higher costs than Verizon. What will the Nash equilibrium of this market be? Compare this to the monopoly and the competitive outcomes.
+- a. (10 points) Under what conditions is this market with a single producer *both* a competitive outcome and a Nash equilibrium?
+- b. (5 points) What if Verizon has fixed costs? How will this Nash equilibrium change? Compare this to the monopoly and the competitive outcomes.
+- c. (10 points) Suppose T-Mobile is considering providing service in this remote area as well. However, TA-Mobile has significantly higher costs than Verizon. What will the Nash equilibrium of this market be? Compare this to the monopoly and the competitive outcomes.
 
 3. Explain what game theorists mean by the phrase "talk is cheap." Use the concept of *subgame perfect Nash equilibrium* in your answer.
 

@@ -249,6 +249,12 @@ Benjamin Klein
 
 ---
 
+class: inverse, center, middle
+
+# Examples of Contractual Restraints
+
+---
+
 # Franchising
 
 .pull-left[

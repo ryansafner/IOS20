@@ -98,6 +98,11 @@ lessons:
     class: "3.3-class"
     reading: "3.3-reading"
 
+  - title: "3.4 Contractual Restraints & Property Rights"
+    slides: "3.4-slides"
+    class: "3.4-class"
+    reading: "3.4-reading"
+
   - title: '<span class="fake-header-table">Applications</span>'
     header: True
 

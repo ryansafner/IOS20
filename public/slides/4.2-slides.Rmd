@@ -1,0 +1,50 @@
+---
+title: "3.3: Asset Specificity Theory"
+subtitle: "ECON 326 · Industrial Organization · Spring 2020"
+author: 'Ryan Safner<br> Assistant Professor of Economics <br> <a href="mailto:safner@hood.edu"><i class="fa fa-paper-plane fa-fw"></i> safner@hood.edu</a> <br> <a href="https://github.com/ryansafner/IOs20"><i class="fa fa-github fa-fw"></i> ryansafner/IOs20</a><br> <a href="https://IOs20.classes.ryansafner.com"> <i class="fa fa-globe fa-fw"></i> IOs20.classes.ryansafner.com</a><br>'
+#date:
+output:
+  xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML" # rescales math with css changes https://github.com/yihui/xaringan/issues/143
+    lib_dir: libs
+    df_print: paged
+    #seal: false
+    css: [custom.css, custom-fonts.css, "hygge"] #, metropolis, metropolis-fonts
+    nature:
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"] # first is for rescaling images , second is for embedding tweets, https://github.com/yihui/xaringan/issues/100
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    includes:
+      in_header: header.html # for font awesome, used in title  
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      message = F,
+                      fig.retina = 3,
+                      fig.align = "center")
+library("tidyverse")
+library("ggrepel")
+
+theme_slides <- theme_light() + 
+  theme(
+    text = element_text(family = "Fira Sans", size = 24)
+  )
+
+```
+
+Suspicions of monopoly come baked-in with our models:
+
+- "That vertical integration has never enjoyed a secure place in value theory is attributable to the fact that, under conventional assumptions, it is an anomaly: if the costs of operating competitive markets are zero, "as is usu- ally assumed in our theoretical analysis" (Arrow, 1969, p. 48), why integrate?" - Williamson (1971) the Vertical Integration of Production: Market Failure Considerations* p.112
+
+- Coase: economists look for a monopoly explanation
+

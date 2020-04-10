@@ -17,11 +17,23 @@ editor_options:
 
 # Overview
 
+Today we look at the other major solution to post-contractual opportunism caused by asset specificity: writing restrictive long-term contracts. We look at examples such as franchising, exclusivity agreements, territorial restraints, and resale price maintenance. All of these will be important once we start considering antitrust concerns.
+
+Finally, we discuss a fourth perspective on the firm, the ["property rights approach"](https://en.wikipedia.org/wiki/Property_rights_(economics)#Property_rights_approach_to_the_theory_of_the_firm), largely affiliated with 2016 Nobel Laureate Oliver Hart. This view argues that firms are defined by their ownership of assets, and the key aspect of ownership is *residual control rights*: that owners can make decisions for all cases not clearly specified in contracts. The key takeaway is that who owns assets matters for efficiency.
+
 # Readings
 
 See today's [readings](/reading/3.4-reading) which may help you understand the concepts, and which are the primary source of what I discuss today.
 
 # Class Livestream/Lecture Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lcZozyvebn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z6TVnlA_Vx4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5WI9jwdEEk8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iOsNy3l8DIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Slides
 

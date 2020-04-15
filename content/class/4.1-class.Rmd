@@ -1,0 +1,37 @@
+---
+title: "4.1 Measuring Market Power"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Tuesday, April 14, 2020*
+
+*Quarantine Lecture 7*
+
+# Overview
+
+
+# Readings
+
+See today's [readings](/reading/3.4-reading) which may help you understand the concepts, and which are the primary source of what I discuss today.
+
+# Class Livestream/Lecture Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W9UVyFPMDNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uCPnB7mkQ0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UAlQJmFEaK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mIfOqcIRYaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/4.1-slides.html)

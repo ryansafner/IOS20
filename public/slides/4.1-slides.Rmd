@@ -518,7 +518,7 @@ $$L=\frac{p-MC(q)}{p} = -\frac{1}{\epsilon_D}$$
 .pull-right[
 
 
-$$L = \frac{p-MC}{p} = \frac{1}{\epsilon_D}$$
+$$L = \frac{p-MC}{p} = -\frac{1}{\epsilon_D}$$
 
 This simple formula only works for a monopoly $(n=1)$!
 
@@ -542,6 +542,21 @@ $$L = \frac{p-MC_i}{p} = -\frac{s_i}{\epsilon_D}$$
 Where $s_i = \frac{q_i}{Q}$
 
 - Note monopoly is special case where $\frac{q_i}{Q}=1$! 
+]
+
+---
+
+# Lerner Index and Cournot Theorem
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/rh4v98afnjit8zc/markup.jpg?raw=1)
+]
+]
+
+.pull-right[
+
+$$L = \frac{p-MC_i}{p} = -\frac{s_i}{\epsilon_D}$$
 
 Alternatively, since $s_i=\frac{1}{n}$:
 
@@ -651,20 +666,20 @@ class: inverse, center, middle
 
 .pull-left[
 .center[
-![](https://www.dropbox.com/s/cyg89bpljib6xoa/naics.png?raw=1)
+![:scale 80%](https://www.dropbox.com/s/cyg89bpljib6xoa/naics.png?raw=1)
 ]
 ]
 
 .pull-right[
+.smaller[
 - .hi-purple[NAICS] used by statistical agencies such as the U.S. Census to classify industries
 
-- Places production into one of 1,004 4-digit industries
-
-- Defined nationally
+- Places production into one of 1,004 4-digit industries, defined nationally
 
 - Do not accurately correspond to economic markets
   - May include some products clearly not substitutes, or leave out some products that clearly are substitutes
   - Hence, should not be assumed to match properly with HHI measures
+]
 ]
 
 ---
@@ -744,6 +759,7 @@ class: inverse, center, middle
 ]
 
 .pull-right[
+.smaller[
 - Can we tell a collusive market from a competitive one?
 
 $$L=\frac{p-MC}{p}=-\frac{1}{\epsilon_D}$$
@@ -753,7 +769,8 @@ $$L=\frac{p-MC}{p}=-\frac{1}{\epsilon_D}$$
 - Could be Bertrand price competition, firms setting $p=MC$
   - Or it could be a cartel splitting monopoly profits by fixing the price
 
-- We almost never know $MC$!
+- .hi-purple[Data problems: we never know MC!]
+]
 ]
 
 ---
@@ -804,16 +821,15 @@ base
 ]
 
 .pull-right[
-- Recall the Lerner index for measuring market power and markup:
+.smaller[
 $$L=\frac{p-MC}{p}$$
-  - $L=1$: monopoly
-  - $L=0$: perfectly competitive
-  
-- Imagine we observe a market with $N$ sellers all charging price $p$ and selling quantity $q$
+
+- Imagine we observe a market with $n$ sellers all charging price $p$ and selling quantity $q$
 
 - Two possible explanations: 
   1. The market is competitive, and all firms are charging $p=MC$
   2. The market is a cartel, and all firms are marking up $p>MC$
+]
 ]
 
 ---
@@ -882,11 +898,11 @@ ggplot(data=tibble(x=1:10), aes(x=x))+
 
 .pull-right[
 
-- What if demand shifts to Demand$_2$? Same problem! 
+- What if .hi-purple[Demand shifts] to Demand $_2$? Same problem! 
 
 1. Competitive firms set $MC_c$ equal to new demand 2 to get $p_2$ at $q_2$
 
-2. Cartel sets $MC_c$ equal to new $MR_2$ at $q_2$, mark up to $p_2$ 
+2. Cartel sets $MC_M$ equal to new $MR_2^M$ at $q_2$, mark up to $p_2$ 
 
 - Changes in demand cannot identify market power
 
@@ -945,7 +961,7 @@ ggplot(data=tibble(x=1:10), aes(x=x))+
 
 - Potential solution famously identified by Bresnahan (1982):
 
-- If demand *rotates* around a price (i.e. becomes more elastic)
+- If .hi-purple[demand *rotates*] around a price (i.e. becomes more elastic)
 
 1. Competitive firms don't change $p$ or $q$ $(MC_c$ still intersects Demand at same point!)
 

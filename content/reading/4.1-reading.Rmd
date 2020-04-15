@@ -1,0 +1,14 @@
+---
+title: "3.4 Contractual Restraints & Property Rights - Readings"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Recommended Readings and Primary Sources:
+
+- [<i class="fas fa-file-pdf"></i> Bresnahan, 1982, "The Oligopoly Solution Concept is Identified"](/readings/Bresnahan-1982.pdf)
+- [<i class="fas fa-external-link-square-alt"></i> U.S. Department of Justice, 2010, "Horizontal Merger Guidelines"](https://www.justice.gov/atr/horizontal-merger-guidelines-08192010)
+- [<i class="fas fa-external-link-square-alt"></i> U.S. Department of Justice, 2017, "Herfindal Hirschman Index"](https://www.justice.gov/atr/herfindahl-hirschman-index)
+
+- <i class="fas fas fa-book"></i> Ch. 8.2.2, 12.1.1, 19 in @Church^[Again, there is [a free PDF](https://works.bepress.com/jeffrey_church/23/) from the authors.]

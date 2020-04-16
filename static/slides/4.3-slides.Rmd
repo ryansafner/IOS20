@@ -42,31 +42,78 @@ theme_slides <- theme_light() +
 
 ```
 
+---
+
+# 
+
+- Mises quote on consumer sovereignty
+
+- Some argue that without antitrust laws, market forces exist to promote competition and prevent special interests from capturing
+
+- government action creates a venue for regulatory capture, where 
+
+- 
+
+
+“progressive” idea was one of “political rationalization of business and industrial conditions, a movement that operated on the assumption that general welfare of the community could be served best by satisfying the concrete needs of business” (Kolko 1963: 2-3)
+
+Woodrow Wilson (1912: 188) said in a speech to the Economic Club of New York, Government cannot take its hands off of business. Government must regulate business, because that is the foundation of every other relationship, particularly of the political relationships. It is futile, therefore, to have the politicians take their hands off. They may blunder at the business, but they cannot give up. They may make fundamental mistakes – they will make a great many if you do not frankly assist and instruct them – but they must go forward whether instructed or not.  
+
+The problem, as Kolko (1963: 3) notes, is “the regulation itself was invariably controlled by the leaders of the regulated industry, and directed towards ends they deemed acceptable and desirable.”  
+
+“competition was unacceptable to many key business and financial interests, and the merger movement was to a large extent a reflection of voluntary, unsuccessful business efforts to bring irresistible competitive trends under control” (Kolko 1963: 4).
+
+though [the Sherman] Act was an attempt by small and medium sized business to protect themselves from the greater efficiencies of the larger businesses within the same or competing industries (Kolko 1963; Weinstein 1968; DiLorenzo 1985, Armentano 1999). As DiLorenzo (1985: 81) notes, the Sherman Act was due to Congress’s objections “to the fact that less efficient (smaller) businessmen (‘honest men’) were driven out of business.
+
+“it was not the existence of monopoly that caused the federal government to intervene in the economy, but the lack of it” (Kolko 1963: 5).'
+
+
+Dorsey (1995: 728), Roosevelt sought to pressure businessmen into reforming themselves. “He believed that the very threat of anti-trust legislation might convince corporate leaders to do business in the proper spirit of public service. He put the captains of industry on notice that if they failed to police themselves, to engage in what he considered moral behavior, then government would be forced to intervene” (Ibid.). In his attempt to do so, Roosevelt had a direct effect on who the Attorney General sought under antitrust law, personally directing him who to file suit against and who not to (Bittlingmayer 1996: 386).
+
+These men, although close to Roosevelt, greatly feared public clamor for regulation and his of ‘Trustbusting’ as a political issue. It was clear to them that when Roosevelt denounced ‘bad’ trusts his main target was Rockefeller and his Standard Oil Company, rather than the Morgan and other corporations in the Civic Federation.”
+
+
+
+"it is business control over politics (and by the ‘business’ I mean the major economic interests) rather than political regulation of the economy that is the significant phenomenon of the Progressive era" (Kolko 1963: 3)
+
+These businessmen desired what they called “rationalization,” which was the “organization of the economy and the larger political sphere in a manner that will allow corporations to function in a predictable and secure environment permitting reasonable profits over the long run” (Kolko 1963: 3). Essentially, businessmen recognized the insecurity that comes with the unhampered market.  
+
+The moral of the whole matter is this: The business of the United States is not as a whole in contact with the government of the United States. So as soon as it is, the matter which now give you, and justly give you, cause for uneasiness disappear. Just so soon as the business of this country has general, free, welcome access to the councils of congress, all the friction between business and politics will disappear (Wilson 1912: 200).
+
+
+ Most of “the new laws attacking unfair competitors and price discrimination meant that government would now make it possible for many trade associations to stabilize, for the first time, prices within their industries, and to make effective oligopoly a new phase of the economy” (Kolko 1963: 268)
+ 
+Many of the big businessmen disliked the Sherman Antitrust Act11 due to its vague content. Roosevelt would often make a distinction between “good” and “bad” trusts, making businessmen uneasy.  -- Highlighted Jan 26, 2017
+
+
+Page 13
+Even labor leaders took issue with the wording of the Sherman act, understanding their need to be sure that “nothing contained in the antitrust laws shall be construed to forbid the existence and operation of labor organizations” (quoted in Kolko 1963: 263). Unionists wanted to be sure that trade organizations were exempted from the antitrust legislation. 
+
+Trans-Missouri Freight Association case of 1897 had laid down a particularly narrow view of the Sherman Act...Supreme Court had declared there was no difference between reasonable and unreasonable restraints on trade. Both were considered illegal. (Weinstein 1968)
+
+ The sharpened definition meant that an even greater portion of the industrial world may fall into violation of the Sherman Act. In reality, the Act was being used to aid small business, shutting down any firm that grew too large (Kolko 1963; Weinstein 1968; DiLorenzo 1985; Armentano 1999). 
+
+p.16: Hammond (1911) continued, “Ruinous Competition, involving the conduct of business without profit, is not to be encouraged, but, on the contrary, should be depreciated, as it deters the investment of Capital and other Kindred enterprises.”  -- Highlighted Jan 26, 2017
+ 
+
+---
 
 # Antitrust
 
 .pull-left[
-.center[
-![](https://www.dropbox.com/s/z3ptcqr8hurtjp6/ftcstatue.jpg?raw=1)
-]
+
 ]
 
 .pull-right[
-.smallest[
-- Today:
-  - Overview of antitrust today
-  - Evolution of antitrust laws & some key cases
-  - Evolution of economic thinking on antitrust
-  - Some key antitrust areas
 
-- Next class:
-  - A clearer look at the "robber barons"
-  - Case studies of antitrust events
-  - Antitrust and rent-seeking, regulatory capture
+- Today: overview of antitrust laws, some key cases, evolution of antitrust jurisprudence
 
-- Later: "Hipster antitrust," regulation of certain industries, natural monopolies, public utilities, telecom., transport.
+- Next class: antitrust 
 
-]
+- Following class: 
+
+- Regulation of certain industries: natural monopolies, public utilities, telecommunications, transportation
+
 ]
 
 ---
@@ -80,9 +127,7 @@ class: inverse, center, middle
 # Antitrust Today
 
 .pull-left[
-.center[
-![](https://www.dropbox.com/s/z3ptcqr8hurtjp6/ftcstatue.jpg?raw=1)
-]
+
 ]
 
 .pull-right[
@@ -100,43 +145,36 @@ class: inverse, center, middle
 
 # Private Antitrust Suits
 
-.left-column[
-.center[
-![:scale 100%](https://www.dropbox.com/s/kzebgem4w061fd9/lawsuit.png?raw=1)
-]
+.pull-left[
+
 ]
 
-.right-column[
-.smallest[
-- **_Private parties_** harmed by business (consumers, competitors, suppliers/buyers) can bring .hi-purple[civil] lawsuits against defendant to seek an .hi-purple[injunction] or recover .hi-purple[damages]
+.pull-right[
+
+- Private parties harmed by business (consumers, competitors, suppliers/buyers) can bring .hi-purple[civil] lawsuits against defendant to seek an .hi-purple[injunction] or recover .hi-purple[damages]
   - Must show they suffered harm by the defendant
 
 - Plaintiffs can earn .hi-purple[treble damages] for successful antitrust claims (as opposed to normal damages under normal contract claims)
 
-- Private antitrust suits outnumber government suits by a factor of 20:1!
+- Private antitrust suits outnumber government suits by a factor of 20:1
 
 - Chilling effects on business activities that might cause raised eyebrows
 ]
-]
+
 ---
 
 # Private Antitrust Suits
 
-.smaller[
 > "Every violation of the antitrust laws is a blow to the free-enterprise system envisaged by Congress. This system depends on strong competition for its health and vigor, and strong competition depends, in turn, on compliance with antitrust legislation. In enacting these laws, Congress had many means at its disposal to penalize violators. It could have, for example, required violators to compensate federal, state, and local governments for the estimated damage to their respective economies caused by the violations. But, this remedy was not selected. Instead, Congress chose to permit all persons to sue to recover three times their actual damages every time they were injured in their business or property by an antitrust violation. .hi[By offering potential litigants the prospect of a recovery in three times the amount of their damages, Congress encouraged these persons to serve as 'private attorneys general.'"]
-
 
 - U.S. Supreme Court, *Hawaii v. Standard Oil Co. of Cal.*, 405 U.S. 251, 262 (1972)
 
-]
 ---
 
 # Private Antitrust Suits
 
 .pull-left[
-.center[
-![:scale 100%](https://www.dropbox.com/s/kzebgem4w061fd9/lawsuit.png?raw=1)
-]
+
 ]
 
 .pull-right[
@@ -155,16 +193,16 @@ class: inverse, center, middle
 
 # Public Antitrust Suits
 
-.left-column[
+.pull-left[
 .center[
-![:scale 75%](https://www.dropbox.com/s/gg6kqeuurg4exjg/doj.png?raw=1)
+![:scale 45%](https://www.dropbox.com/s/gg6kqeuurg4exjg/doj.png?raw=1)
 
-![:scale 75%](https://www.dropbox.com/s/zwc6kgdwe1nksct/ftc.png?raw=1)
+![:scale 45%](https://www.dropbox.com/s/zwc6kgdwe1nksct/ftc.png?raw=1)
 
 ]
 ]
 
-.right-column[
+.pull-right[
 
 - States Attorneys General can bring antitrust suits against businesses
   - Only for commerce solely contained within State borders
@@ -181,28 +219,26 @@ class: inverse, center, middle
 
 # Public Antitrust Suits
 
-.left-column[
+.pull-left[
 .center[
-![:scale 75%](https://www.dropbox.com/s/gg6kqeuurg4exjg/doj.png?raw=1)
+![:scale 45%](https://www.dropbox.com/s/gg6kqeuurg4exjg/doj.png?raw=1)
 
-![:scale 75%](https://www.dropbox.com/s/zwc6kgdwe1nksct/ftc.png?raw=1)
+![:scale 45%](https://www.dropbox.com/s/zwc6kgdwe1nksct/ftc.png?raw=1)
 
 ]
 ]
 
-.right-column[
-.smaller[
-Enforcement actions:
+.pull-right[
 
-- Enforced break up of "monopolizing" companies very rare since mid-20<sup>th</sup> century
-- Civil fines 
-- Typically a .hi-purple["consent decree"]: business agrees to stop an anticompetitive practice
-- Criminal penalities (through DOJ only):
-  - imprisonment for up to 10 years
-  - fines for individuals up to $1,000,000 and, for corporations, up to $100,000,000
+- Enforcement actions:
+  - Enforced break up of "monopolizing" companies very rare since mid-20<sup>th</sup> century
+  - Civil fines 
+  - Typically a .hi-purple["consent decree"]: business agrees to stop an anticompetitive practice
+  - Criminal penalities (through DOJ only):
+    - imprisonment for up to 10 years
+    - fines for individuals up to $1,000,000 and, for corporations, up to $100,000,000
 
 - Many mergers need prior approval from FTC and DOJ
-]
 ]
 
 ---
@@ -211,7 +247,7 @@ Enforcement actions:
 
 .pull-left[
 .center[
-![:scale 100%](https://www.dropbox.com/s/0dmkqjhoc4ow5t2/eu%20law.jpg?raw=1)
+![](https://www.dropbox.com/s/0dmkqjhoc4ow5t2/eu%20law.jpg?raw=1)
 ]
 ]
 
@@ -250,9 +286,7 @@ class: inverse, center, middle
 # Before Antitrust Laws: Medieval Guilds
 
 .pull-left[
-.center[
-![](https://www.dropbox.com/s/o8pro6u6dlm4w80/guilds.jpg?raw=1)
-]
+
 ]
 
 .pull-right[
@@ -262,6 +296,8 @@ class: inverse, center, middle
 - Guild had exclusive monopoly privilege by the monarch to practice a trade
   - Guilds regulated their members
   - Needed to become a 7-year apprentice of the guild to enter
+
+- Under English common law, a law that restrains one's ability to exercise a trade is null and void (denies a tradesman his right to earn a living)
 
 ]
 
@@ -333,14 +369,14 @@ Mitchel v Reynolds (1711) 1 P Wms 181
 ]
 
 .pull-right[
-.smaller[
-- Businesses (and consumers) make contracts that have recourse & remedies in the courts under .hi[Contract Law]:
+
+- Businesses (and consumers) make contracts that have recourse & rememdies in the courts under .hi[Contract Law]:
   - Breach of contract & damages
   - Injunctions on unlawful behavior
 
-- Courts simply .hi-purple[would not enforce "contracts in restraint of trade"]
+- Courts simply would not enforce "contracts in restraint of trade"
   - parties are not liable for breaches of such contracts (and no damages awarded) 
-]
+
 ]
 
 ---
@@ -377,14 +413,14 @@ Mitchel v Reynolds (1711) 1 P Wms 181
 ]
 
 .pull-right[
-.smaller[
+
 - The .hi["Gilded Age"] (c.1880-1920)
 
 - New technologies and new business forms (the modern corporation) allow companies to grow to a massive, national scale for the first time
 
 - Rise of the .hi["robber barons"]: millionaires who owned the big corporations
   - Carnegie (Steel), Vanderbilt (Railroads), Gould (Gold and Railroads), Stanford (Railroads), Rockefeller (Oil), Morgan (Banking)
-]
+
 ]
 
 ---
@@ -420,18 +456,19 @@ Mitchel v Reynolds (1711) 1 P Wms 181
 ]
 
 .pull-right[
-.smallest[
-- *Not an antitrust law*, but done to rein in alleged monopolistic & collusive practices of railroads
 
-- Act required railroad rates to be "reasonable and just" (but did not specify specific rates)
-  - Prohibited price discrimination between short haul or long haul fares
+- Not an antitrust law, but done to rein in alleged monopolistic and collusive practices of railroads
+
+- Act required railroad rates to be "reasonable and just" but did not specify specific rates
+
+- Prohibited price discrimination between short haul or long haul fares
 
 - Created first regulatory agency: .hi[Interstate Commerce Commission (ICC)] specifically to regulate railroads
   - Investigate & prosecute railroads that violated the act
   - Could only apply to interstate railroads
   - Supreme Court weakened its powers, found for railroads in 15/16 cases by 1906
 ]
-]
+
 ---
 
 # Sherman Antitrust Act (1890)
@@ -460,61 +497,40 @@ Mitchel v Reynolds (1711) 1 P Wms 181
 # Addyston Pipe & Steel Co. v. United States
 
 .pull-left[
-.center[
-![:scale 100%](https://www.dropbox.com/s/wflae00wz65gbun/court1.jpg?raw=1)
-]
+
 ]
 
 .pull-right[
-.smallest[
+
 *Addyston Pipe and Steel Co. v. United States*, 175 U.S. 211 (1899)
 
 - One of the most impactful antitrust cases
 
-- Pipemakers formed a .hi-purple[collusive agreement] to .hi-purple[rig bids]: 
+- Pipemakers formed a collusive agreement to rig bids: 
   - municipalities offered projects to the lowest bidder
   - the pipemakers group would secretly designate a "winner" and have all other pipemakers overbid guaranteeing the contract to the winner
 
-]
-]
-
----
-
-# Addyston Pipe & Steel Co. v. United States
-
-.pull-left[
-.center[
-![:scale 100%](https://www.dropbox.com/s/wflae00wz65gbun/court1.jpg?raw=1)
-]
-]
-
-.pull-right[
-.smallest[
-*Addyston Pipe and Steel Co. v. United States*, 175 U.S. 211 (1899)
-
 - Could have sold pipe for a cost & modest profit of $17/ton, but cartel charged $24.25/ton
 
-- Pipemakers argued this is a .hi-purple["reasonable"] restraint of trade
+- Pipemakers argued this is a "reasonable" restraint of trade
 
-]
 ]
 
 ---
+
 # Addyston Pipe & Steel Co. v. United States
 
 .pull-left[
-.center[
-![:scale 100%](https://www.dropbox.com/s/wflae00wz65gbun/court1.jpg?raw=1)
-]
+
 ]
 
 .pull-right[
 
 - U.S. Supreme Court agreed it is impossible for the Sherman Act to prohibit *every* restraint of trade
-  - (employment contracts? unions? noncompete clauses?)
+  - employment contracts? unions? noncompete clauses?
 
 - Contracts in restraint of trade are legal only if the restraint of trade is *"ancillary"* to the main purpose of a lawful contract
-  - If the main purpose *is* .hi-purple[("*naked*") restraint of trade], it is .hi-purple[illegal *per se*]
+  - If the main purpose *is* ("*naked*") restraint of trade, it is illegal *per se*
 
 ]
 
@@ -523,13 +539,10 @@ Mitchel v Reynolds (1711) 1 P Wms 181
 # Per Se Rule and Rule of Reason
 
 .pull-left[
-.center[
-![:scale 100%](https://www.dropbox.com/s/wflae00wz65gbun/court1.jpg?raw=1)
-]
+
 ]
 
 .pull-right[
-.smaller[
 - .hi-purple[*Per se* rule]: certain contracts and business actions *per se* illegal
   - There is no legal defense (including "reasonableness")
   - price-fixing, bid-rigging, group boycotts, geographical market divisions
@@ -537,7 +550,6 @@ Mitchel v Reynolds (1711) 1 P Wms 181
 - .hi-purple[Rule of Reason]: some business practices that restrain trade are reasonable
   - not *per se* illegal, "reasonable" restraint is a valid defense
   - government should review them on a case by case
-]
 ]
 
 ---
@@ -1150,6 +1162,413 @@ Suspicions of monopoly come baked-in with our models:
 
 
 ---
+
+Antitrust Areas: Monopolization
+
+---
+
+# Monopolization
+
+.pull-left[
+
+]
+
+.pull-right[
+
+- Very rare for DOJ to bring monopolization suits, drag on for many years
+
+- Government must prove firm has:
+  - (a) power over price and output and 
+  - (b) this comes from business decisions with the explicit goal to exclude competition
+
+- Remedies:
+  - Horizontal divestiture: break up into separate horizontal competitors
+  - Vertical divestiture: break up into separate companies along supply chain
+  - Consent decrees: end anticompetitive practices like tying, predatory pricing, etc
+  - Sell off or license intellectual property (if this is the source of monopoly)
+
+]
+
+---
+
+# Recent Examples: United States v. AT&T
+
+.pull-left[
+
+]
+
+.pull-right[
+
+- AT&T was protected as a natural monopoly through its Bell System network of companies for decades (another story for another lecture)
+  - sole provider of telephone service in nearly all of United States
+
+- In 1970s FCC suspected AT&T was using monopoly profits from its Western Electric subsidiary to subsidize the costs of its network
+
+- DOJ brought a monopolization case against AT&T in 1972
+]
+
+---
+
+# Recent Examples: United States v. AT&T
+
+.pull-left[
+
+]
+
+.pull-right[
+
+- 1982: AT&T and Government finalize a consent decree:
+  - Breakup of Bell system: AT&T's member telephone companies broke up into separate "Baby Bells" companies<sup>.magenta[1]</sup>
+  - AT&T keeps Western Electric, half of Bell Labs, and AT&T Long Distance
+]
+
+.footnote[
+<sup>.magenta[1]</sup> Most of which have since merged into Verizon, Sprint, and today's AT&T
+]
+
+---
+
+# Recent Examples: United States v. Microsoft
+
+.pull-left[
+
+]
+
+.pull-right[
+
+- Microsoft alleged to have bundled Internet Explorer with Microsoft Windows
+  - argued that IE was a *feature* not a separate product
+
+- DOJ disagreed, thought Microsoft violated $\S 1$ and $\S 2$ of Sherman Act
+  - sought to break up microsoft into two companies, one for OS, one for other software
+
+- Settlement in 2001: Microsoft must share its API for Windows, DOJ dropped its threats to break up
+]
+
+---
+
+# Antitrust Area: Mergers
+
+---
+
+# Mergers 
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/cuvxnuacsnewqhq/mergers.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Constant antitrust scrutiny by FTC and DOJ over proposed .hi[mergers and acqusitions] over a certain size
+  - Clayton Act with HSR amendments
+
+- Anti-competitive: would substantially lessen competition or tend towards monopolization
+  - Two firms could make a collusive agreement to raise price OR
+  - One firm buys the other, then raises the price
+
+- Pro-competitive: would reduce costs and prices, improve management, better bargaining power with suppliers, etc 
+
+]
+
+---
+
+# Mergers 
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/cuvxnuacsnewqhq/mergers.png?raw=1)
+]
+]
+
+.pull-right[
+- Key types of mergers:
+  1. .hi-purple[Horizontal]: between rival competitors in same market
+  2. .hi-purple[Vertical]: between firms along a supply chain
+  3. .hi-purple[Conglomerate]: between non-competing firms in separate markets
+    - .hi-purple[Product extension]: extends range of non-substitutable products a firms sells, .hi-purple["economies of scope"]
+    - .hi-purple[Market extension]: extends markets of same good in different locations
+    - .hi-purple[Pure]: no obvious relationship
+]
+
+---
+
+# Pro-Competitive Merger Example
+
+.pull-left[
+
+```{r, fig.retina=3}
+mc<-function(x){2}
+demand<-function(x){10-x}
+mr<-function(x){10-2*x}
+
+CS_post<-tibble(x=c(2,2,4),
+           y=c(8,6,6))
+
+mc<-function(x){2}
+mc_x<-function(x){6}
+dwl_x<-tibble(x=c(6,6,8),
+           y=c(4,2,2))
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # surpluses
+  geom_rect(xmin=0,xmax=4,ymin=2,ymax=6,fill="green", alpha=0.3)+ #profit
+  geom_rect(xmin=0,xmax=2,ymin=6,ymax=8,fill="blue", alpha=0.3)+ #profit
+  geom_polygon(data=CS_post, aes(x=x,y=y), fill="blue",alpha=0.5)+ #dwl
+  # lines 
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=mr, geom="line", size=2, color = "purple")+
+    geom_label(aes(x=4.5,y=mr(4.5)), color = "purple", label=expression(MR(q)), size = 5)+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=6,y=mc(6)), color = "red", label=expression(MC(q)^{post}==AC(q)^{post}), size = 4)+
+  stat_function(fun=mc_x, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=7,y=mc_x(7)), color = "orange", label=expression(MC(q)^{pre}==AC(q)^{pre}), size = 4)+
+  # optimal dots
+  geom_segment(x=0, xend=2, y=8, yend=8, size=1, linetype="dotted")+
+  geom_segment(x=8, xend=8, y=0, yend=2, size=1, linetype="dotted")+
+  geom_segment(x=4, xend=4, y=0, yend=6, size=1, linetype="dotted")+
+  
+  # x-eff
+  geom_segment(x=2, xend=2, y=0, yend=8, size=1, linetype="dotted")+
+  geom_point(x=2,y=8, size=3)+
+  geom_text(x=2.5,y=8.5,label=expression(paste("(",q^{pre},", ",p^{pre},")")), size=5)+
+
+  geom_point(x=4,y=6, size=3)+
+  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^{post},", ",p^{post},")")), size=5)+
+    geom_text(x=8.5,y=2.5,label=expression(paste("(",q^c,", ",p^c,")")), size=5)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     labels=scales::dollar,                   
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price",
+       caption = expression(paste("Demand: ", p(q)==10-q, ", Cost: ", C(q)==2*q)))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+
+```
+
+]
+
+.pull-right[
+
+- Merger may lower costs from .orange[pre-merger] to .red[most-merger] levels
+
+- Increases .hi-green[profits] to firm from cost savings
+
+- Increases .hi-blue[consumer surplus]
+
+- Reduces **Deadweight Loss**
+]
+
+.source[Williamson, Oliver E, 1968, "Economies as an Antitrust Defense: The Welfare Tradeoffs, *American Economic Review* 58(1): 18-36]
+
+---
+
+# Merger Analysis
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/5c39dnd25uwmmzx/merger_markets_competitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Consider two simple markets:
+  - Upstream Manufacturers, $M_1, M_2, \cdots M_n$
+  - Downstream Retailers, $R_1, R_2, \cdots R_n$
+
+- We will use this to consider the effects of various mergers
+
+- Start with competitive upstream and downstream markets
+]
+
+---
+
+# Vertical Merger
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/h1240j6nw1yb3mv/merger_vertical_competitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Vertical Merger] between $R_1$ and $M_1$
+  - Legitimate reasons: asset specificity, postcontractual opportunism, etc
+
+- Still competitive in retail and manufacturing markets
+
+- Pro-competitive, probably approved
+]
+
+---
+
+# Horizontal Merger
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/xommhhrmigkqqx5/merger_horizontal.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Horizontal Merger] between $R_1$ and $R_2$
+  - Legitimate reasons: economies of scale, cost reduction, bargaining power with $M$'s
+
+- Still competitive in retail and manufacturing markets
+
+- Pro-competitive, probably approved
+]
+
+---
+
+# Horizontal Merger with Market Foreclosure
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/nkw9nizkafl405g/merger_horizontal_anticompetitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Horizontal Merger] between $R_1$ and $R_2$
+
+- Leads to .hi-purple[market foreclosure] in retail
+  - Manufacturers only sell to $R_1+R_2$
+  - Other retailers can't get supply any more, go out of business
+  
+- Anti-competitive, would be blocked
+]
+
+---
+
+# Vertical Merger with Market Foreclosure
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/xniyp66sinhggke/merger_vertical_anticompetitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Suppose now there is market power in manufacturing, just $M_1$, but competitive retail market
+  - (Ignore how the manufacturer got market power!)
+]
+
+---
+
+# Vertical Merger with Market Foreclosure
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/7t8kdyb8uqm188e/merger_vertical_anticompetitive_2.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Vertical Merger] between $R_1$ and $M_1$
+
+- Leads to .hi-purple[market foreclosure] in retail
+  - $R_1$ only "buys from" $M_1$
+  - Other retailers can't get supply any more, go out of business
+
+- Anti-competitive, would be blocked
+]
+
+---
+
+# Conglomerate Merger
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/a2e9frkfeqyjl3w/merger_conglomerate.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Now consider two different markets, $A$ and $B$, each with their own
+  - manufacturers $M_1^A, M_2^A, \cdots M_n^A; \quad M_1^B, M_2^B, \cdots M_n^B$
+  - retailers $R_1^A, R_2^A, \cdots R_n^A; \quad R_1^B, R_2^B, \cdots R_n^B$
+]
+
+---
+
+# Conglomerate Merger
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/1ukb7m8j9mclwbk/merger_conglomerate_competitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Conglomerate merger]: two retailers $R_n^A$ and $R_n^B$ merge
+  - Legitimate reasons: expand to different (non-substitutable) products, expand same product to different territories, economies of scope
+
+- Still competitive in each retail and manufacturing markets
+
+- Pro-competitive, probably approved
+]
+
+---
+
+# Conglomerate Merger with Market Foreclosures
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/r70gdd2chiac30r/conglomerate_merger_anticompetitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Conglomerate merger]: two retailers $R_n^A$ and $R_n^B$ merge
+
+- Leads to .hi-purple[market foreclosure] in both industries
+
+- Anti-competitive, would be blocked
+]
+
+---
+
+# Mergers, A Summary
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/yw8t5xsa8dgei71/coding.jpeg?raw=1)
+]
+]
+
+.pull-right[
+
+- Not always obvious whether a merger is pro-competitive or anti-competitive!
+
+- *Rule of reason*, case-by-case analysis
+
+- Requires lots of data, forecasting, economic models and econometrics done by firms, consultants, and government agencies
+]
+
+
+---
+
+aweofijwef
+
+
 
 Antitrust Areas: Monopolization
 

@@ -112,7 +112,8 @@ lessons:
     reading: "4.1-reading"
 
   - title: "4.2 Antitrust"
-
+    slides: "4.2-slides"
+    
   - title: "4.3 Natural Monopoly I: Theory"
 
   - title: "4.4 Natural Monopoly II: Public Utilities and Telcos"

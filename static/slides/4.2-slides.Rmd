@@ -792,6 +792,7 @@ Mitchel v Reynolds (1711) 1 P Wms 181
 .right-column[
 > "Under this Act, the Commission is empowered, among other things, to (a) prevent unfair methods of competition, and unfair or deceptive acts or practices in or affecting commerce; (b) seek monetary redress and other relief for conduct injurious to consumers; (c) prescribe trade regulation rules defining with specificity acts or practices that are unfair or deceptive, and establishing requirements designed to prevent such acts or practices; (d) conduct investigations relating to the organization, business, practices, and management of entities engaged in commerce; and (e) make reports and legislative recommendations to Congress."
 
+]
 ---
 
 # National Industrial Recovery Act (1933)
@@ -1182,6 +1183,7 @@ class: inverse, center, middle
 ]
 
 .pull-right[
+.smaller[
 - Found "pro-competitive" efficiency explanations for lots of seemingly "anti-competitive" firm behaviors:
   - industrial concentration (market share $\neq$ market power)
   - mergers (asset specificity, double marginalization)
@@ -1189,7 +1191,7 @@ class: inverse, center, middle
 
 - Revision of many *per se* rules to *rule of reason*, courts more permissive of mergers
 ]
-
+]
 ---
 
 # Phase IV: 1972-1991
@@ -1264,4 +1266,6 @@ class: inverse, center, middle
   - Close connection between lawyers & economists in antitrust agencies
 
 - Increasing focus on innovation, intellectual property
+
+- "Hipster antitrust" of 2010s?
 ]

@@ -1,0 +1,38 @@
+---
+title: "4.2 Antitrust"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Thursday, April 16, 2020*
+
+*Quarantine Lecture 8*
+
+# Overview
+
+Today we begin our look at the economics of antitrust, which will take several class periods. Today we cover the kinds of antitrust claims and their remedies today, the history of the major antitrust laws (their origins, evolution, interpretation, and some major court cases), as well as a broad history of economic thought on antitrust.
+
+# Readings
+
+See today's [readings](/reading/4.2-reading) which may help you understand the concepts, and which are the primary source of what I discuss today.
+
+# Class Livestream/Lecture Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HeCn6aC5II0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LzibxJKgmVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZB8PUcSNzsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gWWZk_32Z-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/4.2-slides.html)

@@ -1,0 +1,15 @@
+---
+title: "4.2 Antitrust - Readings"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Recommended Readings and Primary Sources:
+
+- [<i class="fas fa-file-pdf"></i> Crandall and Winston, 2003, "Does Antitrust Policy Improve Consumer Welfare? Assessing the Evidence"](/readings/Crandall-Winston-2003.pdf)
+- [<i class="fas fa-file-pdf"></i> Kovacic and Shapiro, 2000, "Antitrust Policy: A Century of Economic and Legal Thinking"](/readings/Kovacic-Shapiro-2000.pdf)
+
+- [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 1: Standard Oil"](https://www.npr.org/sections/money/2019/02/15/695131832/antitrust-1-standard-oil)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 2: The Paradox"](https://www.npr.org/sections/money/2019/02/20/696342011/antitrust-2-the-paradox)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 3: Big Tech"](https://www.npr.org/sections/money/2019/02/22/697170790/antitrust-3-big-tech)

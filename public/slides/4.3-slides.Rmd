@@ -741,12 +741,13 @@ Mitchel v Reynolds (1711) 1 P Wms 181
 
 # Federal Trade Commission Act (1914)
 
-.pull-left[
+.left-column[
 .center[
-![](![:scale 45%](https://www.dropbox.com/s/zwc6kgdwe1nksct/ftc.png?raw=1)
+![:scale 45%](https://www.dropbox.com/s/zwc6kgdwe1nksct/ftc.png?raw=1)
 ]
 ]
 
+.right-column[
 > "Under this Act, the Commission is empowered, among other things, to (a) prevent unfair methods of competition, and unfair or deceptive acts or practices in or affecting commerce; (b) seek monetary redress and other relief for conduct injurious to consumers; (c) prescribe trade regulation rules defining with specificity acts or practices that are unfair or deceptive, and establishing requirements designed to prevent such acts or practices; (d) conduct investigations relating to the organization, business, practices, and management of entities engaged in commerce; and (e) make reports and legislative recommendations to Congress."
 
 ---
@@ -1566,14 +1567,406 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 ---
 
-- Coase: economists look for a monopoly explanation
-
-
-- Price-fixing
+aweofijwef
 
 
 
-- Predatory pricing
+Antitrust Areas: Monopolization
 
+---
 
-- Mergers
+# Monopolization
+
+.pull-left[
+
+]
+
+.pull-right[
+
+- Very rare for DOJ to bring monopolization suits, drag on for many years
+
+- Government must prove firm has:
+  - (a) power over price and output and 
+  - (b) this comes from business decisions with the explicit goal to exclude competition
+
+- Remedies:
+  - Horizontal divestiture: break up into separate horizontal competitors
+  - Vertical divestiture: break up into separate companies along supply chain
+  - Consent decrees: end anticompetitive practices like tying, predatory pricing, etc
+  - Sell off or license intellectual property (if this is the source of monopoly)
+
+]
+
+---
+
+# Recent Examples: United States v. AT&T
+
+.pull-left[
+
+]
+
+.pull-right[
+
+- AT&T was protected as a natural monopoly through its Bell System network of companies for decades (another story for another lecture)
+  - sole provider of telephone service in nearly all of United States
+
+- In 1970s FCC suspected AT&T was using monopoly profits from its Western Electric subsidiary to subsidize the costs of its network
+
+- DOJ brought a monopolization case against AT&T in 1972
+]
+
+---
+
+# Recent Examples: United States v. AT&T
+
+.pull-left[
+
+]
+
+.pull-right[
+
+- 1982: AT&T and Government finalize a consent decree:
+  - Breakup of Bell system: AT&T's member telephone companies broke up into separate "Baby Bells" companies<sup>.magenta[1]</sup>
+  - AT&T keeps Western Electric, half of Bell Labs, and AT&T Long Distance
+]
+
+.footnote[
+<sup>.magenta[1]</sup> Most of which have since merged into Verizon, Sprint, and today's AT&T
+]
+
+---
+
+# Recent Examples: United States v. Microsoft
+
+.pull-left[
+
+]
+
+.pull-right[
+
+- Microsoft alleged to have bundled Internet Explorer with Microsoft Windows
+  - argued that IE was a *feature* not a separate product
+
+- DOJ disagreed, thought Microsoft violated $\S 1$ and $\S 2$ of Sherman Act
+  - sought to break up microsoft into two companies, one for OS, one for other software
+
+- Settlement in 2001: Microsoft must share its API for Windows, DOJ dropped its threats to break up
+]
+
+---
+
+# Antitrust Area: Mergers
+
+---
+
+# Mergers 
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/cuvxnuacsnewqhq/mergers.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Constant antitrust scrutiny by FTC and DOJ over proposed .hi[mergers and acqusitions] over a certain size
+  - Clayton Act with HSR amendments
+
+- Anti-competitive: would substantially lessen competition or tend towards monopolization
+  - Two firms could make a collusive agreement to raise price OR
+  - One firm buys the other, then raises the price
+
+- Pro-competitive: would reduce costs and prices, improve management, better bargaining power with suppliers, etc 
+
+]
+
+---
+
+# Mergers 
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/cuvxnuacsnewqhq/mergers.png?raw=1)
+]
+]
+
+.pull-right[
+- Key types of mergers:
+  1. .hi-purple[Horizontal]: between rival competitors in same market
+  2. .hi-purple[Vertical]: between firms along a supply chain
+  3. .hi-purple[Conglomerate]: between non-competing firms in separate markets
+    - .hi-purple[Product extension]: extends range of non-substitutable products a firms sells, .hi-purple["economies of scope"]
+    - .hi-purple[Market extension]: extends markets of same good in different locations
+    - .hi-purple[Pure]: no obvious relationship
+]
+
+---
+
+# Pro-Competitive Merger Example
+
+.pull-left[
+
+```{r, fig.retina=3}
+mc<-function(x){2}
+demand<-function(x){10-x}
+mr<-function(x){10-2*x}
+
+CS_post<-tibble(x=c(2,2,4),
+           y=c(8,6,6))
+
+mc<-function(x){2}
+mc_x<-function(x){6}
+dwl_x<-tibble(x=c(6,6,8),
+           y=c(4,2,2))
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  
+  # surpluses
+  geom_rect(xmin=0,xmax=4,ymin=2,ymax=6,fill="green", alpha=0.3)+ #profit
+  geom_rect(xmin=0,xmax=2,ymin=6,ymax=8,fill="blue", alpha=0.3)+ #profit
+  geom_polygon(data=CS_post, aes(x=x,y=y), fill="blue",alpha=0.5)+ #dwl
+  # lines 
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=9,y=demand(9)), color = "blue", label="Demand", size = 5)+
+  stat_function(fun=mr, geom="line", size=2, color = "purple")+
+    geom_label(aes(x=4.5,y=mr(4.5)), color = "purple", label=expression(MR(q)), size = 5)+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=6,y=mc(6)), color = "red", label=expression(MC(q)^{post}==AC(q)^{post}), size = 4)+
+  stat_function(fun=mc_x, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=7,y=mc_x(7)), color = "orange", label=expression(MC(q)^{pre}==AC(q)^{pre}), size = 4)+
+  # optimal dots
+  geom_segment(x=0, xend=2, y=8, yend=8, size=1, linetype="dotted")+
+  geom_segment(x=8, xend=8, y=0, yend=2, size=1, linetype="dotted")+
+  geom_segment(x=4, xend=4, y=0, yend=6, size=1, linetype="dotted")+
+  
+  # x-eff
+  geom_segment(x=2, xend=2, y=0, yend=8, size=1, linetype="dotted")+
+  geom_point(x=2,y=8, size=3)+
+  geom_text(x=2.5,y=8.5,label=expression(paste("(",q^{pre},", ",p^{pre},")")), size=5)+
+
+  geom_point(x=4,y=6, size=3)+
+  geom_text(x=4.5,y=6.5,label=expression(paste("(",q^{post},", ",p^{post},")")), size=5)+
+    geom_text(x=8.5,y=2.5,label=expression(paste("(",q^c,", ",p^c,")")), size=5)+
+    scale_x_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     expand=expand_scale(mult=c(0,0.1)))+
+  scale_y_continuous(breaks=seq(0,10,1),
+                     limits=c(0,10),
+                     labels=scales::dollar,                   
+                     expand=expand_scale(mult=c(0,0.1)))+
+  guides(fill=F)+
+  labs(x = "Quantity",
+       y = "Price",
+       caption = expression(paste("Demand: ", p(q)==10-q, ", Cost: ", C(q)==2*q)))+
+  theme_classic(base_family = "Fira Sans Condensed", base_size=18)
+
+```
+
+]
+
+.pull-right[
+
+- Merger may lower costs from .orange[pre-merger] to .red[most-merger] levels
+
+- Increases .hi-green[profits] to firm from cost savings
+
+- Increases .hi-blue[consumer surplus]
+
+- Reduces **Deadweight Loss**
+]
+
+.source[Williamson, Oliver E, 1968, "Economies as an Antitrust Defense: The Welfare Tradeoffs, *American Economic Review* 58(1): 18-36]
+
+---
+
+# Merger Analysis
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/5c39dnd25uwmmzx/merger_markets_competitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Consider two simple markets:
+  - Upstream Manufacturers, $M_1, M_2, \cdots M_n$
+  - Downstream Retailers, $R_1, R_2, \cdots R_n$
+
+- We will use this to consider the effects of various mergers
+
+- Start with competitive upstream and downstream markets
+]
+
+---
+
+# Vertical Merger
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/h1240j6nw1yb3mv/merger_vertical_competitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Vertical Merger] between $R_1$ and $M_1$
+  - Legitimate reasons: asset specificity, postcontractual opportunism, etc
+
+- Still competitive in retail and manufacturing markets
+
+- Pro-competitive, probably approved
+]
+
+---
+
+# Horizontal Merger
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/xommhhrmigkqqx5/merger_horizontal.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Horizontal Merger] between $R_1$ and $R_2$
+  - Legitimate reasons: economies of scale, cost reduction, bargaining power with $M$'s
+
+- Still competitive in retail and manufacturing markets
+
+- Pro-competitive, probably approved
+]
+
+---
+
+# Horizontal Merger with Market Foreclosure
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/nkw9nizkafl405g/merger_horizontal_anticompetitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Horizontal Merger] between $R_1$ and $R_2$
+
+- Leads to .hi-purple[market foreclosure] in retail
+  - Manufacturers only sell to $R_1+R_2$
+  - Other retailers can't get supply any more, go out of business
+  
+- Anti-competitive, would be blocked
+]
+
+---
+
+# Vertical Merger with Market Foreclosure
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/xniyp66sinhggke/merger_vertical_anticompetitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Suppose now there is market power in manufacturing, just $M_1$, but competitive retail market
+  - (Ignore how the manufacturer got market power!)
+]
+
+---
+
+# Vertical Merger with Market Foreclosure
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/7t8kdyb8uqm188e/merger_vertical_anticompetitive_2.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Vertical Merger] between $R_1$ and $M_1$
+
+- Leads to .hi-purple[market foreclosure] in retail
+  - $R_1$ only "buys from" $M_1$
+  - Other retailers can't get supply any more, go out of business
+
+- Anti-competitive, would be blocked
+]
+
+---
+
+# Conglomerate Merger
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/a2e9frkfeqyjl3w/merger_conglomerate.png?raw=1)
+]
+]
+
+.pull-right[
+
+- Now consider two different markets, $A$ and $B$, each with their own
+  - manufacturers $M_1^A, M_2^A, \cdots M_n^A; \quad M_1^B, M_2^B, \cdots M_n^B$
+  - retailers $R_1^A, R_2^A, \cdots R_n^A; \quad R_1^B, R_2^B, \cdots R_n^B$
+]
+
+---
+
+# Conglomerate Merger
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/1ukb7m8j9mclwbk/merger_conglomerate_competitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Conglomerate merger]: two retailers $R_n^A$ and $R_n^B$ merge
+  - Legitimate reasons: expand to different (non-substitutable) products, expand same product to different territories, economies of scope
+
+- Still competitive in each retail and manufacturing markets
+
+- Pro-competitive, probably approved
+]
+
+---
+
+# Conglomerate Merger with Market Foreclosures
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/r70gdd2chiac30r/conglomerate_merger_anticompetitive.png?raw=1)
+]
+]
+
+.pull-right[
+
+- .hi-purple[Conglomerate merger]: two retailers $R_n^A$ and $R_n^B$ merge
+
+- Leads to .hi-purple[market foreclosure] in both industries
+
+- Anti-competitive, would be blocked
+]
+
+---
+
+# Mergers, A Summary
+
+.pull-left[
+.center[
+![](https://www.dropbox.com/s/yw8t5xsa8dgei71/coding.jpeg?raw=1)
+]
+]
+
+.pull-right[
+
+- Not always obvious whether a merger is pro-competitive or anti-competitive!
+
+- *Rule of reason*, case-by-case analysis
+
+- Requires lots of data, forecasting, economic models and econometrics done by firms, consultants, and government agencies
+]

@@ -111,23 +111,18 @@ lessons:
     class: "4.1-class"
     reading: "4.1-reading"
 
-  - title: "4.2 Antitrust"
+  - title: "4.2 Antitrust I: The Law"
     slides: "4.2-slides"
     class: "4.2-class"
     reading: "4.2-reading"
     
-  - title: "4.3 Natural Monopoly I: Theory"
+  - title: "4.3 Antitrust II: The Paradox"
+    slides: "4.3-slides"
+    
+  - title: "4.3 Antitrust III: Big Tech & Hipster Antitrust"
 
-  - title: "4.4 Natural Monopoly II: Public Utilities and Telcos"
+  - title: '4.4 Natural Monopoly Regulation'
 
-  - title: '4.5 Automation'
+  - title: '4.5 Data as Labor?'
 
-  - title: '4.6 The Gig Economy'
-
-  - title: '4.7 Networks and Platforms'
-
-  - title: '4.8 Data as Labor?'
-
-  - title: '<i class="fas fa-laptop-code"></i> **Position Paper**'
-
-  - title: '<i class="fas fa-laptop-code"></i> **Final Exam**'
+  - title: '<i class="fas fa-laptop-code"></i> **Final Exam** (take home)'

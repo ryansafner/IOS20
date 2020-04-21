@@ -1,0 +1,17 @@
+---
+title: "4.2 Antitrust - Readings"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Recommended Readings and Primary Sources:
+
+- [<i class="fas fa-file-pdf"></i> Crandall and Winston, 2003, "Does Antitrust Policy Improve Consumer Welfare? Assessing the Evidence"](/readings/Crandall-Winston-2003.pdf)
+- [<i class="fas fa-file-pdf"></i> DiLorenzo, 1985, "The Origins of Antitrust: An Interest-Group Perspective"](/readings/DiLorenzo-1985.pdf)
+- [<i class="fas fa-file-pdf"></i> DiLorenzo and High, 1988, "Antitrust and Competition, Historically Considered"](/readings/DiLorenzo-High-1988.pdf)
+- [<i class="fas fa-file-pdf"></i> McGee, 1958, "Predatory Price Cutting: The Standard Oil (N.J.) Case"](/readings/McGee-1958.pdf)
+
+- [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 1: Standard Oil"](https://www.npr.org/sections/money/2019/02/15/695131832/antitrust-1-standard-oil)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 2: The Paradox"](https://www.npr.org/sections/money/2019/02/20/696342011/antitrust-2-the-paradox)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 3: Big Tech"](https://www.npr.org/sections/money/2019/02/22/697170790/antitrust-3-big-tech)

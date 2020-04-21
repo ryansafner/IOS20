@@ -118,11 +118,13 @@ lessons:
     
   - title: "4.3 Antitrust II: The Paradox"
     slides: "4.3-slides"
+    class: "4.3-class"
+    reading: "4.3-reading"
     
-  - title: "4.3 Antitrust III: Big Tech & Hipster Antitrust"
+  - title: "4.4 Antitrust III: Big Tech & Hipster Antitrust"
 
-  - title: '4.4 Natural Monopoly Regulation'
+  - title: '4.5 Natural Monopoly Regulation'
 
-  - title: '4.5 Data as Labor?'
+  - title: '4.6 Data as Labor?'
 
   - title: '<i class="fas fa-laptop-code"></i> **Final Exam** (take home)'

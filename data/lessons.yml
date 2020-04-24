@@ -123,11 +123,14 @@ lessons:
     
   - title: "4.4 Antitrust III: Big Tech & Hipster Antitrust"
     slides: "4.4-slides"
+    class: "4.4-class"
+    reading: "4.4-reading"
 
   - title: '4.5 Natural Monopoly Regulation'
 
   - title: '4.6 Data as Labor?'
 
   - title: "**Problem Set 3** due Friday May 1"
+    assignment: "03-problem-set"
 
   - title: '<i class="fas fa-laptop-code"></i> **Final Exam** (take home)'

@@ -1,0 +1,44 @@
+---
+title: "4.4 Antitrust III: Big Tech & Hipster Antitrust"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+*Thursday, April 23, 2020*
+
+*Quarantine Lecture 10*
+
+# Overview
+
+# Readings
+
+See today's [readings](/reading/4.4-reading) which may help you understand the concepts, and which are the primary source of what I discuss today.
+
+# Class Livestream/Lecture Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hAObrlHSAuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hWaP1FOk5yk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0QdkIxlQeOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vio1sK0-ez4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JylYpM87ZfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Note the same day I recorded this, this article came out in the Wall Street Journal: [<i class="fas fa-external-link-square-alt"></i> "Amazon Scooped Up Data From Its Own Sellers to Launch Competing Products"](https://www.wsj.com/articles/amazon-scooped-up-data-from-its-own-sellers-to-launch-competing-products-11587650015)
+
+# Slides
+
+- [<i class="fas fa-external-link-square-alt"></i> Lecture Slides](/slides/4.4-slides.html)
+
+# Problem Set 3 Due Friday May 1
+
+[Problem Set 3](/assignment/03-problem-set) (covering 3.1-4.5) is posted and is due by email (a PDF please!) by 11:59 PM Friday May 1.

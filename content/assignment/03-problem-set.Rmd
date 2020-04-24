@@ -1,0 +1,149 @@
+---
+title: "Problem Set 3"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(pander)
+source(file.path(here::here(), "lib", "graphics.R"))
+```
+
+*Due by 11:59 PM Friday, May 1, 2020 by email*
+
+- [<i class="fas fa-file-pdf"></i> `Download as PDF`](/assignment/03-problem-set-pdf.pdf)
+- [<i class="far fa-life-ring"></i> `Answer Key`](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+Please **type** your answers to the following questions in a document and **email a PDF attachment** to me.^[In MS Word, or Pages, or most word processing software, File -> Save As -> PDF, or File -> Export -> PDF.] You may still handwrite answers if you will be able to scan and email them, **as a PDF**, if they are easily readable, but this is *not preferred*. It will be *much* easier for me to grade, annotate, and return to you as a PDF, so please save me some trouble.
+
+For the few questions that ask you to draw a **graph/diagram**, *try* to do so *on your computer* (use MS Paint, the drawing tools in MS Word or MS Powerpoint, plot points in MS Excel, drawing/notetaking apps, etc.), and save it as an image to include on your homework document. Again, they need not be perfect or to scale, just show that you understand the broad idea. Being able to understand and sketch the graphs is still a very important and useful skill! If all else fails, I will be lenient in grading graph questions if you are unable to technologically include a graph. 
+
+You may work together (and I highly encourage that) but you must turn in your own answers. Your TA, under my supervision, will grade homeworks 70% for completion, and for the remaining 30%, pick one question to grade for accuracy - so it is best that you try every problem, even if you are unsure how to complete it accurately.
+
+# Theory of the Firm
+
+## Question 1
+
+If markets are so great, why are there firms? Explain what Coase has to say about the purpose of firms.
+
+## Question 2
+
+According to Alchian and Demsetz, what are the problems inherent in *team production* and how does this give rise to firms? How is the "firm" incentivized to solve the team production problem?
+
+## Question 3
+
+Explain what asset specificity and quasi-rents are in contracting, and why this helps explain vertical integration and contracts with vertical restraints.
+
+# Antitrust
+
+## Question 4
+
+An industry consists of the following firms
+
+| Firm | Market Share (%) |
+|------|------------------|
+| A | 40 |
+| B | 20 |
+| C | 10 |
+| D | 10 |
+| E | 5 |
+| F | 5 |
+| G | 2 |
+| H | 2 |
+| I | 2 |
+| J | 2 |
+| K | 2 |
+
+### Part A
+Calculate the $CR_4$ and $CR_8$.
+
+### Part B
+Calculate the HHI for this industry.
+
+$$\begin{align*}
+HHI &= \sum^{11}_{i=1} s^2_i\\ &= 40^2+20^2+10^2+10^2+5^2+5^2+2^2+2^2+2^2+2^2+2^2\\
+&= 1600+400+100+100+25+25+4+4+4+4+4\\
+&=2270\\
+\end{align*}$$
+
+### Part C
+
+### Part D
+
+Calculate the "equivalent number" of a hypothetical market of equal-sized firms for this HHI.^[Hint: either convert to decimals, or multiply your answer by 10,000.]
+
+### Part E
+
+Suppose firms D and E propose a merger. Calculate the new $CR_4$, $CR_8$, and HHI from the merger. Do you think is it likely that the FTC and DOJ would allow these two firms to merge?
+
+### Part F
+
+Suppose *instead* of D and E, firms A and B propose a merger.^[i.e. start from the original market, ignore the proposed merger in Part E.] Calculate the new $CR_4$, $CR_8$, and HHI from the merger. Do you think is it likely that the FTC and DOJ would allow these two firms to merge?
+
+## Question 5
+
+Explain why it is difficult to identify whether a firm has market power just from observing its price. You can explain verbally, no need for a graph.
+
+## Question 6
+
+Explain, in your own words, the main implications for antitrust law from the following key statutes:
+  - Sherman Act (1890)
+  - Clayton Act (1914)
+  - Federal Trade Commission Act (1914)
+  - Hart–Scott–Rodino Antitrust Improvements Act (1976)
+
+## Question 7
+
+Explain the difference between the *per se* rule and the *rule of reason* in antitrust cases. What sorts of business practices fall into each category, and why?
+
+## Question 8
+
+Explain the difference between a *horizontal merger*, a *vertical merger*, and a *conglomerate merger*. How *might* a merger be pro-competitive, and how might a merger be anti-competitive?
+
+## Question 9
+
+Explain Bork's main idea behind the *Paradox of Antitrust*.
+
+## Question 10
+
+Explain Khan's main idea behind "Amazon's Antitrust Paradox" and the "Hipster Antitrust" movement.
+
+# Natural Monopoly
+
+## Question 11
+
+11. Explain the logic of rate of return and common carrier regulation for natural monopoly. What is the government trying to achieve? How does it provide incentives for natural monopoly?
+
+## Question 12
+
+Suppose a typical firm in an industry has a cost structure as follows:
+
+$$\begin{align*}
+C(q)=20q+1200\\
+MC(q)=20
+\end{align*}$$
+
+The market demand for the industry is:
+
+$$q=50-0.1p$$
+
+### Part A
+
+Calculate the (i) price, (ii) quantity, (iii) consumer surplus, and (iv) deadweight loss for the industry if it were perfectly competitive.
+
+### Part B
+
+One firm of these firms achieves economies of scale and becomes the monopolist in this industry. If left to its own devices, what price and quantity will the monopolist set?
+
+### Part C
+
+Calculate the (i) profit, (ii) consumer surplus, and (iii) deadweight loss in the industry under the monopoly.
+
+### Part D
+
+The government decides to regulate the monopolist as a common carrier. What is the price and quantity the government would like to set in order to maximize allocative efficiency? Calculate the amount of profit would the monopolist would earn under this outcome.
+
+### Part E
+
+The government recognizes the poor incentives it creates for the monopolist with its approach in Part D. Instead, it regulates the monopolist to set a price where it breaks even $(\pi=0)$.^[Note: this won't be the *minimum* of average cost, because $MC$ and $AC$ will never intersect in this cost structure. This is simply where $p=AC$.] Calculate the (i) price, (ii) quantity, (iii) consumer surplus, and (iv) deadweight loss under this scenario.^[Hint: To spare you use of the quadratic formula, the quantity will be *approximately* 45!]

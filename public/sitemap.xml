@@ -150,6 +150,14 @@
   </url>
   
   <url>
+    <loc>https://ios20.classes.ryansafner.com/class/4.4-class/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ios20.classes.ryansafner.com/reading/4.4-reading/</loc>
+  </url>
+  
+  <url>
     <loc>https://ios20.classes.ryansafner.com/assignment/</loc>
     <priority>0</priority>
   </url>
@@ -181,6 +189,10 @@
   
   <url>
     <loc>https://ios20.classes.ryansafner.com/assignment/02-problem-set/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ios20.classes.ryansafner.com/assignment/03-problem-set/</loc>
   </url>
   
   <url>

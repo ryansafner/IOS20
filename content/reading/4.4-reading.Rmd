@@ -1,0 +1,29 @@
+---
+title: "4.4 Antitrust III: Big Tech & Hipster Antitrust - Readings"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Recommended Readings and Primary Sources:
+
+## Journal Articles
+
+- [<i class="fas fa-file-pdf"></i> David, 1985, "Clio and the Economics of QWERTY"](/readings/David-1985.pdf)
+- [<i class="fas fa-file-pdf"></i> Khan, 2017, "Amazon's Antitrust Paradox"](/readings/Khan-2017.pdf)
+- [<i class="fas fa-file-pdf"></i> Leibowitz and Margolis, 1990, "The Fable of the Keys"](/readings/Leibowitz-Margolis-1990.pdf)
+
+## Books
+
+- [<i class="fas fas fa-book"></i> Evans and Schmalensee, 2016, *Matchmakers: The New Economics of Multisided Platforms* (Amazon Link)](https://www.amazon.com/Matchmakers-New-Economics-Multisided-Platforms-ebook/dp/B01BO6QMCI/)
+- [<i class="fas fas fa-book"></i> Moazed and Johnson, 2016, *Modern Monopolies: What it Takes to Dominate the 21st Century Economy* (Amazon Link)](https://www.amazon.com/Modern-Monopolies-Dominate-Century-Economy-ebook/dp/B017RC8CBC/)
+
+## NPR's Antitrust Podcast Series
+
+- [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 1: Standard Oil"](https://www.npr.org/sections/money/2019/02/15/695131832/antitrust-1-standard-oil)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 2: The Paradox"](https://www.npr.org/sections/money/2019/02/20/696342011/antitrust-2-the-paradox)
+- [<i class="fas fa-podcast"></i> *NPR Planet Money*: "Antitrust 3: Big Tech"](https://www.npr.org/sections/money/2019/02/22/697170790/antitrust-3-big-tech)
+
+# News Articles:
+
+- [<i class="fas fa-external-link-square-alt"></i> WSJ (Apr 23, 2020): "Amazon Scooped Up Data From Its Own Sellers to Launch Competing Products"](https://www.wsj.com/articles/amazon-scooped-up-data-from-its-own-sellers-to-launch-competing-products-11587650015)

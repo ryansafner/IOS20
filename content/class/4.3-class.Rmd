@@ -11,9 +11,9 @@ editor_options:
   chunk_output_type: console
 ---
 
-*Thursday, April 16, 2020*
+*Tuesday, April 21, 2020*
 
-*Quarantine Lecture 8*
+*Quarantine Lecture 9*
 
 # Overview
 

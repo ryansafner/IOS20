@@ -61,13 +61,8 @@ Calculate the $CR_4$ and $CR_8$.
 ### Part B
 Calculate the HHI for this industry.
 
-$$\begin{align*}
-HHI &= \sum^{11}_{i=1} s^2_i\\ &= 40^2+20^2+10^2+10^2+5^2+5^2+2^2+2^2+2^2+2^2+2^2\\
-&= 1600+400+100+100+25+25+4+4+4+4+4\\
-&=2270\\
-\end{align*}$$
-
 ### Part C
+Under the [current Horizontal Merger Guidelines](https://ios20.classes.ryansafner.com/slides/4.1-slides#27), is this market not very concentrated, "moderately concentrated," or "highly concentrated"?
 
 ### Part D
 
@@ -113,7 +108,7 @@ Explain Khan's main idea behind "Amazon's Antitrust Paradox" and the "Hipster An
 
 ## Question 11
 
-11. Explain the logic of rate of return and common carrier regulation for natural monopoly. What is the government trying to achieve? How does it provide incentives for natural monopoly?
+Explain the logic of rate of return and common carrier regulation for natural monopoly. What is the government trying to achieve? How does it provide incentives for natural monopoly?
 
 ## Question 12
 

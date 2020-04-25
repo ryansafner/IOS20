@@ -13,7 +13,7 @@ library(pander)
 ```
 
 - [<i class="fas fa-file-pdf"></i> `Download as PDF`](/files/syllabus-pdf.pdf)
-- **Last Updated**: January 20, 2020
+- **Last Updated**: April 25, 2020^[Based only on the April 10 Blackboard announcement/email. Sorry it's taken a while to update this!]
 
 <span class="newthought">Industrial Organization</span>[^courseinfo] is one of the most common fields of applied microeconomics. It traditionally studies business firms and their relationship to the market--how they make economic decisions, how they are affected by government regulation, how they strategically interact with one another--and how these change in markets that are more or less competitive--monopoly, oligopoly, monopolistic competition, or perfect competition, often with a close connection to antitrust law. Industrial organization is a direct extension of microeconomics, and as such, the **prerequisite** for this course is **ECON 206**.
 
@@ -77,10 +77,9 @@ Throughout the course, I will post both required and supplemental (non-required)
 assignments <- tribble(
   ~"",  ~Assignment, ~Percent,
   "n"     , "Participation (Average)", "20%",
-  "n", "Homework (Average)", "10%",
-  1, "Position Paper", "25%",
+  "n", "Homework (Average)", "30%",
   1      , "Midterm", "20%",
-  1     , "Final (Take-home)", "25%"
+  1     , "Final (Take-home)", "30%"
 )
 
 grading <- tribble(

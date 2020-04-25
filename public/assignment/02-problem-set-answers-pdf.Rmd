@@ -255,7 +255,6 @@ p&=MC && \text{Competitive market condition}\\
 
 **The total industry output is 30, so each firm is producing 15 units. Since $p=MC$, the market price is \$20, and each firm earns $\pi=0$.**
 
----
 \clearpage
 
 5. What makes a threat credible? In your answer, use the concept of subgame perfection.
@@ -328,12 +327,13 @@ d. Draw this game in normal form. Find all Nash equilibria.^[Hint: think careful
 
 **Note Boeing's strategies are described as "O" (Old) or "N" (New), written as Boeing's set of decisions at nodes (B.1,B.2).**
 
-**There are two Nash equilibria, written as $\{$Airbus' strategy, Boeing's strategy$\}$:**
+**There are three Nash equilibria, written as $\{$Airbus' strategy, Boeing's strategy$\}$:**
 
 1. $\{$New, (Old, New)$\}$
-2. $\{$Old, (New, New)$\}$
+2. $\{$New, (Old, Old)$\}$
+3. $\{$Old, (New, New)$\}$
 
-**Only 1. is subgame perfect. To see why 2. is _not_, see the next question.**
+**Only Nash equilibrium 1 is subgame perfect. To see why 2 and 3 are _not_, see the next question.**
 
 ---
 

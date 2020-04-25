@@ -476,7 +476,7 @@ f. How much of your price is markup over marginal cost?
 **The profit maximizing quantity was $q^*=10$, and price $p^*=\$450$, with a marginal cost $MC(10)=\$400$. (We saw that $MC(10)=AC(10)$ at 10 units, and the AC was \$400, so therefore, MC is also \$400). Recall the firm's markup rule and Lerner Index is:**
 
 $$\begin{aligned}
-	L\frac{p-MC}{p}&=L=-\frac{1}{\epsilon}\\
+	\frac{p-MC}{p}&=L=-\frac{1}{\epsilon}\\
 	\frac{450-400}{400}&=L\\
 	0.125&=L	\\
 	\end{aligned}$$
@@ -769,7 +769,7 @@ e. For each segment of the market: how much of the price is markup, and what is 
 
 ---
 
-_LOCALS_
+## LOCALS
 
 **Use the Lerner index to calculate markup:**
 
@@ -791,7 +791,7 @@ $$\begin{aligned}
 
 **Locals' demand is elastic, for every 1% the price changes, locals will buy 1.85% more/less.**
 
-_LCOALS_
+## TOURISTS
 
 **Use the Lerner index to calculate markup:**
 

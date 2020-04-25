@@ -69,10 +69,11 @@ f. Suppose *instead* of D and E, firms A and B propose a merger.^[i.e. start fro
 \clearpage
 
 6. Explain, in your own words, the main implications for antitrust law from the following key statutes:
-  - Sherman Act (1890)
-  - Clayton Act (1914)
-  - Federal Trade Commission Act (1914)
-  - Hart–Scott–Rodino Antitrust Improvements Act (1976)
+
+- Sherman Act (1890)
+- Clayton Act (1914)
+- Federal Trade Commission Act (1914)
+- Hart–Scott–Rodino Antitrust Improvements Act (1976)
 
 \clearpage
 
@@ -102,8 +103,8 @@ f. Suppose *instead* of D and E, firms A and B propose a merger.^[i.e. start fro
 12. Suppose a typical firm in an industry has a cost structure as follows:
 
 $$\begin{aligned}
-C(q)=20q+1200\\
-MC(q)=20
+C(q)&=20q+1200\\
+MC(q)&=20\\
 \end{aligned}$$
 
 The market demand for the industry is:

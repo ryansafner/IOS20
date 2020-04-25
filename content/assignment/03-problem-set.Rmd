@@ -83,10 +83,11 @@ Explain why it is difficult to identify whether a firm has market power just fro
 ## Question 6
 
 Explain, in your own words, the main implications for antitrust law from the following key statutes:
-  - Sherman Act (1890)
-  - Clayton Act (1914)
-  - Federal Trade Commission Act (1914)
-  - Hart–Scott–Rodino Antitrust Improvements Act (1976)
+
+- Sherman Act (1890)
+- Clayton Act (1914)
+- Federal Trade Commission Act (1914)
+- Hart–Scott–Rodino Antitrust Improvements Act (1976)
 
 ## Question 7
 
@@ -115,8 +116,8 @@ Explain the logic of rate of return and common carrier regulation for natural mo
 Suppose a typical firm in an industry has a cost structure as follows:
 
 $$\begin{align*}
-C(q)=20q+1200\\
-MC(q)=20
+C(q)&=20q+1200\\
+MC(q)&=20\\
 \end{align*}$$
 
 The market demand for the industry is:

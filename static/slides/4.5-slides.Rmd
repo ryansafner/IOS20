@@ -42,8 +42,6 @@ theme_slides <- theme_light() +
 
 ```
 
----
-
 # Economies of Scale and Natural Monopoly I
 
 .pull-left[
@@ -246,7 +244,7 @@ mes_plot+
 # Natural Monopoly: Weak Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 mc_w=function(x){10*x+50}
 ac_w=function(x){5*x+50+800/x}
 demand=function(x){500-10*x}
@@ -307,7 +305,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Natural Monopoly: Weak Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 mc_w=function(x){10*x+50}
 ac_w=function(x){5*x+50+800/x}
 demand=function(x){500-10*x}
@@ -371,7 +369,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Natural Monopoly: Strong Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 mc=function(x){100}
 ac=function(x){100+1500/x}
 demand=function(x){500-10*x}
@@ -430,7 +428,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Natural Monopoly: Strong Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 mc=function(x){100}
 ac=function(x){100+1500/x}
 demand=function(x){500-10*x}
@@ -590,7 +588,7 @@ Harold Demsetz
 # Price Regulation: Weak Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 mc_w=function(x){10*x+50}
 ac_w=function(x){5*x+50+800/x}
 demand=function(x){500-10*x}
@@ -648,7 +646,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Price Regulation: Weak Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 mc_w=function(x){10*x+50}
 ac_w=function(x){5*x+50+800/x}
 demand=function(x){500-10*x}
@@ -721,7 +719,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Price Regulation: Weak Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 mc_w=function(x){10*x+50}
 ac_w=function(x){5*x+50+800/x}
 demand=function(x){500-10*x}
@@ -788,7 +786,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Price Regulation: Strong Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 mc=function(x){100}
 ac=function(x){100+1500/x}
 demand=function(x){500-10*x}
@@ -856,7 +854,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Price Regulation: Strong Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 ggplot(data.frame(x=c(0,10)), aes(x=x))+
   geom_rect(xmin=0,xmax=40,ymin=ac(40),ymax=100, fill="black",alpha=0.7)+
   stat_function(fun=demand, geom="line", size=2, color = "blue")+
@@ -903,7 +901,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Price Regulation: Strong Case
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 mc=function(x){100}
 ac=function(x){100+1500/x}
 demand=function(x){500-10*x}
@@ -973,7 +971,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 # Price Regulation: Rate of Return Regulation
 
 .pull-left[
-```{r, fig.height=4}
+```{r}
 CS_s3<-tribble(
   ~x, ~y,
   0, 500,
@@ -1062,7 +1060,7 @@ ggplot(data.frame(x=c(0,10)), aes(x=x))+
 
 .pull-left[
 .center[
-![](https://www.dropbox.com/s/koprogt4cernivs/commoncarrier.jpg?raw=1)
+![:scale 100%](https://www.dropbox.com/s/koprogt4cernivs/commoncarrier.jpg?raw=1)
 ]
 ]
 

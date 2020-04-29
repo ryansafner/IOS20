@@ -1,0 +1,17 @@
+---
+title: "4.5 Natural Monopoly Regulation - Readings"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Recommended Readings and Primary Sources:
+
+## Journal Articles
+
+- [<i class="fas fa-file-pdf"></i> Demsetz, 1968, "Why Regulate Utilities?"](/readings/Demsetz-1968.pdf)
+- [<i class="fas fa-file-pdf"></i> DiLorenzo, 1996, "The Myth of Natural Monopoly"](/readings/DiLorenzo-1996.pdf)
+- [<i class="fas fa-file-pdf"></i> Thierer, 1994, "Unnatural Monopoly: Critical Moments in the Development of the Bell System Monopoly"](/readings/Thierer-1994.pdf)
+
+## Textbook
+- <i class="fas fas fa-book"></i> 24.1-24.3 on Regulation Rationales, 25.1 for Natural Monopoly Price Regulation in @Church^[Again, there is [a free PDF](https://works.bepress.com/jeffrey_church/23/) from the authors.]

@@ -135,3 +135,4 @@ lessons:
     assignment: "03-problem-set"
 
   - title: '<i class="fas fa-laptop-code"></i> **Final Exam** (take home)'
+    assignment: "final"

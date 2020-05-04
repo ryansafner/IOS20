@@ -1,0 +1,638 @@
+---
+title: "Problem Set 3 Solutions"
+author: "ECON 326 - Industrial Organization - Spring 2020"
+date: "Due by 11:59 PM Friday, May 1, 2020 by email"
+output: pdf_document
+header-includes:
+- \usepackage{amsmath}
+- \usepackage{multirow, multicol, booktabs}
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+library(tidyverse)
+library(mosaic)
+```
+
+Answers may be longer than I would deem sufficient on an exam. Some might vary slightly based on points of interest, examples, or personal experience. These suggested answers are designed to give you both the answer and a short explanation of why it is the answer. 
+
+# Theory of the Firm
+
+1. If markets are so great, why are there firms? Explain what Coase has to say about the purpose of firms.
+
+---
+
+**Unlike markets, firms do not use the price system or market exchanges to allocate resources internally, they use a hierchical, command-and-control system where managers direct factors of production (workers, materials, etc).**
+
+**Firms face a constant make-or-buy decision, where they can either _contract_ with a seller in the open marketplace for a specific transaction, or they can produce _in-house_ and manage resources directly.**
+
+**Coase (1937) says that firms exist because there are _transaction costs_ to using the price system and market exchange to contract. Having to constantly negotiate individual contracts between factor owners exchange by exchange would be tremendously costly. One could never write complete contracts due to uncertainty. It is far less costly to internally organize under a single contract - where a manager contracts for the right to direct workers and other resources (within reason) - in exchange for a wage/salary. That way, managers can make decisions each day about how best to use their workers and resources, rather than initiate and negotiate a new contract for each action.**
+
+**There are costs to using internal organiation, of course, such as _agency costs._ The idea is firms will organize internally when the cost of using the market is higher than the cost of organizing, and contract out into the marketplace when the cost of internal organization is higher than using the market.**
+
+\clearpage
+
+2. According to Alchian and Demsetz, what are the problems inherent in *team production* and how does this give rise to firms? How is the "firm" incentivized to solve the team production problem?
+
+---
+
+**Alchian and Demsetz (1972) famously describe the firm as a nexus of contracts in the market, much like any ordinary contract between buyer and seller, rather than a unique command-and-control hierarchy.**^[**They argue that a manager has only same 'power' and 'authority' as any ordinary buyer/seller does: only the ability to withhold future business, or to take another party to court for fraud or breach of contract.**] 
+
+**They describe _team production_ as a production task that requires the _joint_ efforts of multiple factors of production. This, however, creates an _information problem_: discerning the marginal product of each factor (e.g. each worker's effort towards completing the task) is very costly, and so each factor has an incentive to _shirk_ in their efforts, and _free ride_ off of the efforts of the others in completing the task for the group.**
+
+**They argue that the team members recognize these poor incentives, and recognize that it is _in their own interest_ to appoint a _monitor_ to observe them, to reduce the incentive to shirk or free ride.**
+
+**To make sure the monitor does not shirk in her monitoring duties, the team contracts to receive a fixed payment (i.e. wages, etc) in exchange for the monitor to become the _residual claimant_: to have the right to earn any residual income net of the factor payments (i.e. profit).**
+
+\clearpage
+
+3. Explain what asset specificity and quasi-rents are in contracting, and why this helps explain vertical integration and contracts with vertical restraints.
+
+---
+
+**Asset specificity refers to the degree to which an asset has alternative valuable uses outside its current use. A highly specific asset is one that does not have alternative uses, and must only be used for a very specific purpose. In some sense, this is equivalent to a sunk cost - once it is put to its specific use, it has no value in other uses, can't be resold, and thus the costs cannot be recovered.**
+
+**Oliver Williamson describes four sources of asset specificity: site specificity, physical asset specificity, human asset specificity, and dedicated assets.**
+
+**Highly specific assets open a window for opportunism, where one party in a contract may try to take advantage of the other. If two parties cooperate and fulfill a contract, this creates value to both parties. The (owner of the) highly specific asset can easily be held up by the other party, seeking to get a better deal in the contract, or threatening to pull out of the agreement. This is an attempt to appropriate "quasi-rents" generated by the contract.**
+
+**To solve this holdup problem, firms can either write better contracts (with vertical constraints such as exclusive dealing, territorial restraints, resale price maintenance requirements, franchising agreements, etc) or vertically integrate - where one party buys the other and produces as a single firm without the holdup problem.**
+
+\clearpage
+
+# Antitrust
+
+4. An industry consists of the following firms
+
+| Firm | Market Share (%) |
+|------|------------------|
+| A | 40 |
+| B | 20 |
+| C | 10 |
+| D | 10 |
+| E | 5 |
+| F | 5 |
+| G | 2 |
+| H | 2 |
+| I | 2 |
+| J | 2 |
+| K | 2 |
+
+a. Calculate the $CR_4$ and $CR_8$.
+
+---
+
+$$\begin{aligned}
+CR_4&=0.40+0.20+0.10+0.05\\
+CR_4&=0.75\\ \end{aligned}$$
+
+$$\begin{aligned}
+CR_8&=0.40+0.20+0.10+0.05+0.05+0.02+0.02+0.02\\
+CR_4&=0.86\\ \end{aligned}$$
+
+**Note: it's fine if you left these in percentages, then the concentration ratio will be out of 100, rather than 1.**
+
+---
+
+b. Calculate the HHI for this industry.
+
+---
+
+$$\begin{aligned}
+HHI &= \sum^{11}_{i=1} s^2_i\\ &= 40^2+20^2+10^2+10^2+5^2+5^2+2^2+2^2+2^2+2^2+2^2\\
+&= 1600+400+100+100+25+25+4+4+4+4+4\\
+&=2270\\
+\end{aligned}$$
+
+---
+
+c. Under the [current Horizontal Merger Guidelines (link)](https://ios20.classes.ryansafner.com/slides/4.1-slides#27), is this market not very concentrated, "moderately concentrated," or "highly concentrated"?
+
+---
+
+**This is a _moderately concentrated industry_ since HHI is between 1,500 and 2,500.**
+
+---
+
+d. Calculate the "equivalent number" of a hypothetical market of equal-sized firms for this HHI.^[Hint: either convert to decimals, or multiply your answer by 10,000.]
+
+---
+
+$\frac{10000}{2270}=4.4$ **equally sized firms**
+
+---
+
+e. Suppose firms D and E propose a merger. Calculate the new $CR_4$, $CR_8$, and HHI from the merger. Do you think is it likely that the FTC and DOJ would allow these two firms to merge?
+
+---
+
+$$\begin{aligned}
+HHI &= \sum^{10}_{i=1} s^2_i\\ &= 40^2+20^2+10^2+15^2+5^2+2^2+2^2+2^2+2^2+2^2\\
+&= 1600+400+100+225+25+4+4+4+4+4\\
+&=2370\\
+\end{aligned}$$
+
+**This increases HHI from 2,270 to 2,370, a difference of _100_ points. This is likely to be approved.**
+
+---
+
+f. Suppose *instead* of D and E, firms A and B propose a merger.^[i.e. start from the original market, ignore the proposed merger in Part E.] Calculate the new $CR_4$, $CR_8$, and HHI from the merger. Do you think is it likely that the FTC and DOJ would allow these two firms to merge?
+
+---
+
+$$\begin{aligned}
+HHI &= \sum^{10}_{i=1} s^2_i\\ &= 60^2+10^2+10^2+5^2+5^2+2^2+2^2+2^2+2^2+2^2\\
+&= 3600+100+100+25+25+4+4+4+4+4\\
+&=3,870\\
+\end{aligned}$$
+
+**This increases HHI from 2,270 to 3,870, a difference of _1,600_ points. This is likely to be blocked.**
+
+
+\clearpage
+
+5. Explain why it is difficult to identify whether a firm has market power just from observing its price. You can explain verbally, no need for a graph.
+
+---
+
+**All firms charging the same price might be a competitive industry, where all firms are charging $p=MC$ (and so they 'can't' raise or lower price). Or, it could be a cartel, acting like a single monopoly, marking up $p>MC$ and splitting the monopoly profits. _If_ the cartel has found a way to monitor and prevent cheating, firms would be charging the same agreed-upon price, and not raising or lowering their own prices.**
+
+**For a specific example with graphs, see [4.1 slides](https://ios20.classes.ryansafner.com/slides/4.1-slides#37)**
+
+\clearpage
+
+6. Explain, in your own words, the main implications for antitrust law from the following key statutes:
+  - Sherman Act (1890)
+  - Clayton Act (1914)
+  - Federal Trade Commission Act (1914)
+  - Hart–Scott–Rodino Antitrust Improvements Act (1976)
+
+---
+
+**The Sherman Act is the basis for all U.S. antitrust law. It makes it illegal to write contracts in restraint of trade (section 1) or for firms to "monopolize" an industry (section 2). However, courts have ruled that not _all_ contracts in restraint of trade are illegal, only ones that _nakedly_ restrain trade for no legitimate purpose; and having a monopoly is not illegal, only if it was acquired or maintained by anticompetitive means. Also, under the Sherman Act alone, the government would have to wait for a full blown monopoly or cartel to emerge before it can prosecute it.**
+
+**The Clayton Act is the primary basis for antitrust cases today, as it specifically delineates illegal practices that the government can prosecute before a full-fledged monopoly or cartel emerges. Namely, it makes all of the following practices, that can be shown to *"substantially lessen competition"*, illegal: price discrimination, exclusive dealing, tying, mergers, and being on the board of multiple companies.**
+
+**The Federal Trade Commission Act created the FTC, which can prosecute civil violations of antitrust law, as well as protect consumers from "unfair and deceptive" business practices, and rulemaking authority to define these. The FTC is the government's consumer watchdog and primary litigator against these abuses of consumers by businesses.**
+
+**The HSR Act makes it so a company seeking to merge with or acquire other company above a certain size must pre-notify the DOJ and FTC. The agencies then investigate whether the merger would be anticompetitive or procompetitive, and block or allow it accordingly.** 
+
+\clearpage
+
+7. Explain the difference between the *per se* rule and the *rule of reason* in antitrust cases. What sorts of business practices fall into each category, and why?
+
+---
+
+**The _per se_ rule is part of the Court's interpretation of the Sherman Act, and makes certain practices illegal by definition. There are no legal defenses that permit companies to be acquitted of these actions. These primarily are outright collusive or cartel-like practices: price-fixing, big-rigging, carving of up exclusive territories, group boycotts, etc.**
+
+**The _rule of reason_ is part of the Court's interpretation of the Sherman Act, and makes certain practices that may constrain trade not automatically illegal, if they can be shown to be _reasonable_, or ancillary (a mere side effect) to a legitimate business purpose. Contracts that restrain trade _nakedly_, for no other purpose than just to restrain trade, are illegal. Virtually all practices not covered by the _per se_ rule are scrutinized with the _rule of reason_: mergers and acquisitions, exclusive dealing, price discrimination, tying and bundling, vertical contractual restraints, etc.** 
+
+\clearpage
+
+8. Explain the difference between a *horizontal merger*, a *vertical merger*, and a *conglomerate merger*. How *might* a merger be pro-competitive, and how might a merger be anti-competitive?
+
+---
+
+- **Horizontal merger: two rival competitors in the same market merge**
+
+- **Vertical merger: two companies along the same supply chain merge (e.g. a retailer and a manufacturer)**
+
+- **Conglomerate merger: two companies that are not directly competing in the same market merge**
+
+**A merger might be pro-competitive if it lowers costs for the company and lowers prices for consumers. A merger miught be anti-competitive if it leads to _market foreclosure_, where rival competitors go out of business and substantially increase market concentration, or if it would significantly decrease output and raise prices for consumers.**
+
+\clearpage
+
+9. Explain Bork's main idea behind the *Paradox of Antitrust*.
+
+---
+
+**Robert Bork argues that antitrust law has always had two conflicting goals: (1) to promote consumer welfare, and (2) to protect certain businesses (often small businesses) against other businesses (often large businesses or chain stores, etc).**
+
+**Prosecuting some businesses to protect their _competitors_ may actually harm _consumers_ if means higher prices and lost output (e.g. due to losing economies of scale, etc). Allowing businesses to engage in a variety of business practices that _appear_ anticompetitive may actually benefit consumers via lower prices and increased output.**
+
+**Bork argues that the _only_ goal of antitrust should be to promote consumer welfare. Business practices should be permitted or blocked only based on how they affect consumers (e.g. changes in price, quantity, quality, etc). Bork suggests antitrust law should protect _competition_, not _some competitors_ against other competitors.**
+
+\clearpage
+
+10. Explain Khan's main idea behind "Amazon's Antitrust Paradox" and the "Hipster Antitrust" movement.
+
+---
+
+**Lina Khan argues that the influential consumer welfare standard is far too narrow, and permits too many business practices she suggests are socially harmful. Similar advocates (often properly called the "New Brandeisians, as well as the "hipster antitrust" movement) argue that antitrust law should consider other socially harmful effects such as wage stagnation, monoposony power, and economic inequality.**
+
+**Khan's primary argument against Amazon is that while most of its actions are permitted under the consumer welfare standard (it is aggressively lowering prices and increasing output for consumers), it is acting anticompetitively against other sellers on its platform. Of primary concern is Amazon acting as both a platform for buyers and sellers to exchange, as well as a seller on its own platform (where it competes with other sellers, and has a strong advantage to exploit their data, enter the market, and undercut them).**
+
+\clearpage
+
+# Natural Monopoly
+
+11. Explain the logic of rate of return and common carrier regulation for natural monopoly. What is the government trying to achieve? How does it provide incentives for natural monopoly?
+
+---
+
+**The government wishes to maintain a single firm producing in the industry to take advantage of economies of scale, which will keep price low and output high compared to a more competitive market (where small competing firms cannot reach the proper scale).**
+
+**The ultimate goal of such price regulation is to maximize allocative efficiency by getting as close to the output and price where $p=MC$ as possible. This will maximize consumer surplus and minimize deadweight loss, however it will also likely reduce the monopoly's profits (particularly in the strong natural monopoly case, where $AC>MC)$.**
+
+**The _first-best_ type of price regulation is _marginal_-cost-pricing. There is no allocative inefficiency (no DWL) at this level of output and price. This however, is not possible in a _strong_ natural monopoly, since at this output level, $AC>MC$, and so the monopoly would earn losses.**
+
+**The _second-best_ type of price regualtion is _average_-cost-pricing. There will be no allocative inefficiency (some DWL) at this level of output and price, but the monopolist would break even and earn profit of 0, since $p=AC$.**
+
+**In practice, the government and the monopoly often agree on a _rate of return_ that sets a slightly $p>AC$ to ensure the monopoly earns _some_ positive profits. This comes at the expense of allocative efficiency (it generates more DWL and less consumer surplus), but gives the monopolist more incentive to produce in this market because it is guaranteed some profit.**
+
+**However, rate of return regulation also creates poor incentives for the monopolist to accurately report its average cost to the government (since the government and monopolist agree on a price above its average cost). The monopolist will tend to "gold plate" and overinvest in capital, raising its reported average cost (but bringing benefits and perquesites to its managers) and as such, its prices to consumers.**
+
+\clearpage
+
+12. Suppose a typical firm in an industry has a cost structure as follows:
+
+$$\begin{aligned}
+C(q)&=20q+1200\\
+MC(q)&=20\\
+\end{aligned}$$
+
+The market demand for the industry is:
+
+$$q=50-0.1p$$
+
+a. Calculate the (i) price, (ii) quantity, (iii) consumer surplus, and (iv) deadweight loss for the industry if it were perfectly competitive.
+
+---
+
+**We are ultimately looking for the allocatively efficient outcome where $p=MC$. First, find inverse demand function:**
+
+$$\begin{aligned}
+q&=50-0.1p\\
+q+0.1p&=50\\
+0.1p&=50-q\\
+p&=500-10q\\
+\end{aligned}$$
+
+**Knowing $p$ equals the inverse demand function, set:**
+
+$$\begin{aligned}
+p&=MC\\
+500-10q&=20\\
+480-10q&=0\\
+480&=10q\\
+48&=q\\
+\end{aligned}$$
+
+**The industry would charge $p=MC=\$20$ for 48 units of output.**
+
+$$\begin{aligned}
+CS&=\frac{1}{2}bh\\
+&=\frac{1}{2}(48)(500-20)\\
+&=\frac{1}{2}(48)(480)\\
+&=\frac{1}{2}(23040)\\
+&=\$11,520\\
+\end{aligned}$$
+
+**Deadweight loss would be 0, since this is the allocatively efficient equilibrium.**
+
+```{r, fig.height=4}
+mc=function(x){20}
+ac=function(x){20+1200/x}
+demand=function(x){500-10*x}
+mr=function(x){500-20*x}
+CS_1<-tribble(
+  ~x, ~y,
+  0, 500,
+  0, 20,
+  48,20
+)
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=CS_1,aes(x=x,y=y),fill="blue",alpha=0.3)+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=40,y=demand(40)), color = "blue", label="Demand", size = 3)+
+    stat_function(fun=mr, geom="line", size=2, color = "darkblue")+
+    geom_label(aes(x=20,y=mr(20)), color = "darkblue", label=expression(MR(q)), size = 3)+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=6,y=mc(6)), color = "red", label=expression(MC(q)), size = 3)+
+  stat_function(fun=ac, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=6,y=ac(6)), color = "orange", label=expression(AC(q)), size = 3)+
+  geom_segment(x=48,xend=48,y=0,yend=20, linetype="dashed", size=1)+
+    scale_x_continuous(breaks=c(48), #seq(0,52,4),
+                       limits=c(0,52),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,20,500), #seq(0,500,20),
+                     limits=c(0,500),
+                     expand=c(0,0),
+                     label=scales::dollar)+
+  labs(x = "Output, q",
+       y = "Price ($)")+
+  theme_classic(base_size=12)
+```
+
+---
+
+b. One firm of these firms achieves economies of scale and becomes the monopolist in this industry. If left to its own devices, what price and quantity will the monopolist set?
+
+---
+
+**We know the inverse demand, so double the slope to get $MR(q)$. A profit-maximizing firm first finds $q^*$ where:**
+
+$$\begin{aligned}
+MR&=MC\\
+500-20q&=20\\
+480-20q&=0\\
+480&=20q\\
+24&= q^*\\
+\end{aligned}$$
+
+**Since this firm is a monopolist, it marks up the price to the most consumers are willing to pay at $q^*=24$:**
+
+$$\begin{aligned}
+p&=500-10q\\
+p&=500-10(24)\\
+p&=\$260\\
+\end{aligned}$$
+
+\clearpage
+
+c. Calculate the (i) profit, (ii) consumer surplus, and (iii) deadweight loss in the industry under the monopoly.
+
+---
+
+**Next, find the average cost per unit at 24 units:**
+
+$$\begin{aligned}
+AC&=20+\frac{1200}{q}\\
+AC(24)&=20+\frac{1200}{24}\\
+AC(24)&=20+50\\
+AC(24)&=\$70\\
+\end{aligned}$$
+
+**Now plug this all in to calculate the profit:**
+
+$$\begin{aligned}
+\pi &=(p-AC)q\\
+\pi &=(260-70)24\\
+\pi &=(190)24\\
+\pi &=\$4,560\\
+\end{aligned}$$
+
+$$\begin{aligned}
+CS&=\frac{1}{2}bh\\
+&=\frac{1}{2}(24)(500-260)\\
+&=\frac{1}{2}(24)(240)\\
+&=\frac{1}{2}(5760)\\
+&=\$2,880\\
+\end{aligned}$$
+
+$$\begin{aligned}
+DWL&=\frac{1}{2}bh\\
+&=\frac{1}{2}(48-24)(260-20)\\
+&=\frac{1}{2}(24)(240)\\
+&=\frac{1}{2}(5760)\\
+&=\$2,880\\
+\end{aligned}$$
+
+```{r, fig.height=4}
+CS_2<-tribble(
+  ~x, ~y,
+  0, 500,
+  0, 260,
+  24, 260
+)
+
+DWL_2<-tribble(
+  ~x, ~y,
+  24, 20,
+  24, 260,
+  48, 20
+)
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=CS_2,aes(x=x,y=y),fill="blue",alpha=0.3)+
+  geom_polygon(data=DWL_2,aes(x=x,y=y),fill="black",alpha=0.7)+
+  geom_rect(xmin=0,xmax=24,ymin=70, ymax=260, fill="green", alpha=0.3)+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=40,y=demand(40)), color = "blue", label="Demand", size = 3)+
+    stat_function(fun=mr, geom="line", size=2, color = "darkblue")+
+    geom_label(aes(x=20,y=mr(20)), color = "darkblue", label=expression(MR(q)), size = 3)+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=6,y=mc(6)), color = "red", label=expression(MC(q)), size = 3)+
+  stat_function(fun=ac, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=6,y=ac(6)), color = "orange", label=expression(AC(q)), size = 3)+
+  geom_segment(x=0, xend=24, y=70, yend=70, linetype="dashed", size=1)+
+    geom_segment(x=0, xend=24, y=260, yend=260, linetype="dashed", size=1)+
+    geom_segment(x=24,xend=24,y=0,yend=260, linetype="dashed", size=1)+
+  geom_segment(x=48,xend=48,y=0,yend=20, linetype="dashed", size=1)+
+    scale_x_continuous(breaks=c(0,24,48), #seq(0,52,4),
+                       limits=c(0,52),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,20,70,260,500), #seq(0,500,20),
+                     limits=c(0,500),
+                     expand=c(0,0),
+                     label=scales::dollar)+
+  labs(x = "Output, q",
+       y = "Price ($)")+
+  theme_classic(base_size=12)
+```
+
+\clearpage
+
+d. The government decides to regulate the monopolist as a common carrier. What is the price and quantity the government would like to set in order to maximize allocative efficiency? Calculate the amount of profit would the monopolist would earn under this outcome.
+
+---
+
+**It would like to force the monopolist to produce the allocatively efficient quantity: 48, and price at marginal cost $20. To get the profits for the monopolist, first find average cost per unit at $q=48$:**
+
+$$\begin{aligned}
+AC(48)&=20+\frac{1200}{48}\\
+AC(48)&=20+25\\
+AC(48)&=45\\
+\end{aligned}$$
+
+**Now plug everything into:**
+
+$$\begin{aligned}
+\pi &=(p-AC)q\\
+\pi &=(20-45)48\\
+\pi &=(-25)48\\
+\pi &=-1,200\\
+\end{aligned}$$
+
+```{r, fig.height=4}
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_rect(xmin=0,xmax=48,ymin=20, ymax=45, fill="black", alpha=0.3)+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=40,y=demand(40)), color = "blue", label="Demand", size = 3)+
+    stat_function(fun=mr, geom="line", size=2, color = "darkblue")+
+    geom_label(aes(x=20,y=mr(20)), color = "darkblue", label=expression(MR(q)), size = 3)+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=6,y=mc(6)), color = "red", label=expression(MC(q)), size = 3)+
+  stat_function(fun=ac, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=6,y=ac(6)), color = "orange", label=expression(AC(q)), size = 3)+
+  geom_segment(x=48,xend=48,y=0,yend=20, linetype="dashed", size=1)+
+    geom_segment(x=0,xend=48,y=45,yend=45, linetype="dashed", size=1)+
+    scale_x_continuous(breaks=c(0,48), #seq(0,52,4),
+                       limits=c(0,52),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,20,45,500), #seq(0,500,20),
+                     limits=c(0,500),
+                     expand=c(0,0),
+                     label=scales::dollar)+
+  labs(x = "Output, q",
+       y = "Price ($)")+
+  theme_classic(base_size=12)
+```
+
+---
+
+e. The government recognizes the poor incentives it creates for the monopolist with its approach in Part D. Instead, it regulates the monopolist to set a price where it breaks even $(\pi=0)$.^[Note: this won't be the *minimum* of average cost, because $MC$ and $AC$ will never intersect in this cost structure. This is simply where $p=AC$.] Calculate the (i) price, (ii) quantity, (iii) consumer surplus, and (iv) deadweight loss under this scenario.^[Hint: To spare you use of the quadratic formula, the quantity will be *approximately* 45!]
+
+--
+
+**The monopoly breaks even where $p=AC$.**
+
+## Extra Explanation Starts Here
+
+**I will derive how I found the quantity for you (which I gave to you), but it involves use of the quadratic formula:**
+
+$$\begin{aligned}
+p&=AC(q)\\
+500-10q&=20+\frac{1200}{q}\\
+480-10q&=\frac{1200}{q}\\
+480q-10q^2&=1200\\
+480q-10q^2-1200&=0\\
+-10q^2+480q-1200&=0\\
+\end{aligned}$$
+
+**I've rearranged so that $a=-10$, $b=480$, and $c=-1200$, and plug into the quadratic formula to find the roots of this quadratic function:**
+
+$$\begin{aligned}
+\frac{-b \pm \sqrt{b^2-4ac}}{2a}\\
+\frac{-480 \pm \sqrt{(480)^2-4(-10)(-1200)}}{2(-10)}\\
+\frac{-480 \pm \sqrt{230400-(48000)}}{-20}\\
+\frac{-480 \pm \sqrt{182400}}{-20}\\
+\frac{-480 \pm 427}{-20}\\
+\left(\frac{-53}{-20}; \frac{-907}{-20}\right) \\
+\left(2.65; 45.35\right) \\
+\end{aligned}$$
+
+```{r, fig.height=4}
+u=function(x){-10*x^2+480*x-1200}
+zeros<-tribble(
+  ~x, ~y,
+  2.65, 0,
+  24,4560,
+  45.35, 0
+)
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  stat_function(fun=u, geom="line", size=2, color = "green")+
+  geom_hline(yintercept=0,size=1)+
+  geom_vline(xintercept=0,size=1)+
+  geom_point(data=zeros,aes(x=x,y=y),color="red",size=5)+
+  labs(x = "Output, q",
+       y = "Profit")+
+  theme_light(base_size=12)+
+  scale_x_continuous(breaks=seq(-10,50,5),
+                     limits=c(-10,50))+
+  scale_y_continuous(limits=c(-5000,6000))
+```
+
+**Notice on the graph, AC intersects demand at 2 points, the first is approximately 2.65, and the second is approximately 45.35! The government wants to get as close to the competitive outcome as possible, so we are using the second intersection, about 45.**
+
+**If you want proof that the monopolist breaks even at this quantity, find average cost and price at 45.35:**
+
+$$\begin{aligned}
+AC(45.35)&=20+\frac{1200}{45.35}\\
+AC(45.35)&=20+26.46\\
+AC(45.35)&=46.47\\
+\end{aligned}$$
+
+$$\begin{aligned}
+p&=500-10(45.35)\\
+p&=500-453.5\\
+p&=46.5\\
+\end{aligned}$$
+
+**And plug them both into calculate profit:**
+
+$$\begin{aligned}
+\pi &=(p-AC)q\\
+\pi &=(46.5-46.47)45.35\\
+\pi &=(0.03)45.35\\
+\pi &=1.36\\
+\end{aligned}$$ 
+
+**Close enough to 0!**
+
+## Extra Explanation Ends: Onto What I Asked of You
+
+**Now, back to what I asked you to do. If you used my $q=45$ approximation, price is:**
+
+$$\begin{aligned}
+p&=500-10(45)\\
+p&=500-450\\
+p&=50\\
+\end{aligned}$$
+
+**Consumer surplus then is:**
+
+$$\begin{aligned}
+CS&=\frac{1}{2}bh\\
+&=\frac{1}{2}(45)(500-50)\\
+&=\frac{1}{2}(45)(450)\\
+&=\frac{1}{2}(20250)\\
+&=\$10,125\\
+\end{aligned}$$
+
+$$\begin{aligned}
+DWL&=\frac{1}{2}bh\\
+&=\frac{1}{2}(48-45)(50-20)\\
+&=\frac{1}{2}(3)(30)\\
+&=\frac{1}{2}(90)\\
+&=\$45\\
+\end{aligned}$$
+
+**Quite an improvement over Part B (though less so for the monopolist)!**
+
+```{r, fig.height=4}
+CS_3<-tribble(
+  ~x, ~y,
+  0, 500,
+  0, 50,
+  45, 50
+)
+
+DWL_3<-tribble(
+  ~x, ~y,
+  45, 20,
+  45, 50,
+  48, 20
+)
+
+ggplot(data.frame(x=c(0,10)), aes(x=x))+
+  geom_polygon(data=CS_3,aes(x=x,y=y),fill="blue",alpha=0.3)+
+  geom_polygon(data=DWL_3,aes(x=x,y=y),fill="black",alpha=0.7)+
+  stat_function(fun=demand, geom="line", size=2, color = "blue")+
+    geom_label(aes(x=40,y=demand(40)), color = "blue", label="Demand", size = 3)+
+    stat_function(fun=mr, geom="line", size=2, color = "darkblue")+
+    geom_label(aes(x=20,y=mr(20)), color = "darkblue", label=expression(MR(q)), size = 3)+
+  stat_function(fun=mc, geom="line", size=2, color = "red")+
+    geom_label(aes(x=6,y=mc(6)), color = "red", label=expression(MC(q)), size = 3)+
+  stat_function(fun=ac, geom="line", size=2, color = "orange")+
+    geom_label(aes(x=6,y=ac(6)), color = "orange", label=expression(AC(q)), size = 3)+
+
+    geom_segment(x=45,xend=45,y=0,yend=50, linetype="dashed", size=1)+
+    geom_segment(x=0,xend=45,y=50,yend=50, linetype="dashed", size=1)+
+
+  geom_segment(x=48,xend=48,y=0,yend=20, linetype="dashed", size=1)+
+    scale_x_continuous(breaks=c(0,45,48), #seq(0,52,4),
+                       limits=c(0,52),
+                       expand=c(0,0))+
+  scale_y_continuous(breaks=c(0,20,50,500), #seq(0,500,20),
+                     limits=c(0,500),
+                     expand=c(0,0),
+                     label=scales::dollar)+
+  labs(x = "Output, q",
+       y = "Price ($)")+
+  theme_classic(base_size=12)
+```
